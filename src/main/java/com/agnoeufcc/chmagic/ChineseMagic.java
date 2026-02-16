@@ -31,11 +31,6 @@ import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import net.neoforged.bus.api.SubscribeEvent;
-import net.neoforged.fml.common.Mod;
-import net.neoforged.neoforge.event.level.LevelEvent;
-import net.minecraft.world.level.Level;
-
 // The value here should match an entry in the META-INF/neoforge.mods.toml file
 @Mod(ChineseMagic.MOD_ID)
 public class ChineseMagic {
@@ -74,7 +69,7 @@ public class ChineseMagic {
     public ChineseMagic(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-/*
+
         // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
@@ -82,7 +77,6 @@ public class ChineseMagic {
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
 
- */
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ChineseMagic) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
@@ -93,7 +87,6 @@ public class ChineseMagic {
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
-
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
@@ -124,46 +117,4 @@ public class ChineseMagic {
         // Do something when the server starts
         LOGGER.info("HELLO from server starting");
     }
-
-    //yixiaweiwancheng
-    @Mod.EventBusSubscriber(modid = chmagic.MOD_ID)
-    public class ModEventHandlers {
-    
-    private static boolean initialized = false;
-    
-    @SubscribeEvent
-    public static void onLevelLoad(LevelEvent.Load event) {
-        Level level = (Level) event.getLevel();
-        if (!level.isClientSide() && level.dimension() == Level.OVERWORLD && !initialized) {
-            initialized = true;
-            yaaah();
-        }
-    }
-    
-    private static void yaaah() {
-    }
-    //chicken's yaaah
-    @Mod.EventBusSubscriber
-    public class FunctionScheduler {
-    private static int tickCounter = 0;
-    private static String functionName = "chmagic:yaaah";
-    private static int interval = 5;
-
-    @SubscribeEvent
-    public static void onServerTick(TickEvent.ServerTickEvent event) {
-        if (event.phase == TickEvent.Phase.END) {
-            tickCounter++;
-            if (tickCounter >= interval) {
-                tickCounter = 0;
-                MinecraftServer server = ServerLifecycleHooks.getCurrentServer();
-                if (server != null) {
-                    server.getCommands().performPrefixedCommand(
-                        server.createCommandSourceStack(),
-                        "function " + chmagic:yaaah
-                    );
-                }
-            }
-        }
-    }
-}
 }

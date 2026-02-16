@@ -11,9 +11,9 @@ import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
-@Mod(value = ChineseMagic.MOD_ID, dist = Dist.CLIENT)
+@Mod(value = ChineseMagic.MODID, dist = Dist.CLIENT)
 // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
-@EventBusSubscriber(modid = ChineseMagic.MOD_ID, value = Dist.CLIENT)
+@EventBusSubscriber(modid = ChineseMagic.MODID, value = Dist.CLIENT)
 public class ChineseMagicClient {
     public ChineseMagicClient(ModContainer container) {
         // Allows NeoForge to create a config screen for this mod's configs.
