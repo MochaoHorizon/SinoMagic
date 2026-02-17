@@ -69,7 +69,7 @@ public class ChineseMagic {
     public ChineseMagic(IEventBus modEventBus, ModContainer modContainer) {
         // Register the commonSetup method for modloading
         modEventBus.addListener(this::commonSetup);
-
+/*
         // Register the Deferred Register to the mod event bus so blocks get registered
         BLOCKS.register(modEventBus);
         // Register the Deferred Register to the mod event bus so items get registered
@@ -77,6 +77,7 @@ public class ChineseMagic {
         // Register the Deferred Register to the mod event bus so tabs get registered
         CREATIVE_MODE_TABS.register(modEventBus);
 
+ */
         // Register ourselves for server and other game events we are interested in.
         // Note that this is necessary if and only if we want *this* class (ChineseMagic) to respond directly to events.
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
@@ -87,6 +88,7 @@ public class ChineseMagic {
 
         // Register our mod's ModConfigSpec so that FML can create and load the config file for us
         modContainer.registerConfig(ModConfig.Type.COMMON, Config.SPEC);
+
     }
 
     private void commonSetup(FMLCommonSetupEvent event) {
