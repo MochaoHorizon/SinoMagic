@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=1": {
+      "model": "chmagic:block/planted_dadou_1"
+    },
+    "age=2": {
+      "model": "chmagic:block/planted_dadou_2"
+    },
+    "age=3": {
+      "model": "chmagic:block/planted_dadou_3"
+    },
+    "age=4": {
+      "model": "chmagic:block/planted_dadou_4"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "chmagic:soild_soyamilk",
+  "criteria": {
+    "childhood_memories": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": {
+          "items": "chmagic:spicy_gluten"
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.description.chmagic.childhood_memories"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chmagic:spicy_gluten"
+    },
+    "title": {
+      "translate": "advancement.title.chmagic.childhood_memories"
+    }
+  },
+  "requirements": [
+    [
+      "childhood_memories"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,34 @@
+{
+  "criteria": {
+    "source_of_all_food": {
+      "trigger": "placed_block",
+      "conditions": {
+        "location": {
+          "tool": "farmersdelight:stove"
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "background": "chmagic:gui/advancement/background",
+    "description": {
+      "translate": "advancement.description.chmagic.source_of_all_food"
+    },
+    "frame": "task",
+    "hidden": true,
+    "icon": {
+      "count": 1,
+      "id": "farmersdelight:stove"
+    },
+    "title": {
+      "translate": "advancement.title.chmagic.source_of_all_food"
+    }
+  },
+  "requirements": [
+    [
+      "source_of_all_food"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

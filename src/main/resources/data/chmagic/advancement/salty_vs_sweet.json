@@ -1,0 +1,34 @@
+{
+  "parent": "chmagic:soyamilk",
+  "criteria": {
+    "salty_vs_sweet": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": {
+          "items": ["chmagic:salty_tofu_curd", "chmagic:sweet_tofu_curd"]
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.description.chmagic.salty_vs_sweet"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chmagic:salty_tofu_curd"
+    },
+    "title": {
+      "translate": "advancement.title.chmagic.salty_vs_sweet"
+    }
+  },
+  "requirements": [
+    [
+      "salty_vs_sweet"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

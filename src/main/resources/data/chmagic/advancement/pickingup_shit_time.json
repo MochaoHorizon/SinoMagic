@@ -1,0 +1,34 @@
+{
+  "parent": "chmagic:source_of_all_food",
+  "criteria": {
+    "pickingup_shit_time": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": {
+          "items": "chmagic:dried_shit"
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.description.chmagic.pickingup_shit_time"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chmagic:dried_shit"
+    },
+    "title": {
+      "translate": "advancement.title.chmagic.pickingup_shit_time"
+    }
+  },
+  "requirements": [
+    [
+      "pickingup_shit_time"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

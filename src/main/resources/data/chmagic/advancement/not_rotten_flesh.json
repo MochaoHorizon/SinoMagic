@@ -1,0 +1,34 @@
+{
+  "parent": "chmagic:soild_soyamilk",
+  "criteria": {
+    "not_rotten_flesh": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": {
+          "items": "chmagic:stinky_tofu"
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.description.chmagic.not_rotten_flesh"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chmagic:stinky_tofu"
+    },
+    "title": {
+      "translate": "advancement.title.chmagic.not_rotten_flesh"
+    }
+  },
+  "requirements": [
+    [
+      "not_rotten_flesh"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

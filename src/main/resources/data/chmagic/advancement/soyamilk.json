@@ -1,0 +1,34 @@
+{
+  "parent": "chmagic:golden_powder",
+  "criteria": {
+    "soyamilk": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": {
+          "items": "chmagic:soyamilk_bottle"
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.description.chmagic.soyamilk"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chmagic:soyamilk_bottle"
+    },
+    "title": {
+      "translate": "advancement.title.chmagic.soyamilk"
+    }
+  },
+  "requirements": [
+    [
+      "soyamilk"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

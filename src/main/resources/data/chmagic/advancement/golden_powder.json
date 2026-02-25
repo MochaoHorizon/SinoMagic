@@ -1,0 +1,34 @@
+{
+  "parent": "chmagic:soybean",
+  "criteria": {
+    "golden_powder": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": {
+          "items": "chmagic:dadou_powder"
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.description.chmagic.golden_powder"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chmagic:dadou_powder"
+    },
+    "title": {
+      "translate": "advancement.title.chmagic.golden_powder"
+    }
+  },
+  "requirements": [
+    [
+      "golden_powder"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "chmagic:soild_soyamilk",
+  "criteria": {
+    "chinese_puff_pastry": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": {
+          "items": "chmagic:qianzhang_tofu"
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.description.chmagic.chinese_puff_pastry"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chmagic:qianzhang_tofu"
+    },
+    "title": {
+      "translate": "advancement.title.chmagic.chinese_puff_pastry"
+    }
+  },
+  "requirements": [
+    [
+      "chinese_puff_pastry"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,34 @@
+{
+  "parent": "chmagic:soybean",
+  "criteria": {
+    "ferment_everything": {
+      "trigger": "placed_block",
+      "conditions": {
+        "location": {
+          "tool": "chmagic:dagang"
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.description.chmagic.ferment_everything"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chmagic:dagang"
+    },
+    "title": {
+      "translate": "advancement.title.chmagic.ferment_everything"
+    }
+  },
+  "requirements": [
+    [
+      "ferment_everything"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

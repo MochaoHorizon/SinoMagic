@@ -1,0 +1,35 @@
+{
+  "parent": "chmagic:pickingup_shit_time",
+  "criteria": {
+    "shit_king": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": {
+          "items": "chmagic:dried_shit",
+          "count": 288
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.description.chmagic.shit_king"
+    },
+    "frame": "challenge",
+    "hidden": false,
+    "icon": {
+      "count": 8,
+      "id": "chmagic:dried_shit"
+    },
+    "title": {
+      "translate": "advancement.title.chmagic.shit_king"
+    }
+  },
+  "requirements": [
+    [
+      "shit_king"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

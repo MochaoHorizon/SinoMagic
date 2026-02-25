@@ -1,0 +1,13 @@
+{
+  "itemGroup.chmagic": "Example Mod Tab",
+  "block.chmagic.example_block": "Example Block",
+  "item.chmagic.example_item": "Example Item",
+
+  "chmagic.configuration.title": "Chinese Magic Configs",
+  "chmagic.configuration.section.chmagic.common.toml": "Chinese Magic Configs",
+  "chmagic.configuration.section.chmagic.common.toml.title": "Chinese Magic Configs",
+  "chmagic.configuration.items": "Item List",
+  "chmagic.configuration.logDirtBlock": "Log Dirt Block",
+  "chmagic.configuration.magicNumberIntroduction": "Magic Number Text",
+  "chmagic.configuration.magicNumber": "Magic Number"
+}

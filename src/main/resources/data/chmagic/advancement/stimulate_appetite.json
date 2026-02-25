@@ -1,0 +1,34 @@
+{
+  "parent": "chmagic:soild_soyamilk",
+  "criteria": {
+    "stimulate_appetite": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": {
+          "items": "chmagic:furu"
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.description.chmagic.stimulate_appetite"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chmagic:furu"
+    },
+    "title": {
+      "translate": "advancement.title.chmagic.stimulate_appetite"
+    }
+  },
+  "requirements": [
+    [
+      "stimulate_appetite"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

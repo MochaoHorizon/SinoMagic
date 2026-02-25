@@ -1,0 +1,34 @@
+{
+  "parent": "chmagic:soybean",
+  "criteria": {
+    "oil_seller": {
+      "trigger": "inventory_changed",
+      "conditions": {
+        "items": {
+          "items": "chmagic:dadou_oil_bottle"
+        }
+      }
+    }
+  },
+  "display": {
+    "announce_to_chat": true,
+    "description": {
+      "translate": "advancement.description.chmagic.oil_seller"
+    },
+    "frame": "task",
+    "hidden": false,
+    "icon": {
+      "count": 1,
+      "id": "chmagic:dadou_oil"
+    },
+    "title": {
+      "translate": "advancement.title.chmagic.oil_seller"
+    }
+  },
+  "requirements": [
+    [
+      "oil_seller"
+    ]
+  ],
+  "sends_telemetry_event": false
+}

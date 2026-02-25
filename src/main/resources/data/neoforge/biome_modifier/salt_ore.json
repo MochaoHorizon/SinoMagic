@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": ["#mountains","caves","oceans"],
+  "features": "chmagic:salt_ore",
+  "step": "underground_ores"
+}
