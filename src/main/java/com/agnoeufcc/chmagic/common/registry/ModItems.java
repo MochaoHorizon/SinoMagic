@@ -1,4 +1,4 @@
-package com.agnoeufcc.chmagic.common.registry.item;
+package com.agnoeufcc.chmagic.common.registry;
 
 import com.agnoeufcc.chmagic.ChineseMagic;
 import net.minecraft.world.item.Item;
@@ -11,39 +11,35 @@ public class ModItems {
             DeferredRegister.createItems(ChineseMagic.MOD_ID);
 
     public static final DeferredItem<Item> DADOU =
-            ITEMS.register("dadou", ()-> new Item(foodItem(FoodValues.DADOU)));
+            ITEMS.register("dadou", ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MAODOU =
-            ITEMS.register("maodou", ()-> new Item(foodItem(FoodValues.MAODOU)));
+            ITEMS.register("maodou", ()-> new Item(new Item.Properties()));
+
+    /*
     public static final DeferredItem<Item> DOUJIA =
             ITEMS.register("doujia", ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DRIED_DOUJIA =
-            ITEMS.register("planted_dadou)", ()-> new Item(new Item.Properties()));
+            ITEMS.register("dried_doujia)", ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DADOU_OIL_BOTTLE =
-            ITEMS.register("dadou_oil_bottle", ()-> new Item(new Item.Properties()));
+            ITEMS.register("dadou-oil_bottle", ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DADOU_POWDER =
             ITEMS.register("dadou_powder", ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SOYAMILK_BOTTLE =
-            ITEMS.register("soyamilk_bottle", ()-> new Item(foodItem(FoodValues.SOYAMILK_BOTTLE)));
-    public static final DeferredItem<Item> SALTY_TOFU_CURD =
-            ITEMS.register("salty_tofu_curd", ()-> new Item(foodItem(SAITY_TOFU_CURD)));
-    public static final DeferredItem<Item> SWEET_TOFU_CURD =
-            ITEMS.register("sweet_tofu_curd", ()-> new Item(foodItem(SWEET_TOFU_CURD)));
     public static final DeferredItem<Item> TOFU =
-            ITEMS.register("tofu", ()-> new Item(foodItem(TOFU)));
+            ITEMS.register("tofu", ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> FROZEN_TOFU =
-            ITEMS.register("frozen_tofu", ()-> new Item(foodItem(FROZEN_TOFU)));
+            ITEMS.register("frozen_tofu", ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> MOULD_TOFU =
-            ITEMS.register("mould_tofu", ()-> new Item(foodItem(MOULD_TOFU)));
+            ITEMS.register("mould_tofu", ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> STINKY_TOFU =
-            ITEMS.register("stinky_tofu", ()-> new Item(foodItem(STINKY_TOFU)))
-    public static final DeferredItem<Item> BAKED_TOFU =
-            ITEMS.register("baked_tofu", ()-> new Item(foodItem(BAKED_TOFU)));
-    public static final DeferredItem<Item> FURU =
-            ITEMS.register("furu", ()-> new Item(foodItem(FURU)));
+            ITEMS.register("stinky_tofu", ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SALTY_TOFU_CURD =
+            ITEMS.register("salty_tofu_curd", ()-> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> SWEET_TOFU_CURD =
+            ITEMS.register("sweet_tofu_curd", ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> DOUPI =
-            ITEMS.register("doupi", ()-> new Item(foodItem(DOUPI)));
+            ITEMS.register("doupi", ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> QIANZHANG_TOFU =
-            ITEMS.register("qianzhang_tofu", ()-> new Item(foodItem(QIANZHANG_TOFU)));
+            ITEMS.register("qianzhang_tofu", ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SALT =
             ITEMS.register("salt", ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SALT_ORE =
@@ -56,25 +52,11 @@ public class ModItems {
             ITEMS.register("dregs_dadou", ()-> new Item(new Item.Properties()));
     public static final DeferredItem<Item> SPICY_GLUTEN =
             ITEMS.register("spicy_gluten", ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DRIED_TOFU=
-            ITEMS.register("dried_tofu", ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> BLACKBEAN =
-            ITEMS.register("blackbean", ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> REDBEANSHRUB =
-            ITEMS.register("redbeanshrub", ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> REDBEANSHRUB_POWDER =
-            ITEMS.register("redbeanshrub_powder", ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> REDBEAN =
-            ITEMS.register("redbean", ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> GREENBEAN =
-            ITEMS.register("greenbean", ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> GREENBEAN_POWDER =
-            ITEMS.register("greenbean_powder", ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> DRIED_SHIT =
-            ITEMS.register("dried_shit", ()-> new Item(new Item.Properties()));
-    public static final DeferredItem<Item> SHIT_BUCKET =
-            ITEMS.register("shit_bucket", ()-> new Item(new Item.Properties()));
-    
+    public static final DeferredItem<Item> DRIED_DADOU =
+            ITEMS.register("dried_dadou", ()-> new Item(new Item.Properties()));
+
+     */
+
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

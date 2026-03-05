@@ -1,13 +1,8 @@
 {
-  "itemGroup.chmagic": "Example Mod Tab",
-  "block.chmagic.example_block": "Example Block",
-  "item.chmagic.example_item": "Example Item",
+  "itemGroup.chmagic_tab": "Chinese Magic",
 
-  "chmagic.configuration.title": "Chinese Magic Configs",
-  "chmagic.configuration.section.chmagic.common.toml": "Chinese Magic Configs",
-  "chmagic.configuration.section.chmagic.common.toml.title": "Chinese Magic Configs",
-  "chmagic.configuration.items": "Item List",
-  "chmagic.configuration.logDirtBlock": "Log Dirt Block",
-  "chmagic.configuration.magicNumberIntroduction": "Magic Number Text",
-  "chmagic.configuration.magicNumber": "Magic Number"
+  "item.chmagic.dadou": "Soybean",
+  "item.chmagic.maodou": "Green Soybean",
+
+  "block.chmagic.salt_block": "Salt Block"
 }
