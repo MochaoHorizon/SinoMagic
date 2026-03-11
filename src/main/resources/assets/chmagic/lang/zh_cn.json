@@ -1,8 +1,32 @@
 {
   "itemGroup.chmagic_tab": "中华魔法",
 
-  "item.chmagic.dadou": "大豆",
-  "item.chmagic.maodou": "毛豆",
+  "item.chmagic.soybean": "大豆",
+  "item.chmagic.green_soybean": "毛豆",
+  "item.chmagic.pod": "豆荚",
+  "item.chmagic.dried_pod": "干豆荚",
+  "item.chmagic.soybean_powder": "大豆粉",
+  "item.chmagic.tofu": "豆腐",
+  "item.chmagic.salty_tofu_curd": "咸豆腐脑",
+  "item.chmagic.sweet_tofu_curd": "甜豆腐脑",
+  "item.chmagic.frozen_tofu": "冻豆腐",
+  "item.chmagic.hairy_tofu": "毛豆腐",
+  "item.chmagic.stinky_tofu": "臭豆腐",
+  "item.chmagic.baked_tofu": "烤豆腐",
+  "item.chmagic.fermented_tofu": "腐乳",
+  "item.chmagic.tofu_skin": "豆皮",
+  "item.chmagic.qianzhang_tofu": "千张",
+  "item.chmagic.soybean_meal": "豆粕",
+  "item.chmagic.tofu_jerky": "豆干",
+  "item.chmagic.latiao": "辣条",
+
+  "item.chmagic.blackbean": "黑豆",
+  "item.chmagic.redbean": "红豆",
+  "item.chmagic.redbean_paste": "红豆沙",
+  "item.chmagic.greenbean": "绿豆",
+  "item.chmagic.greenbean_paste": "绿豆沙",
+
+  "item.chmagic.salt": "盐",
 
   "block.chmagic.salt_block": "盐块"
 }

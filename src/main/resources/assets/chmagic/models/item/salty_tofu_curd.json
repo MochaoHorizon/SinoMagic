@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "chmagic:item/dadou"
+    "layer0": "chmagic:item/salty_tofu_curd"
   }
 }
