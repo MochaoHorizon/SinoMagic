@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "group": "",
+  "category": "food",
+  "experience": 5,
+  "cookingtime": 80,
+  "ingredient": "doujia",
+  "result": {
+    "id": "dried_doujia"
+  }
+}

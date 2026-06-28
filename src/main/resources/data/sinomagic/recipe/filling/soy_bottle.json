@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:glass_bottle"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 250,
+      "fiuld": "sinomagic:soy"
+    }
+  ],
+  "results": [
+    {
+      "id": "sinomagic:soy_bottle"
+    }
+  ]
+}

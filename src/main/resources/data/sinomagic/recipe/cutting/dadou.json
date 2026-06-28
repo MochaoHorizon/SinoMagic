@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "sinomagic:dried_doujia"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 8,
+        "id": "sinomagic:dadou"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

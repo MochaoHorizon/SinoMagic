@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "sinomagic:doupi"
+    },
+    {
+      "item": "sinomagic:chili"
+    },
+    {
+      "id": "sinomagic:dadou_oil",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "sinomagic:spicy_gluten"
+    }
+  ]
+}

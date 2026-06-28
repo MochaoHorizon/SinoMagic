@@ -1,0 +1,17 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "sinomagic:tofu"
+    },
+    {
+      "item": "sinomagic:stain"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "sinomagic:mould_tofu"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "superheated",
+  "ingredients": [
+    {
+      "id": "minecraft:water",
+      "amount": 400
+    }
+  ],
+  "results": [
+    {
+      "count": 150,
+      "id": "sinomagic:luzhi"
+    },
+    {
+      "id": "sinomagic:salt"
+    }
+  ]
+}

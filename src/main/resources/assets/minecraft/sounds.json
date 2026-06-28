@@ -1,0 +1,124 @@
+{
+  "music.game": {
+    "replace": true,
+    "sounds": [
+      {
+        "name": "sinomagic:music/1_dongfanghong_remix",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/2_molihua",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/3_erquanyingyue",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/4_gaoshanliushui",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/5_yuzhouchangwan",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/6_gadameiling",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/7_arirang",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/8_navamuqam",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/9_zhubajie",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/10_akdun_beri",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/11_dangqishuangjiang",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/12_vietnam",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/13_chunjianghuayueye",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/14_oynasun",
+        "stream": true
+      }
+    ]
+  },
+  "music.menu": {
+    "replace": true,
+    "sounds": [
+      {
+        "name": "sinomagic:music/1_dongfanghong_remix",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/2_molihua",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/3_erquanyingyue",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/4_gaoshanliushui",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/5_yuzhouchangwan",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/6_gadameiling",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/7_arirang",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/8_navamuqam",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/9_zhubajie",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/10_akdun_beri",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/11_dangqishuangjiang",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/12_vietnam",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/13_chunjianghuayueye",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/14_oynasun",
+        "stream": true
+      }
+    ]
+  }
+}

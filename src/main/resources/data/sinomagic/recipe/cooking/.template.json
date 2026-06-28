@@ -1,0 +1,15 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": ,
+//SMALL_EXP = 0.35F, MEDIUM_EXP = 1.0F, LARGE_EXP = 2.0F
+  "ingredients": [
+    {
+      "item": "  "
+    }
+  ],
+  "recipe_book_tab": "  ",
+  "result": {
+    "count": ,
+    "id": "  "
+  }
+}

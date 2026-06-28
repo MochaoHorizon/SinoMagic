@@ -1,0 +1,21 @@
+{
+  "type": "create:mixing",
+  "ingredients": [
+    {
+      "item": "sinomagic:yeast"
+    },
+    {
+      "item": "farmersdelight:dough"
+    },
+    {
+      "item": "minecraft:water",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "sinomagic:yeast",
+      "amount": 5
+    }
+  ]
+}

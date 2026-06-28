@@ -1,0 +1,18 @@
+{
+  "type": "create:filling",
+  "ingredients": [
+    {
+      "item": "minecraft:bucket"
+    },
+    {
+      "type": "neoforge:single",
+      "amount": 1000,
+      "fiuld": "sinomagic:shit"
+    }
+  ],
+  "results": [
+    {
+      "id": "sinomagic:shit_bucket"
+    }
+  ]
+}

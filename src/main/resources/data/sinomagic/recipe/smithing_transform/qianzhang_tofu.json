@@ -1,0 +1,10 @@
+{
+  "type": "minecraft:smithing_transform",
+  "template": "minecraft:paper",
+  "base": "sinomagic:tofu",
+  "addition": "sinomagic:tofu",
+  "result": {
+    "count": 8,
+    "id": "sinomagic:qianzhang_tofu"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "sinomagic:dadou"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 4,
+        "id": "sinomagic:dadou_powder"
+      }
+    }
+  ],
+  "tool": {
+    "type": "#pickaxe",
+    "action": "pickaxe_dig"
+  }
+}

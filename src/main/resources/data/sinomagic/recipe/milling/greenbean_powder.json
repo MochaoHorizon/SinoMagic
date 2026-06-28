@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "sinomagic:greenbean"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "sinomagic:greenbean_powder"
+    }
+  ]
+}

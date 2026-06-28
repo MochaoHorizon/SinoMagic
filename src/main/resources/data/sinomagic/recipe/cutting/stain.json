@@ -1,0 +1,22 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "minecraft:mycelium"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 3,
+        "id": "sinomagic:stain"
+      },
+      {
+        "id": "minecraft:rooted_dirt"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

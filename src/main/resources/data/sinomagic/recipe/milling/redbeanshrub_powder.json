@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "sinomagic:redbeanshrub"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "sinomagic:redbeanshrub_powder"
+    }
+  ]
+}

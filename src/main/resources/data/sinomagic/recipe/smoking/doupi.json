@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smoking",
+  "group": "",
+  "category": "food",
+  "experience": 5,
+  "cookingtime": 300,
+  "ingredient": "sinomagic:soyamilk_bottle",
+  "result": {
+    "id": "doupi"
+  }
+}

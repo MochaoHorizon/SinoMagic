@@ -1,0 +1,62 @@
+#Sorry, DMHR114514's English is very average, I learn mostly written English. :)
+#I should say thanks for simibubi, I learn much on mods.toml of create. qwq
+modLoader="javafml"
+loaderVersion="[0,)"
+license="MIT"
+
+[[mods]]
+modId="sinomagic"
+version="0.1.0"
+displayName="SinoMagic"
+authors="MochaoHorizon"
+logoflie="icon.png"
+description="This is a mod that shows the charm of Chinese culture."
+
+[[mixins]]
+config="sinomagic.mixins.json"
+
+#These are things what sinomagic-mod have to use.
+#Although Farmer's Delight is the dependencies of sinomagic-mod, but sinomagic-mod also have many content, at least on the plan. XD
+[[dependencies."sinomagic"]]
+modId="minecraft"
+    type="required"
+    versionRange="[1.21.1]"
+    ordering="NONE"
+    side="BOTH"
+    
+[[dependencies."sinomagic"]]
+    modId="neoforge"
+    type="required"
+    versionRange="[21.2.206,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies."sinomagic"]]
+    modId="farmersdelight"
+    type="required"
+    versionRange="[1.2.4a,)"
+    ordering="NONE"
+    side="BOTH"
+
+#This mod need create to realize mechanized food production. But I think that sometimes making food by hand is also a very romantic thing. Yes, I like create too! :D
+[[dependencies."sinomagic"]]
+    modId="create"
+    type="optional"
+    versionRange="[6.0.1,)"
+    ordering="NONE"
+    side="BOTH"
+
+#It is impossible to wake them up.
+[[dependencies."sinomagic"]]
+    modId="sakura"
+    type="incompatible"
+    versionRange="[0.0.1,)"
+    ordering="NONE"
+    side="BOTH"
+
+[[dependencies."sinomagic"]]
+    modId="chinjufumod"
+    type="incompatible"
+    versionRange="[0.0.1,)"
+    ordering="NONE"
+    side="BOTH"

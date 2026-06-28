@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "sinomagic:tofu"
+    },
+    {
+      "id": "sinomagic:luzhi",
+      "amount": 250
+    }
+  ],
+  "results": [
+    {
+      "id": "sinomagic:stinky_tofu"
+    }
+  ]
+}

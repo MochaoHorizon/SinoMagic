@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "sinomagic:greenbean"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 4,
+        "id": "sinomagic:greenbean_powder"
+      }
+    }
+  ],
+  "tool": {
+    "type": "#pickaxe",
+    "action": "pickaxe_dig"
+  }
+}

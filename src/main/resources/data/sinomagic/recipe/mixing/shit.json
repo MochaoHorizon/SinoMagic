@@ -1,0 +1,19 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "dried_shit"
+    },
+    {
+      "id": "minecraft:water",
+      "amount": 800
+    }
+  ],
+  "results": [
+    {
+      "id": "sinomagic:shit",
+      "amount": 1000
+    }
+  ]
+}

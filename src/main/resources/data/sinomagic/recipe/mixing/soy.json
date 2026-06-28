@@ -1,0 +1,25 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "sinomagic:dadou"
+    },
+    {
+      "item": "sinomagic:stain"
+    },
+    {
+      "item": "sinomagic:salt"
+    },
+    {
+      "id": "minecraft:water",
+      "amount": 450
+    }
+  ],
+  "results": [
+    {
+      "amount": 500,
+      "id": "sinomagic:soy"
+    }
+  ]
+}

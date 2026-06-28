@@ -1,0 +1,13 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "sinomagic:tofu"
+    }
+  ],
+  "results": [
+    {
+      "id": "sinomagic:qianzhang_tofu"
+    }
+  ]
+}

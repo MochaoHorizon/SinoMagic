@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "sinomagic:dadou_powder"
+    },
+    {
+      "item": "minecraft:water_bottle"
+    }
+  ],
+  "recipe_book_tab": "drink",
+  "result": {
+    "id": "sinomagic:soyamilk_bottle"
+  }
+}

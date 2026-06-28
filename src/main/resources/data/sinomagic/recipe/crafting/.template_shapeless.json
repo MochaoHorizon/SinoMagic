@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "group": "",
+  "category": "  ",
+  "ingredient": [
+    "item": "  ",
+    "item": "  "
+    ],
+  "result": {
+    "count": 1,
+    "id": "  "
+  }
+}

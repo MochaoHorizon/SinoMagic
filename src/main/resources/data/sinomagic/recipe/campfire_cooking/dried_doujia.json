@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 500,
+  "experience": 0.0,
+  "ingredient": {
+    "item": "sinomagic:doujia"
+  },
+  "result": {
+    "id": "sinomagic:dried_doujia"
+  }
+}

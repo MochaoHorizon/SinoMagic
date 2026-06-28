@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "jukebox_song.sinomagic.redflag"
+  },
+  "length_in_seconds": 135,
+  "sound_event": "sinomagic:redflag"
+}

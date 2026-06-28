@@ -14,13 +14,13 @@ the special sound of walking chicken (yaaah) is quoted from the network by Cloud
 In fact, DMHR114514 didn't want to make soy products first,
 but when chatting with netizens, it was soy products that first formed ideas.
 
-=====程序主要贡献者  Major contributors to the mod=====
+=====程序贡献者  contributors of the mod=====
 @一只带明球/带明浩二（DHMR114514）
 项目所有者、纹理、程序、平台管理
 自 讨 苦 吃
 
 @北陆南躔（ExTetragon）
-程序
+程序、设计
 
 @Cloud_123awa（Cloud1232534）
 纹理、设计
@@ -28,5 +28,14 @@ but when chatting with netizens, it was soy products that first formed ideas.
 @之一（kkkkkkkkkk）
 纹理、设计
 
+@万生君
+纹理、模型
+
 @哲学家史蒂夫（Psteve）
 技术顾问
+
+@墨琛_COMU
+音乐（东方红_remix）
+
+@Cryoballuz_成冰纪
+音乐（豳风·七月）

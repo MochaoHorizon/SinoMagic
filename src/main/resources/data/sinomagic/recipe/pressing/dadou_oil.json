@@ -1,0 +1,17 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "sinomagic:dadou"
+    }
+  ],
+  "results": [
+    {
+      "id": "sinomagic:dadou_oil",
+      "amount": 100
+    },
+    {
+      "id": "sinomagic:dregs_dadou"
+    }
+  ]
+}

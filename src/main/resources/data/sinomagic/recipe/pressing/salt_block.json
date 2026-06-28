@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "id": "sinomagic:salt",
+      "count": 9
+    }
+  ],
+  "results": [
+    {
+      "id": "sinomagic:salt_block"
+    }
+  ]
+}

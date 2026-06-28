@@ -1,0 +1,18 @@
+{
+  "type": "create:mixing",
+  "heat_requirement": "heated",
+//If it don't need heated, delete line 3. If it need super-heated, change line 3 into "superheated".
+  "ingredients": [
+    {
+      "item": "  "
+    },
+    {
+      "item": "  "
+    }
+  ],
+  "results": [
+    {
+      "id": "  "
+    }
+  ]
+}
