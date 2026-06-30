@@ -29,16 +29,6 @@ public class CookingRecipes
 				.unlockedByAnyIngredient(SinoMagicItems.DADOU_POWDER.get())
 				.setRecipeBookTab(CookingPotRecipeBookTab.DRINKS)
 				.build(output);
-		CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.DADOU_OIL_BOTTLE.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.GLASS_BOTTLE)
-				.addIngredient(SinoMagicItems.DADOU.get())
-				.unlockedByAnyIngredient(SinoMagicItems.DADOU.get())
-				.setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-				.build(output);
-	    CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.DREGS_DADOU.get(), 1, NORMAL_COOKING, SMALL_EXP)
-				.addIngredient(SinoMagicItems.DADOU.get())
-				.unlockedByAnyIngredient(SinoMagicItems.DADOU.get())
-				.setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-				.build(output);
 		CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.TOFU.get(), 2, NORMAL_COOKING, SMALL_EXP)
 				.addIngredient(SinoMagicItems.SOYAMILK_BOTTLE.get())
 				.addIngredient(SinoMagicItems.LUZHI_BOTTLE.get())
@@ -46,11 +36,6 @@ public class CookingRecipes
 				.setRecipeBookTab(CookingPotRecipeBookTab.MISC)
 				.build(output);
 		CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.LUZHI_BOTTLE.get(), 1, FAST_COOKING, MEDIUM_EXP, Items.GLASS_BOTTLE)
-				.addIngredient(Items.WATER_BUCKET)
-				.unlockedByAnyIngredient(SinoMagicItems.SALT.get())
-				.setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-				.build(output);
-		CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.SALT.get(), 2, FAST_COOKING, MEDIUM_EXP)
 				.addIngredient(Items.WATER_BUCKET)
 				.unlockedByAnyIngredient(Items.WATER_BUCKET)
 				.setRecipeBookTab(CookingPotRecipeBookTab.MISC)
@@ -67,7 +52,7 @@ public class CookingRecipes
 				.unlockedByAnyIngredient(SinoMagicItems.MOULD_TOFU.get())
 				.setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
 				.build(output);
-	    CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.DOUPI.get(), 1, NORMAL_COOKING, MEDIUM_EXP)
+	    CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.DOUPI.get(), 2, NORMAL_COOKING, MEDIUM_EXP)
 				.addIngredient(SinoMagicItems.SOYAMILK_BOTTLE.get())
 				.unlockedByAnyIngredient(SinoMagicItems.SOYAMILK_BOTTLE.get(), SinoMagicItems.TOFU.get())
 				.setRecipeBookTab(CookingPotRecipeBookTab.MEALS)

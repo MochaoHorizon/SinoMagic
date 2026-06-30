@@ -1,10 +1,9 @@
 {
   "type": "minecraft:crafting_shapeless",
-  "group": "",
   "category": "misc",
   "ingredient": [
-    "item": "sinomagic:tofu",
-    "item": "minecraft:ice"
+    "sinomagic:tofu",
+    "minecraft:ice"
     ],
   "result": {
     "count": 2,

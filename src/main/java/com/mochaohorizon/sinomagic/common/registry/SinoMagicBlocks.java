@@ -23,6 +23,12 @@ public class SinoMagicBlocks {
                     .explosionResistance(1.0f)
                     .sound(SoundType.STONE)
             ));
+    public static final DeferredBlock<Block> TOFU_BLOCK = registerBlocks(
+            "tofu_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .destroyTime(0.5f)
+                    .explosionResistance(0.5f)
+                    .sound(SoundType.STONE)
+            ));
 
 
 //Register blocks and blockitems

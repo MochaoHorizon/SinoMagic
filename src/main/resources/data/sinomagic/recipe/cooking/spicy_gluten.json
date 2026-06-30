@@ -1,7 +1,6 @@
 {
   "type": "farmersdelight:cooking",
   "experience": 2.0,
-//SMALL_EXP = 0.35F, MEDIUM_EXP = 1.0F, LARGE_EXP = 2.0F
   "ingredients": [
     {
       "item": "sinomagic:doupi"

@@ -202,6 +202,21 @@ public class SinoMagicItems {
             Item::new,
             new Item.Properties()
     );
+    public static final Supplier<Item> CHILI = ITEMS.registerItem(
+            "chili",
+            Item::new,
+            new Item.Properties()
+    );
+    public static final Supplier<Item> FIRE_CHILI = ITEMS.registerItem(
+            "fire_chili",
+            Item::new,
+            new Item.Properties()
+    );
+    public static final Supplier<Item> CHILI_SEED = ITEMS.registerItem(
+            "chili_seed",
+            Item::new,
+            new Item.Properties()
+    );
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);

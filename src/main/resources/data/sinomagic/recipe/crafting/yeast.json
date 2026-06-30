@@ -2,9 +2,9 @@
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredient": [
-    "item": "sinomagic:yeast",
-    "item": "farmersdelight:dough",
-    "item": "minecraft:water_bucket"
+    "sinomagic:yeast",
+    "farmersdelight:dough",
+    "minecraft:water_bucket"
     ],
   "result": {
     "count": 2,

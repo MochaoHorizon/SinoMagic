@@ -45,6 +45,9 @@ public class ItemModels extends ItemModelProvider {
         basicItem(SinoMagicItems.SHIT_BUCKET.get());
         basicItem(SinoMagicItems.SALT.get());
         basicItem(SinoMagicItems.YEAST.get());
+        basicItem(SinoMagicItems.CHILI.get());
+        basicItem(SinoMagicItems.FIRE_CHILI.get());
+        basicItem(SinoMagicItems.CHILI_SEED.get());
 
     }
 }

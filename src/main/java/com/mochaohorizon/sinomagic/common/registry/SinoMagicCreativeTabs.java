@@ -50,6 +50,10 @@ public class SinoMagicCreativeTabs {
                         output.accept(SinoMagicItems.LUZHI_BOTTLE.get());
                         output.accept(SinoMagicItems.DRIED_SHIT.get());
                         output.accept(SinoMagicItems.SHIT_BUCKET.get());
+                        output.accept(SinoMagicItems.YEAST.get());
+                        output.accept(SinoMagicItems.CHILI.get());
+                        output.accept(SinoMagicItems.FIRE_CHILI.get());
+                        output.accept(SinoMagicItems.CHILI_SEED.get());
 
 
                         output.accept(SinoMagicBlocks.SALT_BLOCK.get());

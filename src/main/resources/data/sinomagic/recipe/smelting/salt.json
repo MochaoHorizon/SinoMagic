@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "experience": 0.35,
+  "cookingtime": 150,
+  "ingredient": "minecraft:water_bucket",
+  "result": {
+    "count": 4,
+    "id": "sinomagic:salt"
+  }
+}
