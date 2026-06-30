@@ -27,7 +27,7 @@ modId="minecraft"
 [[dependencies."sinomagic"]]
     modId="neoforge"
     type="required"
-    versionRange="[21.2.206,)"
+    versionRange="[21.1.185,)"
     ordering="NONE"
     side="BOTH"
 
@@ -38,25 +38,10 @@ modId="minecraft"
     ordering="NONE"
     side="BOTH"
 
-#This mod need create to realize mechanized food production. But I think that sometimes making food by hand is also a very romantic thing. Yes, I like create too! :D
+#This mod need create to realize mechanized food production. But I think that sometimes making food by hand is also a very romantic thing. Yes, I like create too!
 [[dependencies."sinomagic"]]
     modId="create"
     type="optional"
     versionRange="[6.0.1,)"
-    ordering="NONE"
-    side="BOTH"
-
-#It is impossible to wake them up.
-[[dependencies."sinomagic"]]
-    modId="sakura"
-    type="incompatible"
-    versionRange="[0.0.1,)"
-    ordering="NONE"
-    side="BOTH"
-
-[[dependencies."sinomagic"]]
-    modId="chinjufumod"
-    type="incompatible"
-    versionRange="[0.0.1,)"
     ordering="NONE"
     side="BOTH"
