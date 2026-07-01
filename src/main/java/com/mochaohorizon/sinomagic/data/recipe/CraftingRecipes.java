@@ -1,6 +1,5 @@
 package com.mochaohorizon.sinomagic.data.recipe;
 
-import com.mochaohorizon.sinomagic.SinoMagic;
 import com.mochaohorizon.sinomagic.common.registry.SinoMagicBlocks;
 import com.mochaohorizon.sinomagic.common.registry.SinoMagicItems;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
@@ -10,7 +9,6 @@ import net.minecraft.data.recipes.ShapedRecipeBuilder;
 import net.minecraft.data.recipes.ShapelessRecipeBuilder;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.item.crafting.ShapedRecipe;
 import vectorwing.farmersdelight.common.registry.ModItems;
 
 public class CraftingRecipes {

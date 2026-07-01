@@ -1,7 +1,6 @@
 package com.mochaohorizon.sinomagic.data.recipe;
 
 import net.minecraft.data.recipes.RecipeOutput;
-//import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.ItemAbilities;
 import vectorwing.farmersdelight.common.crafting.ingredient.ItemAbilityIngredient;

@@ -1,27 +1,26 @@
 {
   "block.sinomagic.tofu_block": "黎祁方",
-  "block.sinomagic.planted_dadou": "菽苗",
-  "block.sinomagic.wild_dadou": "野菽",
   "block.sinomagic.salt_ore": "鹽礦",
   "block.sinomagic.salt_block": "鹽砣",
   "block.sinomagic.dagang": "瓮",
 
+  "block.sinomagic.planted_dadou": "菽苗",
+  "block.sinomagic.wild_dadou": "野菽",
+  "block.sinomagic.planted_chili": "番椒苗",
+  "block.sinomagic.wild_chili": "野番椒",
+
   "block.sinomagic.dadou_oil": "豆油液",
   "fluid.sinomagic.dadou_oil": "豆油",
   "item.sinomagic.dadou_oil_bottle": "豆油缾",
-  
   "block.sinomagic.soy": "醬清液",
   "fluid.sinomagic.soy": "醬清",
   "item.sinomagic.soy_bottle": "醬清缾",
-  
   "block.sinomagic.soyamilk": "豆乳液",
   "fluid.sinomagic.soyamilk": "豆乳",
   "item.sinomagic.soyamilk_bottle": "豆乳缾",
-  
   "block.sinomagic.luzhi": "鹵汁液",
   "fluid.sinomagic.luzhi": "鹵汁",
   "item.sinomagic.luzhi_bottle": "鹵汁缾",
-  
   "block.sinomagic.shit_fluid": "穢液",
   "fluid.sinomagic.shit_fluid": "穢",
   "item.sinomagic.shit_bucket": "穢桶",

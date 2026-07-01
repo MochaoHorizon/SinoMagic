@@ -157,12 +157,12 @@ public class SinoMagicItems {
     );
     public static final Supplier<Item> BLACKBEAN = ITEMS.registerItem(
             "blackbean",
-            Item::new,
+            props -> new Item(props.food(SinoMagicFoodValues.BLACKBEAN)),
             new Item.Properties()
     );
     public static final Supplier<Item> REDBEANSHRUB = ITEMS.registerItem(
             "redbeanshrub",
-            Item::new,
+            props -> new Item(props.food(SinoMagicFoodValues.REDBEANSHRUB)),
             new Item.Properties()
     );
     public static final Supplier<Item> REDBEANSHRUB_POWDER = ITEMS.registerItem(
@@ -172,12 +172,12 @@ public class SinoMagicItems {
     );
     public static final Supplier<Item> REDBEAN = ITEMS.registerItem(
             "redbean",
-            Item::new,
+            props -> new Item(props.food(SinoMagicFoodValues.REDBEAN)),
             new Item.Properties()
     );
     public static final Supplier<Item> GREENBEAN = ITEMS.registerItem(
             "greenbean",
-            Item::new,
+            props -> new Item(props.food(SinoMagicFoodValues.GREENBEAN)),
             new Item.Properties()
     );
     public static final Supplier<Item> GREENBEAN_POWDER = ITEMS.registerItem(

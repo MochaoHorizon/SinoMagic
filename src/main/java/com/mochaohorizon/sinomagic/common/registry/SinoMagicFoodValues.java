@@ -73,4 +73,24 @@ public class SinoMagicFoodValues
             .nutrition(8)
             .saturationModifier(1.0f)
             .build();
+    public static final FoodProperties BLACKBEAN = (new FoodProperties.Builder())
+            .nutrition(2)
+            .saturationModifier(0.5f)
+            .fast()
+            .build();
+    public static final FoodProperties REDBEANSHRUB = (new FoodProperties.Builder())
+            .nutrition(2)
+            .saturationModifier(0.5f)
+            .fast()
+            .build();
+    public static final FoodProperties REDBEAN = (new FoodProperties.Builder())
+            .nutrition(2)
+            .saturationModifier(0.5f)
+            .fast()
+            .build();
+    public static final FoodProperties GREENBEAN = (new FoodProperties.Builder())
+            .nutrition(2)
+            .saturationModifier(0.5f)
+            .fast()
+            .build();
 }

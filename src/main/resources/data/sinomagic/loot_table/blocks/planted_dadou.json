@@ -2,7 +2,6 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "name": "dadou_pool",
       "rolls": 1.0,
       "entries": [
         {
@@ -13,7 +12,7 @@
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "farmersdelight:planted_dadou",
+          "block": "sinomagic:planted_dadou",
           "properties": {
             "age": "4"
           }
@@ -37,7 +36,7 @@
           }
         }
       ]
-    },
+    }
   ],
   "functions": [
     {

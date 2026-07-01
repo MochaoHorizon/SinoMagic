@@ -4,6 +4,7 @@ import com.mochaohorizon.sinomagic.SinoMagic;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -16,9 +17,14 @@ public class SinoMagicBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(SinoMagic.MOD_ID);
 
-    //add in v0.1.0
     public static final DeferredBlock<Block> SALT_BLOCK = registerBlocks(
             "salt_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .destroyTime(1.5f)
+                    .explosionResistance(1.0f)
+                    .sound(SoundType.STONE)
+            ));
+    public static final DeferredBlock<Block> SALT_ORE = registerBlocks(
+            "salt_ore", () -> new Block(BlockBehaviour.Properties.of()
                     .destroyTime(1.5f)
                     .explosionResistance(1.0f)
                     .sound(SoundType.STONE)
@@ -28,6 +34,18 @@ public class SinoMagicBlocks {
                     .destroyTime(0.5f)
                     .explosionResistance(0.5f)
                     .sound(SoundType.STONE)
+            ));
+    public static final DeferredBlock<Block> PLANTED_DADOU = registerBlocks(
+            "planted_dadou", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
+            ));
+    public static final DeferredBlock<Block> WILD_DADOU = registerBlocks(
+            "wild_dadou", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS)
+            ));
+    public static final DeferredBlock<Block> PLANTED_CHILI = registerBlocks(
+            "planted_chili", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
+            ));
+    public static final DeferredBlock<Block> WILD_CHILI = registerBlocks(
+            "wild_chili", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS)
             ));
 
 

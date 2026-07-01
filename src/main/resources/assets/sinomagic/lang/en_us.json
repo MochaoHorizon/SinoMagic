@@ -1,27 +1,26 @@
 {
   "block.sinomagic.tofu_block": "Tofu Block",
-  "block.sinomagic.planted_dadou": "Soybean Plant",
-  "block.sinomagic.wild_dadou": "Wild Soybean Plant",
   "block.sinomagic.salt_ore": "Salt Ore",
   "block.sinomagic.salt_block": "Salt Block",
   "block.sinomagic.dagang": "Jar",
 
+  "block.sinomagic.planted_dadou": "Soybean Plant",
+  "block.sinomagic.wild_dadou": "Wild Soybean Plant",
+  "block.sinomagic.planted_chili": "Chili Plant",
+  "block.sinomagic.wild_chili": "Wild Chili Plant",
+
   "block.sinomagic.dadou_oil": "Soybean Oil Fluid",
   "fluid.sinomagic.dadou_oil": "Soybean Oil",
   "item.sinomagic.dadou_oil_bottle": "Soybean Oil Bottle",
-
   "block.sinomagic.soy": "Soy Sauce Fluid",
   "fluid.sinomagic.soy": "Soy Sauce",
   "item.sinomagic.soy_bottle": "Soy Sauce Bottle",
-
   "block.sinomagic.soyamilk": "Soy Milk Fluid",
   "fluid.sinomagic.soyamilk": "Soy Milk",
   "item.sinomagic.soyamilk_bottle": "Soy Milk Bottle",
-
   "block.sinomagic.luzhi": "Marinade Fluid",
   "fluid.sinomagic.luzhi": "Marinade",
   "item.sinomagic.luzhi_bottle": "Marinade Bottle",
-
   "block.sinomagic.shit_fluid": "Shit Fluid",
   "fluid.sinomagic.shit_fluid": "Shit",
   "item.sinomagic.shit_bucket": "Shit Bucket",
