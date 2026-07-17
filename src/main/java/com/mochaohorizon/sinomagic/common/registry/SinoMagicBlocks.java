@@ -47,7 +47,9 @@ public class SinoMagicBlocks {
     public static final DeferredBlock<Block> WILD_CHILI = registerBlocks(
             "wild_chili", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS)
             ));
-
+    public static final SinoMagicBlocks MILLSTONE =registerBlocks(
+            "millstone", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+            ));
 
 //Register blocks and blockitems
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {

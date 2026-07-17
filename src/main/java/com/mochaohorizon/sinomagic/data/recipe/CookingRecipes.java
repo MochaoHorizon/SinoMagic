@@ -1,10 +1,10 @@
 package com.mochaohorizon.sinomagic.data.recipe;
 
+import com.mochaohorizon.sinomagic.common.registry.SinoMagicItems;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.world.item.Items;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
-import com.mochaohorizon.sinomagic.common.registry.SinoMagicItems;
 
 public class CookingRecipes
 {
