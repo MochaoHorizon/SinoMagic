@@ -15,8 +15,9 @@ In fact, DMHR114514 didn't want to make soy products first,
 but when chatting with netizens, it was soy products that first formed ideas.
 
 =====程序贡献者  contributors of the mod=====
-@一只带明球/带明浩二（DHMR114514）
-项目所有者、纹理、程序、平台管理
+----墨潮河山团队成员----
+@一只带明球/带明浩二（DHMR114514） 
+项目创始人、程序、设计、纹理、平台管理
 自 讨 苦 吃
 
 @北陆南躔（ExTetragon）
@@ -28,11 +29,12 @@ but when chatting with netizens, it was soy products that first formed ideas.
 @之一（kkkkkkkkkk）
 纹理、设计
 
-@万生君
-纹理、模型
-
 @哲学家史蒂夫（Psteve）
 技术顾问
+
+----非团队成员----
+@万生君
+纹理、模型
 
 @墨琛_COMU
 音乐（东方红_remix）

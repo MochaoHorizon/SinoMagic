@@ -8,15 +8,17 @@ license="MIT"
 modId="sinomagic"
 version="0.1.0"
 displayName="SinoMagic"
+displayURL="https://github.com/MochaoHorizon/SinoMagic"
 authors="MochaoHorizon"
 logoflie="icon.png"
-description="This is a mod that shows the charm of Chinese culture."
+credits="一只带明球(DMHR114514), 荧惑启明(ExTetRagon), 克劳德(Cloud1232534), 之一"
+description="七月流火，九月授衣，春日载阳，有鸣仓庚"
 
 [[mixins]]
 config="sinomagic.mixins.json"
 
-#These are things what sinomagic-mod have to use.
-#Although Farmer's Delight is the dependencies of sinomagic-mod, but sinomagic-mod also have many content, at least on the plan. XD
+#These are things what sinomagic have to use.
+#Although Farmer's Delight is the dependencies of sinomagic, but sinomagic also have many content, at least on the plan. XD
 [[dependencies."sinomagic"]]
 modId="minecraft"
     type="required"
@@ -42,6 +44,6 @@ modId="minecraft"
 [[dependencies."sinomagic"]]
     modId="create"
     type="optional"
-    versionRange="[6.0.1,)"
+    versionRange="[6.0.10,)"
     ordering="NONE"
     side="BOTH"
