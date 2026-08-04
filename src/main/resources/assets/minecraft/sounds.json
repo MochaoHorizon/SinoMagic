@@ -57,6 +57,10 @@
       {
         "name": "sinomagic:music/14_oynasun",
         "stream": true
+      },
+      {
+        "name": "sinomagic:music/15_songbie",
+        "stream": true
       }
     ]
   },
@@ -117,6 +121,10 @@
       },
       {
         "name": "sinomagic:music/14_oynasun",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:music/15_songbie",
         "stream": true
       }
     ]
