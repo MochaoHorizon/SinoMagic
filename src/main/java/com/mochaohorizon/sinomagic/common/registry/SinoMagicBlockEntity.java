@@ -12,8 +12,8 @@ public class SinoMagicBlockEntity{
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITY_TYPES =
             DeferredRegister.create(Registries.BLOCK_ENTITY_TYPE, SinoMagic.MOD_ID);
 
-    public static final Supplier<BlockEntityType<MillstoneBlockEntity>> Millstone_Block_Entity = BLOCK_ENTITY_TYPES.register(
-            "millstone_block_entity",
+    public static final Supplier<BlockEntityType<MillstoneBlockEntity>> Millstone_BlockEntity = BLOCK_ENTITY_TYPES.register(
+            "millstone_blockentity",
             () -> BlockEntityType.Builder.of(
                             MillstoneBlockEntity::new,
                             SinoMagicBlocks.MILLSTONE.get())

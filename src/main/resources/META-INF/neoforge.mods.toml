@@ -40,6 +40,13 @@ modId="minecraft"
     ordering="NONE"
     side="BOTH"
 
+[[dependencies."sinomagic"]]
+modId="geckolib"
+type="required"
+versionRange="[4.8.3]"
+ordering="NONE"
+side="BOTH"
+
 #This mod need create to realize mechanized food production. But I think that sometimes making food by hand is also a very romantic thing. Yes, I like create too!
 [[dependencies."sinomagic"]]
     modId="create"

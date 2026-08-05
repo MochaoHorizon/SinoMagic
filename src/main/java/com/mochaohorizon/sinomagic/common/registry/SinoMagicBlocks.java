@@ -1,6 +1,7 @@
 package com.mochaohorizon.sinomagic.common.registry;
 
 import com.mochaohorizon.sinomagic.SinoMagic;
+import com.mochaohorizon.sinomagic.common.block.Millstone;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
@@ -21,19 +22,18 @@ public class SinoMagicBlocks {
             "salt_block", () -> new Block(BlockBehaviour.Properties.of()
                     .destroyTime(1.5f)
                     .explosionResistance(1.0f)
-                    .sound(SoundType.STONE)
             ));
     public static final DeferredBlock<Block> SALT_ORE = registerBlocks(
             "salt_ore", () -> new Block(BlockBehaviour.Properties.of()
                     .destroyTime(1.5f)
                     .explosionResistance(1.0f)
-                    .sound(SoundType.STONE)
             ));
     public static final DeferredBlock<Block> TOFU_BLOCK = registerBlocks(
             "tofu_block", () -> new Block(BlockBehaviour.Properties.of()
                     .destroyTime(0.5f)
                     .explosionResistance(0.5f)
-                    .sound(SoundType.STONE)
+                    .sound(SoundType.SLIME_BLOCK)
+                    .friction(0.75f)
             ));
     public static final DeferredBlock<Block> PLANTED_DADOU = registerBlocks(
             "planted_dadou", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
@@ -48,7 +48,9 @@ public class SinoMagicBlocks {
             "wild_chili", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS)
             ));
     public static final DeferredBlock<Block> MILLSTONE = registerBlocks(
-            "millstone", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
+            "millstone", () -> new Millstone(BlockBehaviour.Properties.of()
+                    .destroyTime(1.5f)
+                    .explosionResistance(6.0f)
             ));
 
 //Register blocks and blockitems

@@ -1,7 +1,7 @@
 package com.mochaohorizon.sinomagic;
 
 import com.mochaohorizon.sinomagic.client.renderer.MillstoneRenderer;
-import com.mochaohorizon.sinomagic.common.block.entity.MillstoneBlockEntity;
+import com.mochaohorizon.sinomagic.common.registry.SinoMagicBlockEntity;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -13,7 +13,7 @@ import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
 
-import static com.mochaohorizon.sinomagic.common.registry.SinoMagicBlockEntity.Millstone_Block_Entity;
+import static com.mochaohorizon.sinomagic.common.registry.SinoMagicBlockEntity.Millstone_BlockEntity;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
 @Mod(value = SinoMagic.MOD_ID, dist = Dist.CLIENT)
@@ -37,7 +37,7 @@ public class SinoMagicClient {
     @SubscribeEvent
     public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
         event.registerBlockEntityRenderer(
-                Millstone_Block_Entity.get(),
+                SinoMagicBlockEntity.Millstone_BlockEntity.get(),
                 MillstoneRenderer::new
         );
     }
