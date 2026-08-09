@@ -1,0 +1,14 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "id": "sinomagic:dried_shit",
+      "count": 9
+    }
+  ],
+  "results": [
+    {
+      "id": "sinomagic:dried_shit_block"
+    }
+  ]
+}

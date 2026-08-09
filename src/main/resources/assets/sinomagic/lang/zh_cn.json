@@ -3,6 +3,8 @@
   "block.sinomagic.salt_ore": "盐矿石",
   "block.sinomagic.salt_block": "盐块",
   "block.sinomagic.dagang": "大缸",
+  "block.ainomagic.millstone": "石磨",
+  "block.sinomagic.dried_shit_block": "史块",
 
   "block.sinomagic.planted_dadou": "大豆植株",
   "block.sinomagic.wild_dadou": "野生大豆",
@@ -104,7 +106,6 @@
   "jukebox_song.sinomagic.baoweihuanghe": "保卫黄河",
   "jukebox_song.sinomagic.beijing": "北京欢迎你",
   "jukebox_song.sinomagic.beijingjinshanshang": "北京的金山上",
-  "jukebox_song.sinomagic.binfengjuly": "豳（bin1）风·七月",
   "jukebox_song.sinomagic.bubugao": "步步高",
   "jukebox_song.sinomagic.chinfengwuyi": "秦风·无衣",
   "jukebox_song.sinomagic.CPVAsong": "中国人民志愿军进行曲",

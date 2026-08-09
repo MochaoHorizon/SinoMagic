@@ -52,6 +52,12 @@ public class SinoMagicBlocks {
                     .destroyTime(1.5f)
                     .explosionResistance(6.0f)
             ));
+    public static final DeferredBlock<Block> DRIED_SHIT_BLOCK = registerBlocks(
+            "dried_shit_block", () -> new Millstone(BlockBehaviour.Properties.of()
+                    .destroyTime(1.0f)
+                    .explosionResistance(4.0f)
+                    .friction(0.75f)
+            ));
 
 //Register blocks and blockitems
     private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
