@@ -18,6 +18,7 @@ public class SinoMagicBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(SinoMagic.MOD_ID);
 
+    //Blocks added to v1.0.0-人食五谷开发版
     public static final DeferredBlock<Block> SALT_BLOCK = registerBlocks(
             "salt_block", () -> new Block(BlockBehaviour.Properties.of()
                     .destroyTime(1.5f)

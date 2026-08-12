@@ -6,7 +6,7 @@ license="MIT"
 
 [[mods]]
 modId="sinomagic"
-version="0.1.0"
+version="1.0.0"
 displayName="SinoMagic"
 displayURL="https://github.com/MochaoHorizon/SinoMagic"
 authors="MochaoHorizon"
@@ -41,11 +41,11 @@ modId="minecraft"
     side="BOTH"
 
 [[dependencies."sinomagic"]]
-modId="geckolib"
-type="required"
-versionRange="[4.8.3]"
-ordering="NONE"
-side="BOTH"
+    modId="geckolib"
+    type="required"
+    versionRange="[4.8.3]"
+    ordering="NONE"
+    side="BOTH"
 
 #This mod need create to realize mechanized food production. But I think that sometimes making food by hand is also a very romantic thing. Yes, I like create too!
 [[dependencies."sinomagic"]]

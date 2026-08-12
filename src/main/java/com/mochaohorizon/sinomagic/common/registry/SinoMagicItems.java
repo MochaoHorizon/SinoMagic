@@ -2,6 +2,7 @@ package com.mochaohorizon.sinomagic.common.registry;
 
 import com.mochaohorizon.sinomagic.SinoMagic;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
@@ -13,7 +14,7 @@ public class SinoMagicItems {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(SinoMagic.MOD_ID);
 
-    //Helper Methods
+    //From Farmersdelight
     public static Item.Properties foodItem(FoodProperties food) {
         return new Item.Properties().food(food);
     }
@@ -26,8 +27,7 @@ public class SinoMagicItems {
         return new Item.Properties().craftRemainder(Items.GLASS_BOTTLE).stacksTo(16);
     }
 
-
-    //add in v0.1.0
+    //Simple items added to v1.0.0-人食五谷开发版
     public static final Supplier<Item> DADOU = ITEMS.registerItem(
             "dadou",
             props -> new Item(props.food(SinoMagicFoodValues.DADOU)),
@@ -215,6 +215,53 @@ public class SinoMagicItems {
     public static final Supplier<Item> CHILI_SEED = ITEMS.registerItem(
             "chili_seed",
             Item::new,
+            new Item.Properties()
+    );
+
+    //Block items added to v1.0.0-人食五谷开发版
+    public static final Supplier<BlockItem> SALT_BLOCK = ITEMS.registerSimpleBlockItem(
+            "salt_block",
+            SinoMagicBlocks.SALT_BLOCK,
+            new Item.Properties()
+    );
+    public static final Supplier<BlockItem> SALT_ORE = ITEMS.registerSimpleBlockItem(
+            "salt_ore",
+            SinoMagicBlocks.SALT_ORE,
+            new Item.Properties()
+    );
+    public static final Supplier<BlockItem> TOFU_BLOCK = ITEMS.registerSimpleBlockItem(
+            "tofu_block",
+            SinoMagicBlocks.TOFU_BLOCK,
+            new Item.Properties()
+    );
+    public static final Supplier<BlockItem> PLANTED_DADOU = ITEMS.registerSimpleBlockItem(
+            "planted_dadou",
+            SinoMagicBlocks.PLANTED_DADOU,
+            new Item.Properties()
+    );
+    public static final Supplier<BlockItem> WILD_DADOU = ITEMS.registerSimpleBlockItem(
+            "wild_dadou",
+            SinoMagicBlocks.WILD_DADOU,
+            new Item.Properties()
+    );
+    public static final Supplier<BlockItem> PLANTED_CHILI = ITEMS.registerSimpleBlockItem(
+            "planted_chili",
+            SinoMagicBlocks.PLANTED_CHILI,
+            new Item.Properties()
+    );
+    public static final Supplier<BlockItem> WILD_CHILI = ITEMS.registerSimpleBlockItem(
+            "wild_chili",
+            SinoMagicBlocks.WILD_CHILI,
+            new Item.Properties()
+    );
+    public static final Supplier<BlockItem> MILLSTONE = ITEMS.registerSimpleBlockItem(
+            "millstone",
+            SinoMagicBlocks.MILLSTONE,
+            new Item.Properties()
+    );
+    public static final Supplier<BlockItem> DRIED_SHIT_BLOCK = ITEMS.registerSimpleBlockItem(
+            "dried_shit_block",
+            SinoMagicBlocks.DRIED_SHIT_BLOCK,
             new Item.Properties()
     );
 

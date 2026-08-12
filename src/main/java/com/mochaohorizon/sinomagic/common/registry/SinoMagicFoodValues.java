@@ -5,7 +5,7 @@ import net.minecraft.world.item.Items;
 
 public class SinoMagicFoodValues
 {
-    //add in v0.1.0
+    //Food items added in v1.0.0-人食五谷开发版
     public static final FoodProperties DADOU = (new FoodProperties.Builder())
             .nutrition(2)
             .saturationModifier(0.5f)

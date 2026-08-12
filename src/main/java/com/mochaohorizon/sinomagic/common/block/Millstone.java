@@ -17,4 +17,7 @@ public class Millstone extends Block implements EntityBlock {
     public BlockEntity newBlockEntity(BlockPos pos, BlockState state){
         return new MillstoneBlockEntity(pos, state);
     }
+
+    //石磨点击事件
+
 }
