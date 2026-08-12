@@ -1,11 +1,15 @@
 package com.mochaohorizon.sinomagic.common.crafting.recipeserializer;
 
+import com.google.gson.JsonObject;
 import com.mochaohorizon.sinomagic.common.crafting.recipeclass.Millstone;
 import com.mojang.serialization.MapCodec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.minecraft.core.registries.BuiltInRegistries;
+import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.network.RegistryFriendlyByteBuf;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.RecipeSerializer;
@@ -14,9 +18,9 @@ import net.minecraft.world.level.block.state.BlockState;
 
 public class MillstoneSerializer implements RecipeSerializer<Millstone> {
     public static final MapCodec<Millstone> CODEC = RecordCodecBuilder.mapCodec(inst -> inst.group(
-            BlockState.CODEC.fieldOf("state").forGetter(Millstone::getInputState),
-            Ingredient.CODEC.fieldOf("ingredient").forGetter(Millstone::getInputItem),
-            ItemStack.CODEC.fieldOf("result").forGetter(Millstone::getResult)
+        BlockState.CODEC.fieldOf("state").forGetter(Millstone::getInputState),
+        Ingredient.CODEC.fieldOf("ingredient").forGetter(Millstone::getIngredient),
+        ItemStack.CODEC.fieldOf("result").forGetter(Millstone::getResult)
     ).apply(inst, Millstone::new));
     public static final StreamCodec<RegistryFriendlyByteBuf, Millstone> STREAM_CODEC =
             StreamCodec.composite(
@@ -34,5 +38,5 @@ public class MillstoneSerializer implements RecipeSerializer<Millstone> {
     @Override
     public StreamCodec<RegistryFriendlyByteBuf, Millstone> streamCodec() {
         return STREAM_CODEC;
-    }
+    }*/
 }

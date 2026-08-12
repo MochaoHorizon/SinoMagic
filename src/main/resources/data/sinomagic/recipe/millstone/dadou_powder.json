@@ -1,0 +1,12 @@
+{
+  "type": "sinomagic:millstone",
+  "ingredient": {
+    "item": "sinomagic:dadou"
+  },
+  "ingredientCount": 1,
+  "processTime": 200,
+  "result": {
+    "id": "sinomagic:dadou_powder",
+    "count": 1
+  }
+}
