@@ -1,5 +1,6 @@
-package com.mochaohorizon.sinomagic.common.crafting.recipeclass;
+package com.mochaohorizon.sinomagic.common.crafting;
 
+import com.mochaohorizon.sinomagic.common.registry.SinoMagicSerializer;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.resources.ResourceLocation;
@@ -9,19 +10,17 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.state.BlockState;
 
 import static com.mochaohorizon.sinomagic.common.registry.SinoMagicRecipeTypes.MILLSTONE;
-import static com.mochaohorizon.sinomagic.common.registry.SinoMagicSerializer.MILLSTONE_SERIALIZER;
 
-public class Millstone implements Recipe<SingleRecipeInput> {
+public class MillstoneRecipe implements Recipe<SingleRecipeInput> {
+    //配方类
     private final ResourceLocation id;
-    private final BlockState inputState;
     private final Ingredient ingredient;
     private final int ingredientCount;
     private final int processTime;
     private final ItemStack result;
 
-    public Millstone(ResourceLocation id, BlockState inputState, Ingredient ingredient, int ingredientCount, int processTime, ItemStack result) {
+    public MillstoneRecipe(ResourceLocation id, Ingredient ingredient, int ingredientCount, int processTime, ItemStack result) {
         this.id = id;
-        this.inputState = inputState;
         this.ingredient = ingredient;
         this.ingredientCount =ingredientCount;
         this.processTime = processTime;
@@ -66,7 +65,7 @@ public class Millstone implements Recipe<SingleRecipeInput> {
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return MILLSTONE_SERIALIZER.get();
+        return SinoMagicSerializer.MILLSTONESERIALIZER.get();
     }
 
     //自定义.get()
