@@ -29,14 +29,14 @@ modId="minecraft"
 [[dependencies."sinomagic"]]
     modId="neoforge"
     type="required"
-    versionRange="[21.1.185,)"
+    versionRange="[21.1.219,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies."sinomagic"]]
     modId="farmersdelight"
     type="required"
-    versionRange="[1.2.4a,)"
+    versionRange="[1.2.4a]"
     ordering="NONE"
     side="BOTH"
 

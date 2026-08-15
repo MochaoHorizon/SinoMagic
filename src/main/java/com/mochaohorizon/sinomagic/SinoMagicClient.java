@@ -1,7 +1,5 @@
 package com.mochaohorizon.sinomagic;
 
-import com.mochaohorizon.sinomagic.client.renderer.MillstoneRenderer;
-import com.mochaohorizon.sinomagic.common.registry.SinoMagicBlockEntity;
 import net.minecraft.client.Minecraft;
 import net.neoforged.api.distmarker.Dist;
 import net.neoforged.bus.api.SubscribeEvent;
@@ -9,11 +7,8 @@ import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.common.EventBusSubscriber;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
-import net.neoforged.neoforge.client.event.EntityRenderersEvent;
 import net.neoforged.neoforge.client.gui.ConfigurationScreen;
 import net.neoforged.neoforge.client.gui.IConfigScreenFactory;
-
-import static com.mochaohorizon.sinomagic.common.registry.SinoMagicBlockEntity.Millstone_BlockEntity;
 
 // This class will not load on dedicated servers. Accessing client side code from here is safe.
 @Mod(value = SinoMagic.MOD_ID, dist = Dist.CLIENT)
@@ -32,14 +27,5 @@ public class SinoMagicClient {
         // Some client setup code
         SinoMagic.LOGGER.info("HELLO FROM CLIENT SETUP");
         SinoMagic.LOGGER.info("MINECRAFT NAME >> {}", Minecraft.getInstance().getUser().getName());
-    }
-
-    //石磨模型渲染
-    @SubscribeEvent
-    public static void registerEntityRenderers(EntityRenderersEvent.RegisterRenderers event) {
-        event.registerBlockEntityRenderer(
-                SinoMagicBlockEntity.Millstone_BlockEntity.get(),
-                MillstoneRenderer::new
-        );
     }
 }

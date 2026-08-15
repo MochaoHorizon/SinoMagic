@@ -38,6 +38,3 @@ but when chatting with netizens, it was soy products that first formed ideas.
 
 @墨琛_COMU
 音乐（东方红_remix）
-
-@Cryoballuz_成冰纪
-音乐（豳风·七月）
