@@ -53,6 +53,11 @@ public class SinoMagicBlocks {
                     .destroyTime(1.5f)
                     .explosionResistance(6.0f)
             ));
+    public static final DeferredBlock<Block> DAGANG = registerBlocks(
+            "dagang", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
+                    .destroyTime(1.25f)
+                    .explosionResistance(4.5f)
+            ));
     public static final DeferredBlock<Block> DRIED_SHIT_BLOCK = registerBlocks(
             "dried_shit_block", () -> new Millstone(BlockBehaviour.Properties.of()
                     .destroyTime(1.0f)

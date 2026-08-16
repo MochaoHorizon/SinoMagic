@@ -36,14 +36,14 @@ modId="minecraft"
 [[dependencies."sinomagic"]]
     modId="farmersdelight"
     type="required"
-    versionRange="[1.2.4a]"
+    versionRange="[1.2.4a,)"
     ordering="NONE"
     side="BOTH"
 
 [[dependencies."sinomagic"]]
     modId="geckolib"
     type="required"
-    versionRange="[4.8.3]"
+    versionRange="[4.8.3,)"
     ordering="NONE"
     side="BOTH"
 

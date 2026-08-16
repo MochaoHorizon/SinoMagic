@@ -218,53 +218,6 @@ public class SinoMagicItems {
             new Item.Properties()
     );
 
-    //Block items added to v1.0.0-人食五谷开发版
-    public static final Supplier<BlockItem> SALT_BLOCK = ITEMS.registerSimpleBlockItem(
-            "salt_block",
-            SinoMagicBlocks.SALT_BLOCK,
-            new Item.Properties()
-    );
-    public static final Supplier<BlockItem> SALT_ORE = ITEMS.registerSimpleBlockItem(
-            "salt_ore",
-            SinoMagicBlocks.SALT_ORE,
-            new Item.Properties()
-    );
-    public static final Supplier<BlockItem> TOFU_BLOCK = ITEMS.registerSimpleBlockItem(
-            "tofu_block",
-            SinoMagicBlocks.TOFU_BLOCK,
-            new Item.Properties()
-    );
-    public static final Supplier<BlockItem> PLANTED_DADOU = ITEMS.registerSimpleBlockItem(
-            "planted_dadou",
-            SinoMagicBlocks.PLANTED_DADOU,
-            new Item.Properties()
-    );
-    public static final Supplier<BlockItem> WILD_DADOU = ITEMS.registerSimpleBlockItem(
-            "wild_dadou",
-            SinoMagicBlocks.WILD_DADOU,
-            new Item.Properties()
-    );
-    public static final Supplier<BlockItem> PLANTED_CHILI = ITEMS.registerSimpleBlockItem(
-            "planted_chili",
-            SinoMagicBlocks.PLANTED_CHILI,
-            new Item.Properties()
-    );
-    public static final Supplier<BlockItem> WILD_CHILI = ITEMS.registerSimpleBlockItem(
-            "wild_chili",
-            SinoMagicBlocks.WILD_CHILI,
-            new Item.Properties()
-    );
-    public static final Supplier<BlockItem> MILLSTONE = ITEMS.registerSimpleBlockItem(
-            "millstone",
-            SinoMagicBlocks.MILLSTONE,
-            new Item.Properties()
-    );
-    public static final Supplier<BlockItem> DRIED_SHIT_BLOCK = ITEMS.registerSimpleBlockItem(
-            "dried_shit_block",
-            SinoMagicBlocks.DRIED_SHIT_BLOCK,
-            new Item.Properties()
-    );
-
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
     }

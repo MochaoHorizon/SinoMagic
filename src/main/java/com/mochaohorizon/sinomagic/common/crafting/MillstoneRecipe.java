@@ -1,5 +1,6 @@
 package com.mochaohorizon.sinomagic.common.crafting;
 
+import com.mochaohorizon.sinomagic.common.registry.SinoMagicRecipeTypes;
 import com.mochaohorizon.sinomagic.common.registry.SinoMagicSerializer;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
@@ -7,9 +8,6 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
-import net.minecraft.world.level.block.state.BlockState;
-
-import static com.mochaohorizon.sinomagic.common.registry.SinoMagicRecipeTypes.MILLSTONE;
 
 public class MillstoneRecipe implements Recipe<SingleRecipeInput> {
     //配方类
@@ -58,9 +56,8 @@ public class MillstoneRecipe implements Recipe<SingleRecipeInput> {
         return this.result.copy();
     }
 
-    @Override
     public RecipeType<?> getType() {
-        return MILLSTONE.get();
+        return SinoMagicRecipeTypes.MILLSTONERECIPE.get();
     }
 
     @Override
