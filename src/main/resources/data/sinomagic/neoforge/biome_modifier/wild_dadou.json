@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
-  "biomes": ["#minecraft:is_badlands","#minecraft:is_savanna","#minecraft:is_mountain","minecraft:plains","minecraft:swamp"],
-  "features": "sinomagic:patch_wild_chili",
+  "biomes": "#sinomagic:can_patch_wild_dadou",
+  "features": "sinomagic:patch_wild_dadou",
   "step": "vegetal_decoration"
 }
