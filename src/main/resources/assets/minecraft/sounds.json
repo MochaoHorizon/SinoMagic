@@ -136,5 +136,89 @@
         "stream": true
       }
     ]
+  },
+  "music.": {
+    "sounds": [
+      {
+        "name": "sinomagic:bainiaochaofeng",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:baoweihuanghe",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:beijingjinshanshang",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:bubugao",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:chinfengwuyi",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:dadao",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:dadongbei",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:dahaihangxing",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:haohange",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:haoyunlai",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:jinshekuangwu",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:lanlingwang",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:mingtianhuigenghao",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:ourworkerhavepowerr",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:saima",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:shehuizhuyihao",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:tongtiandadao",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:youjidui",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:yuanfangkeren",
+        "stream": true
+      },
+      {
+        "name": "sinomagic:zijinghua",
+        "stream": true
+      }
+    ]
   }
 }

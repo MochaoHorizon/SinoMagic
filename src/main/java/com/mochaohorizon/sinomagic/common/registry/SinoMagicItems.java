@@ -1,18 +1,20 @@
 package com.mochaohorizon.sinomagic.common.registry;
 
-import com.mochaohorizon.sinomagic.SinoMagic;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredItem;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.function.Supplier;
 
+import static com.mochaohorizon.sinomagic.SinoMagic.MOD_ID;
+import static net.minecraft.world.item.Rarity.RARE;
+
 public class SinoMagicItems {
     public static final DeferredRegister.Items ITEMS =
-            DeferredRegister.createItems(SinoMagic.MOD_ID);
+            DeferredRegister.createItems(MOD_ID);
 
     //From Farmersdelight
     public static Item.Properties foodItem(FoodProperties food) {
@@ -217,6 +219,128 @@ public class SinoMagicItems {
             Item::new,
             new Item.Properties()
     );
+
+    //music discs
+    public static final DeferredItem<Item> BAINIAOCHAOFENG_DISC =
+            ITEMS.register("bainiaochaofeng_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.BAINIAOCHAOFENG_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> BAOWEIHUANGHE_DISC =
+            ITEMS.register("baoweihuanghe_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.BAOWEIHUANGHE_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> BEIJINGJINSHANSHANG_DISC =
+            ITEMS.register("beijingjinshanshang_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.BEIJINGJINSHANSHANG_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> BUBUGAO_DISC =
+            ITEMS.register("bubugao_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.BUBUGAO_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> CHINFENGWUYI_DISC =
+            ITEMS.register("chinfengwuyi_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.CHINFENGWUYI_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> DADAO_DISC =
+            ITEMS.register("dadao_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.DADAO_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> DADONGBEI_DISC =
+            ITEMS.register("dadongbei_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.DADONGBEI_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> DAHAIHANGXING_DISC =
+            ITEMS.register("dahaihangxing_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.DAHAIHANGXING_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> HAOHANGE_DISC =
+            ITEMS.register("haohange_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.HAOHANGE_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> HAOYUNLAI_DISC =
+            ITEMS.register("haoyunlai_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.HAOYUNLAI_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> JINSHEKUANGWU_DISC =
+            ITEMS.register("jinshekuangwu_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.JINSHEKUANGWU_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> LANLINGWANG_DISC =
+            ITEMS.register("lanlingwang_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.LANLINGWANG_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> MINGTIANHUIGENGHAO_DISC =
+            ITEMS.register("mingtianhuigenghao_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.MINGTIANHUIGENGHAO_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> OURWORKERHAVEPOWER_DISC =
+            ITEMS.register("ourworkerhavepower_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.OURWORKERHAVEPOWER_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> SAIMA_DISC =
+            ITEMS.register("saima_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.SAIMA_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> SHEHUIZHUYIHAO_DISC =
+            ITEMS.register("shehuizhuyihao_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.SHEHUIZHUYIHAO_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> TONGTIANDADAO_DISC =
+            ITEMS.register("tongtiandadao_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.TONGTIANDADAO_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> YOUJIDUI_DISC =
+            ITEMS.register("youjidui_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.YOUJIDUI_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> YUANFANGKEREN_DISC =
+            ITEMS.register("yuanfangkeren_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.YUANFANGKEREN_SONG.getKey())
+            ));
+    public static final DeferredItem<Item> ZIJINGHUA_DISC =
+            ITEMS.register("zijinghua_disc", () -> new Item(new Item.Properties()
+                    .stacksTo(1)
+                    .rarity(RARE)
+                    .jukeboxPlayable(SinoMagicJukeboxSongs.ZIJINGHUA_SONG.getKey())
+            ));
 
     public static void register(IEventBus eventBus){
         ITEMS.register(eventBus);
