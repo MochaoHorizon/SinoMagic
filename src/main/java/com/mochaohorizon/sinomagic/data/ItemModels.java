@@ -12,7 +12,8 @@ public class ItemModels extends ItemModelProvider {
     }
 
     @Override
-    protected void registerModels (){
+    protected void registerModels () {
+        //Model of simple items add to v1.0.0-人食五谷开发版
         basicItem(SinoMagicItems.DADOU.get());
         basicItem(SinoMagicItems.MAODOU.get());
         basicItem(SinoMagicItems.DOUJIA.get());
@@ -48,6 +49,41 @@ public class ItemModels extends ItemModelProvider {
         basicItem(SinoMagicItems.CHILI.get());
         basicItem(SinoMagicItems.FIRE_CHILI.get());
         basicItem(SinoMagicItems.CHILI_SEED.get());
+        /*basicItem(SinoMagicItems.JIANBING.get());
+        basicItem(SinoMagicItems.HUAJUAN.get());
+        basicItem(SinoMagicItems.MANTOU.get());
+        basicItem(SinoMagicItems.MANTOU_REDBEAN.get());
+        basicItem(SinoMagicItems.XIAOMI.get());
+        basicItem(SinoMagicItems.MEIZI.get());*/
 
+        //Model of music disc add to v1.0.0-人食五谷开发版
+        basicItem(SinoMagicItems.BAINIAOCHAOFENG_DISC.get());
+        basicItem(SinoMagicItems.BAOWEIHUANGHE_DISC.get());
+        basicItem(SinoMagicItems.BEIJINGJINSHANSHANG_DISC.get());
+        basicItem(SinoMagicItems.BUBUGAO_DISC.get());
+        basicItem(SinoMagicItems.CHINFENGWUYI_DISC.get());
+        basicItem(SinoMagicItems.DADAO_DISC.get());
+        basicItem(SinoMagicItems.DADONGBEI_DISC.get());
+        basicItem(SinoMagicItems.DAHAIHANGXING_DISC.get());
+        basicItem(SinoMagicItems.HAOHANGE_DISC.get());
+        basicItem(SinoMagicItems.HAOYUNLAI_DISC.get());
+        basicItem(SinoMagicItems.JINSHEKUANGWU_DISC.get());
+        basicItem(SinoMagicItems.LANLINGWANG_DISC.get());
+        basicItem(SinoMagicItems.MINGTIANHUIGENGHAO_DISC.get());
+        basicItem(SinoMagicItems.OURWORKERHAVEPOWER_DISC.get());
+        basicItem(SinoMagicItems.SAIMA_DISC.get());
+        basicItem(SinoMagicItems.SHEHUIZHUYIHAO_DISC.get());
+        basicItem(SinoMagicItems.TONGTIANDADAO_DISC.get());
+        basicItem(SinoMagicItems.YOUJIDUI_DISC.get());
+        basicItem(SinoMagicItems.YUANFANGKEREN_DISC.get());
+        basicItem(SinoMagicItems.ZIJINGHUA_DISC.get());
+
+        //Model of blockitem add to v1.0.0-人食五谷开发版
+        basicItem(SinoMagicItems.SALT_BLOCK.get());
+        basicItem(SinoMagicItems.SALT_ORE.get());
+        basicItem(SinoMagicItems.TOFU_BLOCK.get());
+        basicItem(SinoMagicItems.DAGANG.get());
+        basicItem(SinoMagicItems.MILLSTONE.get());
+        basicItem(SinoMagicItems.DRIED_SHIT_BLOCK.get());
     }
 }

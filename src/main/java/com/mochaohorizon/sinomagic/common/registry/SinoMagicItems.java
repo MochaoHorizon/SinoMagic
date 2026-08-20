@@ -1,6 +1,8 @@
 package com.mochaohorizon.sinomagic.common.registry;
 
+import com.mochaohorizon.sinomagic.data.ItemModels;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
@@ -220,7 +222,7 @@ public class SinoMagicItems {
             new Item.Properties()
     );
 
-    //music discs
+    //music discs add to v1.0.0-食五谷开发版
     public static final DeferredItem<Item> BAINIAOCHAOFENG_DISC =
             ITEMS.register("bainiaochaofeng_disc", () -> new Item(new Item.Properties()
                     .stacksTo(1)
@@ -340,6 +342,26 @@ public class SinoMagicItems {
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(SinoMagicJukeboxSongs.ZIJINGHUA_SONG.getKey())
+            ));
+
+    //Block items add to v1.0.0-人食五谷开发版
+    public static final DeferredItem<Item> SALT_BLOCK =
+            ITEMS.register("salt_block", () -> new BlockItem(SinoMagicBlocks.SALT_BLOCK.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> SALT_ORE =
+            ITEMS.register("salt_ore", () -> new BlockItem(SinoMagicBlocks.SALT_ORE.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> TOFU_BLOCK =
+            ITEMS.register("tofu_block", () -> new BlockItem(SinoMagicBlocks.TOFU_BLOCK.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> MILLSTONE =
+            ITEMS.register("millstone", () -> new BlockItem(SinoMagicBlocks.MILLSTONE.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> DAGANG =
+            ITEMS.register("dagang", () -> new BlockItem(SinoMagicBlocks.DAGANG.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> DRIED_SHIT_BLOCK =
+            ITEMS.register("dried_shit_block", () -> new BlockItem(SinoMagicBlocks.DRIED_SHIT_BLOCK.get(), new Item.Properties()
             ));
 
     public static void register(IEventBus eventBus){

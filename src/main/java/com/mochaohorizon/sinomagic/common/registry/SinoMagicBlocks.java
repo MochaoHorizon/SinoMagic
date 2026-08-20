@@ -65,14 +65,8 @@ public class SinoMagicBlocks {
                     .friction(0.75f)
             ));
 
-//Register blocks and blockitems
-    private static <T extends Block> void registerBlockItems(String name, DeferredBlock<T> block) {
-        SinoMagicItems.ITEMS.register(name, ()-> new BlockItem(block.get(), new Item.Properties()));
-    }
-
     private static <T extends Block> DeferredBlock<T> registerBlocks(String name, Supplier<T> block){
         DeferredBlock<T> blocks = BLOCKS.register(name, block);
-        registerBlockItems(name, blocks);
         return blocks;
     }
 
