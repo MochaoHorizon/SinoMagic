@@ -1,6 +1,5 @@
 package com.mochaohorizon.sinomagic.common.registry;
 
-import com.mochaohorizon.sinomagic.data.ItemModels;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;

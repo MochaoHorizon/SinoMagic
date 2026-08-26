@@ -1,5 +1,8 @@
 {
   "variants": {
+    "age=0": {
+      "model": "sinomagic:block/planted_chili_1"
+    },
     "age=1": {
       "model": "sinomagic:block/planted_chili_1"
     },
@@ -7,9 +10,18 @@
       "model": "sinomagic:block/planted_chili_2"
     },
     "age=3": {
-      "model": "sinomagic:block/planted_chili_3"
+      "model": "sinomagic:block/planted_chili_2"
     },
     "age=4": {
+      "model": "sinomagic:block/planted_chili_3"
+    },
+    "age=5": {
+      "model": "sinomagic:block/planted_chili_3"
+    },
+    "age=6": {
+      "model": "sinomagic:block/planted_chili_4"
+    },
+    "age=7": {
       "model": "sinomagic:block/planted_chili_4"
     }
   }

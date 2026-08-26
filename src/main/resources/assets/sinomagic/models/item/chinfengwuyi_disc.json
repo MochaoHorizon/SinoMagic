@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/chinfengwuyi_disc"
+    "layer0": "sinomagic:item/chinfengwuyi_disc"
   }
 }

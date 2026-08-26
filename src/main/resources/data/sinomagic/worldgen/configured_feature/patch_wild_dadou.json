@@ -1,19 +1,35 @@
 {
-  "type": "minecraft:random_patch",
+  "type": "minecraft:flower",
   "config": {
-    "tries": 32,
-    "xz_spread": 7,
-    "y_spread": 3,
     "feature": {
-      "type": "minecraft:simple_block",
-      "config": {
-        "to_place": {
-          "type": "minecraft:simple_state_provider",
-          "state": {
-            "Name": "sinomagic:wild_dadou"
+      "feature": {
+        "type": "minecraft:simple_block",
+        "config": {
+          "to_place": {
+            "type": "minecraft:noise_threshold_provider",
+            "entries": [
+              {
+                "data": {
+                  "Name": "sinomagic:wild_dadou"
+                },
+                "weight": 1
+              }
+            ]
           }
         }
-      }
-    }
+      },
+      "placement": [
+        {
+          "type": "minecraft:block_predicate_filter",
+          "predicate": {
+            "type": "minecraft:matching_blocks",
+            "blocks": "minecraft:air"
+          }
+        }
+      ]
+    },
+    "tries": 50,
+    "xz_spread": 7,
+    "y_spread": 3
   }
 }

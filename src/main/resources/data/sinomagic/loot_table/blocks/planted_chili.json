@@ -15,7 +15,7 @@
           "condition": "minecraft:block_state_property",
           "block": "sinomagic:planted_chili",
           "properties": {
-            "age": "4"
+            "age": "7"
           }
         }
       ],
@@ -25,49 +25,6 @@
           "count": {
             "min": 1.0,
             "max": 3.0,
-            "type": "minecraft:uniform"
-          }
-        },
-        {
-          "function": "minecraft:apply_bonus",
-          "enchantment": "minecraft:fortune",
-          "formula": "minecraft:uniform_bonus_count",
-          "parameters": {
-            "bonusMultiplier": 1
-          }
-        }
-      ]
-    },
-    {
-      "name": "chili_pool2",
-      "rolls": 1.0,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "sinomagic:chili_seed"
-        }
-      ],
-      "conditions": [
-        {
-          "condition": "any_of",
-          "terms": {
-            "condition": "minecraft:block_state_property",
-            "block": "sinomagic:planted_chili",
-            "properties": {
-              "age": {
-                "min": 1,
-                "max": 3
-              }
-            }
-          }
-        }
-      ],
-      "functions": [
-        {
-          "function": "minecraft:set_count",
-          "count": {
-            "min": 1.0,
-            "max": 2.0,
             "type": "minecraft:uniform"
           }
         },

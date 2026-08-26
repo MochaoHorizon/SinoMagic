@@ -1,9 +1,9 @@
 package com.mochaohorizon.sinomagic.common.registry;
 
 import com.mochaohorizon.sinomagic.SinoMagic;
+import com.mochaohorizon.sinomagic.common.block.ChiliBlock;
+import com.mochaohorizon.sinomagic.common.block.DadouBlock;
 import com.mochaohorizon.sinomagic.common.block.Millstone;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
@@ -37,13 +37,13 @@ public class SinoMagicBlocks {
                     .friction(0.75f)
             ));
     public static final DeferredBlock<Block> PLANTED_DADOU = registerBlocks(
-            "planted_dadou", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
+            "planted_dadou", () -> new DadouBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
             ));
     public static final DeferredBlock<Block> WILD_DADOU = registerBlocks(
             "wild_dadou", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS)
             ));
     public static final DeferredBlock<Block> PLANTED_CHILI = registerBlocks(
-            "planted_chili", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
+            "planted_chili", () -> new ChiliBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
             ));
     public static final DeferredBlock<Block> WILD_CHILI = registerBlocks(
             "wild_chili", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS)

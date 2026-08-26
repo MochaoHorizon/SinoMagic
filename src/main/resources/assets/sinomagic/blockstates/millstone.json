@@ -1,0 +1,8 @@
+{
+  "loader": "geckolib:geo",
+  "geo": "sinomagic:block/millstone.json",
+  "textures": {
+    "0": "sinomagic:block/millstone"
+  },
+  "animations": "sinomagic:block/millstone.animation.json"
+}

@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/haohange_disc"
+    "layer0": "sinomagic:item/haohange_disc"
   }
 }

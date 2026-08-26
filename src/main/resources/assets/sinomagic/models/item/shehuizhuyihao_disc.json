@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/shehuizhuyihao_disc"
+    "layer0": "sinomagic:item/shehuizhuyihao_disc"
   }
 }

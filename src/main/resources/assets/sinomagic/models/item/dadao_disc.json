@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/dadao_disc"
+    "layer0": "sinomagic:item/dadao_disc"
   }
 }
