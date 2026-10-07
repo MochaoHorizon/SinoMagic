@@ -1,9 +1,9 @@
 {
-  "feature": "sinomagic:configured_wild_chili",
+  "feature": "sinomagic:patch_wild_chili",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 50
+      "type": "minecraft:count",
+      "count": 1
     },
     {
       "type": "minecraft:in_square"
@@ -11,6 +11,9 @@
     {
       "type": "minecraft:heightmap",
       "heightmap": "WORLD_SURFACE_WG"
+    },
+    {
+      "type": "minecraft:biome"
     }
   ]
 }
