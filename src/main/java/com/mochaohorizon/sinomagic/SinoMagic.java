@@ -3,6 +3,8 @@ package com.mochaohorizon.sinomagic;
 import com.mochaohorizon.sinomagic.registry.ModBlockEntities;
 import com.mochaohorizon.sinomagic.registry.ModBlocks;
 import com.mochaohorizon.sinomagic.registry.ModCreativeTabs;
+import com.mochaohorizon.sinomagic.registry.ModFluidTypes;
+import com.mochaohorizon.sinomagic.registry.ModFluids;
 import com.mochaohorizon.sinomagic.registry.ModItems;
 import com.mochaohorizon.sinomagic.registry.ModRecipeTypes;
 import com.mochaohorizon.sinomagic.registry.ModSerializers;
@@ -31,6 +33,8 @@ public class SinoMagic {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModFluidTypes.register(modEventBus);
+        ModFluids.register(modEventBus);
         ModCreativeTabs.register(modEventBus);
         ModBlockEntities.register(modEventBus);
         ModRecipeTypes.register(modEventBus);

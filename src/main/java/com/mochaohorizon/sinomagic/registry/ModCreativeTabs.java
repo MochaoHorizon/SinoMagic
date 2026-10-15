@@ -45,21 +45,27 @@ public class ModCreativeTabs {
                         output.accept(ModItems.FERMENTED_BEAN_CURD.get());
                         output.accept(ModItems.TOFU_SKIN.get());
                         output.accept(ModItems.QIANZHANG_TOFU.get());
-                        output.accept(ModItems.SOY_MILK_BOTTLE.get());
                         output.accept(ModItems.SALTY_TOFU_PUDDING.get());
                         output.accept(ModItems.SWEET_TOFU_PUDDING.get());
 
                         // ---------- 豆沙与酱料 ----------
                         output.accept(ModItems.RED_BEAN_PASTE.get());
                         output.accept(ModItems.MUNG_BEAN_PASTE.get());
-                        output.accept(ModItems.SOY_SAUCE_BOTTLE.get());
-                        output.accept(ModItems.MARINADE_BOTTLE.get());
 
                         // ---------- 基础材料 ----------
                         output.accept(ModItems.SALT.get());
                         output.accept(ModItems.YEAST.get());
-                        output.accept(ModItems.SOYBEAN_OIL_BOTTLE.get());
                         output.accept(ModItems.DRIED_SHIT.get());
+
+                        // ---------- 流体容器 ----------
+                        output.accept(ModItems.SOYBEAN_OIL_BOTTLE.get());
+                        output.accept(ModItems.SOY_SAUCE_BOTTLE.get());
+                        output.accept(ModItems.SOY_MILK_BOTTLE.get());
+                        output.accept(ModItems.MARINADE_BOTTLE.get());
+                        output.accept(ModItems.SOYBEAN_OIL_BUCKET.get());
+                        output.accept(ModItems.SOY_SAUCE_BUCKET.get());
+                        output.accept(ModItems.SOY_MILK_BUCKET.get());
+                        output.accept(ModItems.MARINADE_BUCKET.get());
                         output.accept(ModItems.SHIT_BUCKET.get());
 
                         // ---------- 零食 ----------

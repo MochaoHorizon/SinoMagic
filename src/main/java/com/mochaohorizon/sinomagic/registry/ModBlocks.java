@@ -9,6 +9,7 @@ import com.mochaohorizon.sinomagic.block.Millstone;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.neoforged.bus.api.IEventBus;
@@ -79,6 +80,19 @@ public class ModBlocks {
                     .friction(0.75f)
             ));
 
+    // ---------- 流体方块 ----------
+    //5 种流体的世界形态，属性直接抄原版水。与原版水一样没有对应的 BlockItem，也不进创造栏
+    public static final DeferredBlock<LiquidBlock> SOYBEAN_OIL_FLUID = registerBlocks(
+            "soybean_oil", () -> new LiquidBlock(ModFluids.SOYBEAN_OIL.get(), fluidBlockProperties()));
+    public static final DeferredBlock<LiquidBlock> SOY_SAUCE_FLUID = registerBlocks(
+            "soy_sauce", () -> new LiquidBlock(ModFluids.SOY_SAUCE.get(), fluidBlockProperties()));
+    public static final DeferredBlock<LiquidBlock> SOY_MILK_FLUID = registerBlocks(
+            "soy_milk", () -> new LiquidBlock(ModFluids.SOY_MILK.get(), fluidBlockProperties()));
+    public static final DeferredBlock<LiquidBlock> MARINADE_FLUID = registerBlocks(
+            "marinade", () -> new LiquidBlock(ModFluids.MARINADE.get(), fluidBlockProperties()));
+    public static final DeferredBlock<LiquidBlock> SHIT_FLUID = registerBlocks(
+            "shit", () -> new LiquidBlock(ModFluids.SHIT.get(), fluidBlockProperties()));
+
     // ---------- 功能方块 ----------
     public static final DeferredBlock<Block> MILLSTONE = registerBlocks(
             "millstone", () -> new Millstone(BlockBehaviour.Properties.of()
@@ -90,6 +104,10 @@ public class ModBlocks {
                     .destroyTime(1.25f)
                     .explosionResistance(4.5f)
             ));
+
+    private static BlockBehaviour.Properties fluidBlockProperties() {
+        return BlockBehaviour.Properties.ofFullCopy(Blocks.WATER);
+    }
 
     private static <T extends Block> DeferredBlock<T> registerBlocks(String name, Supplier<T> block){
         DeferredBlock<T> blocks = BLOCKS.register(name, block);

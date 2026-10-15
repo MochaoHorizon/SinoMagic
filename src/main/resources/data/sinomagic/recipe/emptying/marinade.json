@@ -2,7 +2,7 @@
   "type": "create:emptying",
   "ingredients": [
     {
-      "item": "sinomagic:soy_milk_bottle"
+      "item": "sinomagic:marinade_bottle"
     }
   ],
   "results": [
@@ -11,7 +11,7 @@
     },
     {
       "amount": 250,
-      "id": "sinomagic:soyamilk"
+      "id": "sinomagic:marinade"
     }
   ]
 }

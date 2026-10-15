@@ -1,6 +1,7 @@
 package com.mochaohorizon.sinomagic.registry;
 
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.BucketItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Items;
@@ -130,13 +131,6 @@ public class ModItems {
             props -> new Item(props.food(FoodValues.QIANZHANG_TOFU)),
             new Item.Properties()
     );
-    public static final Supplier<Item> SOY_MILK_BOTTLE = ITEMS.registerItem(
-            "soy_milk_bottle",
-            props -> new Item(props.food(FoodValues.SOY_MILK_BOTTLE)),
-            new Item.Properties()
-                .craftRemainder(Items.GLASS_BOTTLE)
-                .stacksTo(16)
-    );
     public static final Supplier<Item> SALTY_TOFU_PUDDING = ITEMS.registerItem(
             "salty_tofu_pudding",
             props -> new Item(props.food(FoodValues.SALTY_TOFU_PUDDING)),
@@ -163,20 +157,6 @@ public class ModItems {
             Item::new,
             new Item.Properties()
     );
-    public static final Supplier<Item> SOY_SAUCE_BOTTLE = ITEMS.registerItem(
-            "soy_sauce_bottle",
-            Item::new,
-            new Item.Properties()
-                .craftRemainder(Items.GLASS_BOTTLE)
-                .stacksTo(16)
-    );
-    public static final Supplier<Item> MARINADE_BOTTLE = ITEMS.registerItem(
-            "marinade_bottle",
-            Item::new,
-            new Item.Properties()
-                .craftRemainder(Items.GLASS_BOTTLE)
-                .stacksTo(16)
-    );
 
     // ---------- 基础材料 ----------
     public static final Supplier<Item> SALT = ITEMS.registerItem(
@@ -189,6 +169,14 @@ public class ModItems {
             Item::new,
             new Item.Properties()
     );
+    public static final Supplier<Item> DRIED_SHIT = ITEMS.registerItem(
+            "dried_shit",
+            Item::new,
+            new Item.Properties()
+    );
+
+    // ---------- 流体容器 ----------
+    //瓶装：Create 灌注配方的产物，用完返还玻璃瓶
     public static final Supplier<Item> SOYBEAN_OIL_BOTTLE = ITEMS.registerItem(
             "soybean_oil_bottle",
             Item::new,
@@ -196,17 +184,62 @@ public class ModItems {
                 .craftRemainder(Items.GLASS_BOTTLE)
                 .stacksTo(16)
     );
-    public static final Supplier<Item> DRIED_SHIT = ITEMS.registerItem(
-            "dried_shit",
+    public static final Supplier<Item> SOY_SAUCE_BOTTLE = ITEMS.registerItem(
+            "soy_sauce_bottle",
             Item::new,
             new Item.Properties()
+                .craftRemainder(Items.GLASS_BOTTLE)
+                .stacksTo(16)
+    );
+    public static final Supplier<Item> SOY_MILK_BOTTLE = ITEMS.registerItem(
+            "soy_milk_bottle",
+            props -> new Item(props.food(FoodValues.SOY_MILK_BOTTLE)),
+            new Item.Properties()
+                .craftRemainder(Items.GLASS_BOTTLE)
+                .stacksTo(16)
+    );
+    public static final Supplier<Item> MARINADE_BOTTLE = ITEMS.registerItem(
+            "marinade_bottle",
+            Item::new,
+            new Item.Properties()
+                .craftRemainder(Items.GLASS_BOTTLE)
+                .stacksTo(16)
+    );
+    //桶装：BucketItem，对着流体源方块右键可舀起，再右键可倒回世界
+    public static final Supplier<Item> SOYBEAN_OIL_BUCKET = ITEMS.registerItem(
+            "soybean_oil_bucket",
+            props -> new BucketItem(ModFluids.SOYBEAN_OIL.get(), props),
+            new Item.Properties()
+                .craftRemainder(Items.BUCKET)
+                .stacksTo(1)
+    );
+    public static final Supplier<Item> SOY_SAUCE_BUCKET = ITEMS.registerItem(
+            "soy_sauce_bucket",
+            props -> new BucketItem(ModFluids.SOY_SAUCE.get(), props),
+            new Item.Properties()
+                .craftRemainder(Items.BUCKET)
+                .stacksTo(1)
+    );
+    public static final Supplier<Item> SOY_MILK_BUCKET = ITEMS.registerItem(
+            "soy_milk_bucket",
+            props -> new BucketItem(ModFluids.SOY_MILK.get(), props),
+            new Item.Properties()
+                .craftRemainder(Items.BUCKET)
+                .stacksTo(1)
+    );
+    public static final Supplier<Item> MARINADE_BUCKET = ITEMS.registerItem(
+            "marinade_bucket",
+            props -> new BucketItem(ModFluids.MARINADE.get(), props),
+            new Item.Properties()
+                .craftRemainder(Items.BUCKET)
+                .stacksTo(1)
     );
     public static final Supplier<Item> SHIT_BUCKET = ITEMS.registerItem(
             "shit_bucket",
-            Item::new,
+            props -> new BucketItem(ModFluids.SHIT.get(), props),
             new Item.Properties()
                 .craftRemainder(Items.BUCKET)
-                .stacksTo(16)
+                .stacksTo(1)
     );
 
     // ---------- 零食 ----------
