@@ -1,16 +1,17 @@
-package com.mochaohorizon.sinomagic.common.block;
+package com.mochaohorizon.sinomagic.block;
 
-import com.mochaohorizon.sinomagic.common.registry.ModItems;
+import com.mochaohorizon.sinomagic.registry.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.CropBlock;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class SoybeanBlock extends CropBlock {
+public class ChiliBlock extends CropBlock {
     //形状高度与 blockstate 的 stage 映射一致：stage0=6px, stage1=8px, stage2=12px, stage3=14px
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 6.0D, 16.0D),   //age 0 → stage0
@@ -23,14 +24,14 @@ public class SoybeanBlock extends CropBlock {
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 14.0D, 16.0D)   //age 7 → stage3 成熟
     };
 
-    public SoybeanBlock(Properties properties) {
+    public ChiliBlock(BlockBehaviour.Properties properties) {
         super(properties);
     }
 
-    //种植用大豆本身，掉落豆荚由战利品表管理
+    //种植用辣椒种子，掉落辣椒由战利品表管理
     @Override
     protected ItemLike getBaseSeedId() {
-        return ModItems.SOYBEAN.get();
+        return ModItems.CHILI_SEED.get();
     }
 
     @Override

@@ -1,7 +1,7 @@
-package com.mochaohorizon.sinomagic.common.block;
+package com.mochaohorizon.sinomagic.block;
 
-import com.mochaohorizon.sinomagic.common.block.entity.MillstoneBlockEntity;
-import com.mochaohorizon.sinomagic.common.crafting.MillstoneRecipe;
+import com.mochaohorizon.sinomagic.block.entity.MillstoneBlockEntity;
+import com.mochaohorizon.sinomagic.crafting.MillstoneRecipe;
 import net.minecraft.core.BlockPos;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.InteractionHand;

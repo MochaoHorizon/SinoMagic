@@ -1,6 +1,5 @@
-package com.mochaohorizon.sinomagic.common.block;
+package com.mochaohorizon.sinomagic.block;
 
-import com.mochaohorizon.sinomagic.common.registry.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
@@ -11,7 +10,12 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
-public class ChiliBlock extends CropBlock {
+import java.util.function.Supplier;
+
+/**
+ * 通用豆科植株：黑豆、赤豆、绿豆共用。生长行为全部继承 CropBlock，只覆写形状与种子。
+ */
+public class BeanBlock extends CropBlock {
     //形状高度与 blockstate 的 stage 映射一致：stage0=6px, stage1=8px, stage2=12px, stage3=14px
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 6.0D, 16.0D),   //age 0 → stage0
@@ -24,14 +28,18 @@ public class ChiliBlock extends CropBlock {
             Block.box(0.0D, 0.0D, 0.0D, 16.0D, 14.0D, 16.0D)   //age 7 → stage3 成熟
     };
 
-    public ChiliBlock(BlockBehaviour.Properties properties) {
+    //种子以 Supplier 延迟求值，避开与 ModItems 的初始化顺序问题
+    private final Supplier<? extends ItemLike> seed;
+
+    public BeanBlock(Supplier<? extends ItemLike> seed, BlockBehaviour.Properties properties) {
         super(properties);
+        this.seed = seed;
     }
 
-    //种植用辣椒种子，掉落辣椒由战利品表管理
+    //种植用种子本身，掉落由战利品表管理
     @Override
     protected ItemLike getBaseSeedId() {
-        return ModItems.CHILI_SEED.get();
+        return this.seed.get();
     }
 
     @Override

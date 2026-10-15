@@ -1,7 +1,7 @@
-package com.mochaohorizon.sinomagic.common.registry;
+package com.mochaohorizon.sinomagic.registry;
 
 import com.mochaohorizon.sinomagic.SinoMagic;
-import com.mochaohorizon.sinomagic.common.block.entity.MillstoneBlockEntity;
+import com.mochaohorizon.sinomagic.block.entity.MillstoneBlockEntity;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.neoforged.bus.api.IEventBus;

@@ -1,4 +1,4 @@
-package com.DHMR114514.DMHRsJavaLib.newfunction;
+package com.mochaohorizon.sinomagic.util;
 
 import java.util.Random;
 

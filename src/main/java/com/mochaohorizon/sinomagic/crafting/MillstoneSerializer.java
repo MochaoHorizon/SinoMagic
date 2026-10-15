@@ -1,4 +1,4 @@
-package com.mochaohorizon.sinomagic.common.crafting;
+package com.mochaohorizon.sinomagic.crafting;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.MapCodec;

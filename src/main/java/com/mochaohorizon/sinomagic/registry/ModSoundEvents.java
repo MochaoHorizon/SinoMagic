@@ -1,4 +1,4 @@
-package com.mochaohorizon.sinomagic.common.registry;
+package com.mochaohorizon.sinomagic.registry;
 
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;

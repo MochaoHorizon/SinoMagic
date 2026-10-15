@@ -1,6 +1,5 @@
-package com.mochaohorizon.sinomagic.common.registry;
+package com.mochaohorizon.sinomagic.registry;
 
-import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
@@ -18,20 +17,7 @@ public class ModItems {
     public static final DeferredRegister.Items ITEMS =
             DeferredRegister.createItems(MOD_ID);
 
-    //From Farmersdelight
-    public static Item.Properties foodItem(FoodProperties food) {
-        return new Item.Properties().food(food);
-    }
-
-    public static Item.Properties bowlFoodItem(FoodProperties food) {
-        return new Item.Properties().food(food).craftRemainder(Items.BOWL).stacksTo(16);
-    }
-
-    public static Item.Properties drinkItem() {
-        return new Item.Properties().craftRemainder(Items.GLASS_BOTTLE).stacksTo(16);
-    }
-
-    //Simple items added to v1.0.0-人食五谷开发版
+    // ---------- 豆类作物 ----------
     //大豆兼作食物与种子，用 ItemNameBlockItem 才能种下
     public static final Supplier<Item> SOYBEAN = ITEMS.registerItem(
             "soybean",
@@ -53,42 +39,60 @@ public class ModItems {
             Item::new,
             new Item.Properties()
     );
-    public static final Supplier<Item> SOYBEAN_OIL_BOTTLE = ITEMS.registerItem(
-            "soybean_oil_bottle",
+    //黑豆、赤豆、绿豆同上
+    public static final Supplier<Item> BLACK_BEAN = ITEMS.registerItem(
+            "black_bean",
+            props -> new ItemNameBlockItem(ModBlocks.BLACK_BEAN_PLANT.get(), props.food(FoodValues.BLACK_BEAN)),
+            new Item.Properties()
+    );
+    public static final Supplier<Item> RED_BEAN = ITEMS.registerItem(
+            "red_bean",
+            props -> new ItemNameBlockItem(ModBlocks.RED_BEAN_PLANT.get(), props.food(FoodValues.RED_BEAN)),
+            new Item.Properties()
+    );
+    public static final Supplier<Item> MUNG_BEAN = ITEMS.registerItem(
+            "mung_bean",
+            props -> new ItemNameBlockItem(ModBlocks.MUNG_BEAN_PLANT.get(), props.food(FoodValues.MUNG_BEAN)),
+            new Item.Properties()
+    );
+
+    // ---------- 辣椒 ----------
+    public static final Supplier<Item> CHILI = ITEMS.registerItem(
+            "chili",
             Item::new,
             new Item.Properties()
-                .craftRemainder(Items.GLASS_BOTTLE)
-                .stacksTo(16)
     );
+    public static final Supplier<Item> FIRE_CHILI = ITEMS.registerItem(
+            "fire_chili",
+            Item::new,
+            new Item.Properties()
+    );
+    //辣椒种子，可种下辣椒植株
+    public static final Supplier<Item> CHILI_SEED = ITEMS.registerItem(
+            "chili_seed",
+            props -> new ItemNameBlockItem(ModBlocks.CHILI_PLANT.get(), props),
+            new Item.Properties()
+    );
+
+    // ---------- 豆制品 ----------
     public static final Supplier<Item> SOYBEAN_POWDER = ITEMS.registerItem(
             "soybean_powder",
             Item::new,
             new Item.Properties()
     );
-    public static final Supplier<Item> SOY_MILK_BOTTLE = ITEMS.registerItem(
-            "soy_milk_bottle",
-            props -> new Item(props.food(FoodValues.SOY_MILK_BOTTLE)),
+    public static final Supplier<Item> SOYBEAN_MEAL = ITEMS.registerItem(
+            "soybean_meal",
+            Item::new,
             new Item.Properties()
-                .craftRemainder(Items.GLASS_BOTTLE)
-                .stacksTo(16)
-    );
-    public static final Supplier<Item> SALTY_TOFU_PUDDING = ITEMS.registerItem(
-            "salty_tofu_pudding",
-            props -> new Item(props.food(FoodValues.SALTY_TOFU_PUDDING)),
-            new Item.Properties()
-                .craftRemainder(Items.BOWL)
-                .stacksTo(16)
-    );
-    public static final Supplier<Item> SWEET_TOFU_PUDDING = ITEMS.registerItem(
-            "sweet_tofu_pudding",
-            props -> new Item(props.food(FoodValues.SWEET_TOFU_PUDDING)),
-            new Item.Properties()
-                .craftRemainder(Items.BOWL)
-                .stacksTo(16)
     );
     public static final Supplier<Item> TOFU = ITEMS.registerItem(
             "tofu",
             props -> new Item(props.food(FoodValues.TOFU)),
+            new Item.Properties()
+    );
+    public static final Supplier<Item> DRIED_TOFU = ITEMS.registerItem(
+            "dried_tofu",
+            props -> new Item(props.food(FoodValues.DRIED_TOFU)),
             new Item.Properties()
     );
     public static final Supplier<Item> FROZEN_TOFU = ITEMS.registerItem(
@@ -126,8 +130,36 @@ public class ModItems {
             props -> new Item(props.food(FoodValues.QIANZHANG_TOFU)),
             new Item.Properties()
     );
-    public static final Supplier<Item> SALT = ITEMS.registerItem(
-            "salt",
+    public static final Supplier<Item> SOY_MILK_BOTTLE = ITEMS.registerItem(
+            "soy_milk_bottle",
+            props -> new Item(props.food(FoodValues.SOY_MILK_BOTTLE)),
+            new Item.Properties()
+                .craftRemainder(Items.GLASS_BOTTLE)
+                .stacksTo(16)
+    );
+    public static final Supplier<Item> SALTY_TOFU_PUDDING = ITEMS.registerItem(
+            "salty_tofu_pudding",
+            props -> new Item(props.food(FoodValues.SALTY_TOFU_PUDDING)),
+            new Item.Properties()
+                .craftRemainder(Items.BOWL)
+                .stacksTo(16)
+    );
+    public static final Supplier<Item> SWEET_TOFU_PUDDING = ITEMS.registerItem(
+            "sweet_tofu_pudding",
+            props -> new Item(props.food(FoodValues.SWEET_TOFU_PUDDING)),
+            new Item.Properties()
+                .craftRemainder(Items.BOWL)
+                .stacksTo(16)
+    );
+
+    // ---------- 豆沙与酱料 ----------
+    public static final Supplier<Item> RED_BEAN_PASTE = ITEMS.registerItem(
+            "red_bean_paste",
+            Item::new,
+            new Item.Properties()
+    );
+    public static final Supplier<Item> MUNG_BEAN_PASTE = ITEMS.registerItem(
+            "mung_bean_paste",
             Item::new,
             new Item.Properties()
     );
@@ -145,46 +177,24 @@ public class ModItems {
                 .craftRemainder(Items.GLASS_BOTTLE)
                 .stacksTo(16)
     );
-    public static final Supplier<Item> SOYBEAN_MEAL = ITEMS.registerItem(
-            "soybean_meal",
+
+    // ---------- 基础材料 ----------
+    public static final Supplier<Item> SALT = ITEMS.registerItem(
+            "salt",
             Item::new,
             new Item.Properties()
     );
-    public static final Supplier<Item> LATIAO = ITEMS.registerItem(
-            "latiao",
-            props -> new Item(props.food(FoodValues.LATIAO)),
-            new Item.Properties()
-    );
-    public static final Supplier<Item> DRIED_TOFU = ITEMS.registerItem(
-            "dried_tofu",
-            props -> new Item(props.food(FoodValues.DRIED_TOFU)),
-            new Item.Properties()
-    );
-    //黑豆、赤豆、绿豆同上
-    public static final Supplier<Item> BLACK_BEAN = ITEMS.registerItem(
-            "black_bean",
-            props -> new ItemNameBlockItem(ModBlocks.BLACK_BEAN_PLANT.get(), props.food(FoodValues.BLACK_BEAN)),
-            new Item.Properties()
-    );
-    public static final Supplier<Item> RED_BEAN = ITEMS.registerItem(
-            "red_bean",
-            props -> new ItemNameBlockItem(ModBlocks.RED_BEAN_PLANT.get(), props.food(FoodValues.RED_BEAN)),
-            new Item.Properties()
-    );
-    public static final Supplier<Item> RED_BEAN_PASTE = ITEMS.registerItem(
-            "red_bean_paste",
+    public static final Supplier<Item> YEAST = ITEMS.registerItem(
+            "yeast",
             Item::new,
             new Item.Properties()
     );
-    public static final Supplier<Item> MUNG_BEAN = ITEMS.registerItem(
-            "mung_bean",
-            props -> new ItemNameBlockItem(ModBlocks.MUNG_BEAN_PLANT.get(), props.food(FoodValues.MUNG_BEAN)),
-            new Item.Properties()
-    );
-    public static final Supplier<Item> MUNG_BEAN_PASTE = ITEMS.registerItem(
-            "mung_bean_paste",
+    public static final Supplier<Item> SOYBEAN_OIL_BOTTLE = ITEMS.registerItem(
+            "soybean_oil_bottle",
             Item::new,
             new Item.Properties()
+                .craftRemainder(Items.GLASS_BOTTLE)
+                .stacksTo(16)
     );
     public static final Supplier<Item> DRIED_SHIT = ITEMS.registerItem(
             "dried_shit",
@@ -198,29 +208,41 @@ public class ModItems {
                 .craftRemainder(Items.BUCKET)
                 .stacksTo(16)
     );
-    public static final Supplier<Item> YEAST = ITEMS.registerItem(
-            "yeast",
-            Item::new,
-            new Item.Properties()
-    );
-    public static final Supplier<Item> CHILI = ITEMS.registerItem(
-            "chili",
-            Item::new,
-            new Item.Properties()
-    );
-    public static final Supplier<Item> FIRE_CHILI = ITEMS.registerItem(
-            "fire_chili",
-            Item::new,
-            new Item.Properties()
-    );
-    //辣椒种子，可种下辣椒植株
-    public static final Supplier<Item> CHILI_SEED = ITEMS.registerItem(
-            "chili_seed",
-            props -> new ItemNameBlockItem(ModBlocks.CHILI_PLANT.get(), props),
+
+    // ---------- 零食 ----------
+    public static final Supplier<Item> LATIAO = ITEMS.registerItem(
+            "latiao",
+            props -> new Item(props.food(FoodValues.LATIAO)),
             new Item.Properties()
     );
 
-    //music discs add to v1.0.0-食五谷开发版
+    // ---------- 方块物品 ----------
+    public static final DeferredItem<Item> SALT_BLOCK =
+            ITEMS.register("salt_block", () -> new BlockItem(ModBlocks.SALT_BLOCK.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> SALT_ORE =
+            ITEMS.register("salt_ore", () -> new BlockItem(ModBlocks.SALT_ORE.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> TOFU_BLOCK =
+            ITEMS.register("tofu_block", () -> new BlockItem(ModBlocks.TOFU_BLOCK.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> SHIT_BLOCK =
+            ITEMS.register("shit_block", () -> new BlockItem(ModBlocks.SHIT_BLOCK.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> MILLSTONE =
+            ITEMS.register("millstone", () -> new BlockItem(ModBlocks.MILLSTONE.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> VAT =
+            ITEMS.register("vat", () -> new BlockItem(ModBlocks.VAT.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> WILD_SOYBEAN_PLANT =
+            ITEMS.register("wild_soybean_plant", () -> new BlockItem(ModBlocks.WILD_SOYBEAN_PLANT.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> WILD_CHILI_PLANT =
+            ITEMS.register("wild_chili_plant", () -> new BlockItem(ModBlocks.WILD_CHILI_PLANT.get(), new Item.Properties()
+            ));
+
+    // ---------- 音乐唱片 ----------
     public static final DeferredItem<Item> MUSIC_DISC_BAINIAOCHAOFENG =
             ITEMS.register("music_disc_bainiaochaofeng", () -> new Item(new Item.Properties()
                     .stacksTo(1)
@@ -340,32 +362,6 @@ public class ModItems {
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.ZIJINGHUA_SONG)
-            ));
-
-    //Block items add to v1.0.0-人食五谷开发版
-    public static final DeferredItem<Item> SALT_BLOCK =
-            ITEMS.register("salt_block", () -> new BlockItem(ModBlocks.SALT_BLOCK.get(), new Item.Properties()
-            ));
-    public static final DeferredItem<Item> SALT_ORE =
-            ITEMS.register("salt_ore", () -> new BlockItem(ModBlocks.SALT_ORE.get(), new Item.Properties()
-            ));
-    public static final DeferredItem<Item> TOFU_BLOCK =
-            ITEMS.register("tofu_block", () -> new BlockItem(ModBlocks.TOFU_BLOCK.get(), new Item.Properties()
-            ));
-    public static final DeferredItem<Item> MILLSTONE =
-            ITEMS.register("millstone", () -> new BlockItem(ModBlocks.MILLSTONE.get(), new Item.Properties()
-            ));
-    public static final DeferredItem<Item> VAT =
-            ITEMS.register("vat", () -> new BlockItem(ModBlocks.VAT.get(), new Item.Properties()
-            ));
-    public static final DeferredItem<Item> SHIT_BLOCK =
-            ITEMS.register("shit_block", () -> new BlockItem(ModBlocks.SHIT_BLOCK.get(), new Item.Properties()
-            ));
-    public static final DeferredItem<Item> WILD_SOYBEAN_PLANT =
-            ITEMS.register("wild_soybean_plant", () -> new BlockItem(ModBlocks.WILD_SOYBEAN_PLANT.get(), new Item.Properties()
-            ));
-    public static final DeferredItem<Item> WILD_CHILI_PLANT =
-            ITEMS.register("wild_chili_plant", () -> new BlockItem(ModBlocks.WILD_CHILI_PLANT.get(), new Item.Properties()
             ));
 
     public static void register(IEventBus eventBus){

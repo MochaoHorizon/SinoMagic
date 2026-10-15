@@ -1,12 +1,12 @@
 package com.mochaohorizon.sinomagic;
 
-import com.mochaohorizon.sinomagic.common.registry.ModBlockEntities;
-import com.mochaohorizon.sinomagic.common.registry.ModBlocks;
-import com.mochaohorizon.sinomagic.common.registry.ModCreativeTabs;
-import com.mochaohorizon.sinomagic.common.registry.ModItems;
-import com.mochaohorizon.sinomagic.common.registry.ModRecipeTypes;
-import com.mochaohorizon.sinomagic.common.registry.ModSerializers;
-import com.mochaohorizon.sinomagic.common.registry.ModSoundEvents;
+import com.mochaohorizon.sinomagic.registry.ModBlockEntities;
+import com.mochaohorizon.sinomagic.registry.ModBlocks;
+import com.mochaohorizon.sinomagic.registry.ModCreativeTabs;
+import com.mochaohorizon.sinomagic.registry.ModItems;
+import com.mochaohorizon.sinomagic.registry.ModRecipeTypes;
+import com.mochaohorizon.sinomagic.registry.ModSerializers;
+import com.mochaohorizon.sinomagic.registry.ModSoundEvents;
 import com.mojang.logging.LogUtils;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.block.Blocks;

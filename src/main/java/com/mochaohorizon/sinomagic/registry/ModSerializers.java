@@ -1,7 +1,7 @@
-package com.mochaohorizon.sinomagic.common.registry;
+package com.mochaohorizon.sinomagic.registry;
 
 import com.mochaohorizon.sinomagic.SinoMagic;
-import com.mochaohorizon.sinomagic.common.crafting.MillstoneSerializer;
+import com.mochaohorizon.sinomagic.crafting.MillstoneSerializer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.crafting.RecipeSerializer;
 import net.neoforged.bus.api.IEventBus;

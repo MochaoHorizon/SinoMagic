@@ -1,7 +1,7 @@
-package com.mochaohorizon.sinomagic.common.block.entity;
+package com.mochaohorizon.sinomagic.block.entity;
 
-import com.mochaohorizon.sinomagic.common.crafting.MillstoneRecipe;
-import com.mochaohorizon.sinomagic.common.registry.ModRecipeTypes;
+import com.mochaohorizon.sinomagic.crafting.MillstoneRecipe;
+import com.mochaohorizon.sinomagic.registry.ModRecipeTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
@@ -27,7 +27,7 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.Optional;
 
-import static com.mochaohorizon.sinomagic.common.registry.ModBlockEntities.Millstone_BlockEntity;
+import static com.mochaohorizon.sinomagic.registry.ModBlockEntities.Millstone_BlockEntity;
 
 public class MillstoneBlockEntity extends BlockEntity implements GeoBlockEntity {
 

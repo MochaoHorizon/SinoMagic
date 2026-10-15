@@ -50,7 +50,7 @@ Open the folder in IntelliJ IDEA as a Gradle project to get code completion for 
 ## Credits
 
 - 一只带明球 (DMHR114514)
-- 荧惑启明 (ExTetRagon)
+- 荧惑启明 (ExTetragon)
 - 克劳德 (Cloud1232534)
 - 之一
 

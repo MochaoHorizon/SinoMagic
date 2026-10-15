@@ -1,4 +1,4 @@
-package com.mochaohorizon.sinomagic.common.registry;
+package com.mochaohorizon.sinomagic.registry;
 
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Items;

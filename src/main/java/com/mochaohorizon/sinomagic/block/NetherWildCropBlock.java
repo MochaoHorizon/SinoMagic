@@ -1,4 +1,4 @@
-package com.mochaohorizon.sinomagic.common.block;
+package com.mochaohorizon.sinomagic.block;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;

@@ -1,7 +1,7 @@
-package com.mochaohorizon.sinomagic.common.crafting;
+package com.mochaohorizon.sinomagic.crafting;
 
-import com.mochaohorizon.sinomagic.common.registry.ModRecipeTypes;
-import com.mochaohorizon.sinomagic.common.registry.ModSerializers;
+import com.mochaohorizon.sinomagic.registry.ModRecipeTypes;
+import com.mochaohorizon.sinomagic.registry.ModSerializers;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.resources.ResourceLocation;

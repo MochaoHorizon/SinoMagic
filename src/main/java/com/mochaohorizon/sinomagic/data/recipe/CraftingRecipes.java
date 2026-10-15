@@ -1,7 +1,7 @@
 package com.mochaohorizon.sinomagic.data.recipe;
 
-import com.mochaohorizon.sinomagic.common.registry.ModBlocks;
-import com.mochaohorizon.sinomagic.common.registry.ModItems;
+import com.mochaohorizon.sinomagic.registry.ModBlocks;
+import com.mochaohorizon.sinomagic.registry.ModItems;
 import net.minecraft.advancements.critereon.InventoryChangeTrigger;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;

@@ -1,7 +1,7 @@
-package com.mochaohorizon.sinomagic.common.registry;
+package com.mochaohorizon.sinomagic.registry;
 
 import com.mochaohorizon.sinomagic.SinoMagic;
-import com.mochaohorizon.sinomagic.common.crafting.MillstoneRecipe;
+import com.mochaohorizon.sinomagic.crafting.MillstoneRecipe;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeType;

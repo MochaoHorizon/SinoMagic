@@ -1,11 +1,11 @@
-package com.mochaohorizon.sinomagic.common.registry;
+package com.mochaohorizon.sinomagic.registry;
 
 import com.mochaohorizon.sinomagic.SinoMagic;
-import com.mochaohorizon.sinomagic.common.block.BeanBlock;
-import com.mochaohorizon.sinomagic.common.block.ChiliBlock;
-import com.mochaohorizon.sinomagic.common.block.NetherWildCropBlock;
-import com.mochaohorizon.sinomagic.common.block.SoybeanBlock;
-import com.mochaohorizon.sinomagic.common.block.Millstone;
+import com.mochaohorizon.sinomagic.block.BeanBlock;
+import com.mochaohorizon.sinomagic.block.ChiliBlock;
+import com.mochaohorizon.sinomagic.block.NetherWildCropBlock;
+import com.mochaohorizon.sinomagic.block.SoybeanBlock;
+import com.mochaohorizon.sinomagic.block.Millstone;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
@@ -22,7 +22,39 @@ public class ModBlocks {
     public static final DeferredRegister.Blocks BLOCKS =
             DeferredRegister.createBlocks(SinoMagic.MOD_ID);
 
-    //Blocks added to v1.0.0-人食五谷开发版
+    // ---------- 作物方块 ----------
+    public static final DeferredBlock<Block> SOYBEAN_PLANT = registerBlocks(
+            "soybean_plant", () -> new SoybeanBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
+            ));
+    public static final DeferredBlock<Block> CHILI_PLANT = registerBlocks(
+            "chili_plant", () -> new ChiliBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
+            ));
+    //黑豆、赤豆、绿豆共用 BeanBlock
+    public static final DeferredBlock<Block> BLACK_BEAN_PLANT = registerBlocks(
+            "black_bean_plant", () -> new BeanBlock(ModItems.BLACK_BEAN,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
+            ));
+    public static final DeferredBlock<Block> RED_BEAN_PLANT = registerBlocks(
+            "red_bean_plant", () -> new BeanBlock(ModItems.RED_BEAN,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
+            ));
+    public static final DeferredBlock<Block> MUNG_BEAN_PLANT = registerBlocks(
+            "mung_bean_plant", () -> new BeanBlock(ModItems.MUNG_BEAN,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
+            ));
+
+    // ---------- 野生植株 ----------
+    //野生植株沿用农夫乐事 WildCropBlock：泥土/沙限定，可骨粉繁殖，可燃
+    public static final DeferredBlock<Block> WILD_SOYBEAN_PLANT = registerBlocks(
+            "wild_soybean_plant", () -> new WildCropBlock(MobEffects.SATURATION, 8,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS)
+            ));
+    public static final DeferredBlock<Block> WILD_CHILI_PLANT = registerBlocks(
+            "wild_chili_plant", () -> new NetherWildCropBlock(MobEffects.FIRE_RESISTANCE, 8,
+                    BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS)
+            ));
+
+    // ---------- 普通方块 ----------
     public static final DeferredBlock<Block> SALT_BLOCK = registerBlocks(
             "salt_block", () -> new Block(BlockBehaviour.Properties.of()
                     .destroyTime(1.5f)
@@ -40,34 +72,14 @@ public class ModBlocks {
                     .sound(SoundType.SLIME_BLOCK)
                     .friction(0.75f)
             ));
-    public static final DeferredBlock<Block> SOYBEAN_PLANT = registerBlocks(
-            "soybean_plant", () -> new SoybeanBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
+    public static final DeferredBlock<Block> SHIT_BLOCK = registerBlocks(
+            "shit_block", () -> new Block(BlockBehaviour.Properties.of()
+                    .destroyTime(1.0f)
+                    .explosionResistance(4.0f)
+                    .friction(0.75f)
             ));
-    //野生植株沿用农夫乐事 WildCropBlock：泥土/沙限定，可骨粉繁殖，可燃
-    public static final DeferredBlock<Block> WILD_SOYBEAN_PLANT = registerBlocks(
-            "wild_soybean_plant", () -> new WildCropBlock(MobEffects.SATURATION, 8,
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS)
-            ));
-    public static final DeferredBlock<Block> CHILI_PLANT = registerBlocks(
-            "chili_plant", () -> new ChiliBlock(BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
-            ));
-    public static final DeferredBlock<Block> WILD_CHILI_PLANT = registerBlocks(
-            "wild_chili_plant", () -> new NetherWildCropBlock(MobEffects.FIRE_RESISTANCE, 8,
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.TALL_GRASS)
-            ));
-    //黑豆、赤豆、绿豆共用 BeanBlock
-    public static final DeferredBlock<Block> BLACK_BEAN_PLANT = registerBlocks(
-            "black_bean_plant", () -> new BeanBlock(ModItems.BLACK_BEAN,
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
-            ));
-    public static final DeferredBlock<Block> RED_BEAN_PLANT = registerBlocks(
-            "red_bean_plant", () -> new BeanBlock(ModItems.RED_BEAN,
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
-            ));
-    public static final DeferredBlock<Block> MUNG_BEAN_PLANT = registerBlocks(
-            "mung_bean_plant", () -> new BeanBlock(ModItems.MUNG_BEAN,
-                    BlockBehaviour.Properties.ofFullCopy(Blocks.WHEAT)
-            ));
+
+    // ---------- 功能方块 ----------
     public static final DeferredBlock<Block> MILLSTONE = registerBlocks(
             "millstone", () -> new Millstone(BlockBehaviour.Properties.of()
                     .destroyTime(1.5f)
@@ -77,12 +89,6 @@ public class ModBlocks {
             "vat", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.BRICKS)
                     .destroyTime(1.25f)
                     .explosionResistance(4.5f)
-            ));
-    public static final DeferredBlock<Block> SHIT_BLOCK = registerBlocks(
-            "shit_block", () -> new Block(BlockBehaviour.Properties.of()
-                    .destroyTime(1.0f)
-                    .explosionResistance(4.0f)
-                    .friction(0.75f)
             ));
 
     private static <T extends Block> DeferredBlock<T> registerBlocks(String name, Supplier<T> block){

@@ -12,7 +12,7 @@ displayURL="https://github.com/MochaoHorizon/SinoMagic"
 # TODO: no icon.png yet. Drop one into src/main/resources/ and uncomment.
 #logoFile="icon.png"
 authors="MochaoHorizon"
-credits="一只带明球(DMHR114514), 荧惑启明(ExTetRagon), 克劳德(Cloud1232534), 之一"
+credits="一只带明球(DMHR114514), 荧惑启明(ExTetragon), 克劳德(Cloud1232534), 之一"
 description="七月流火，九月授衣，春日载阳，有鸣仓庚"
 
 [[mixins]]

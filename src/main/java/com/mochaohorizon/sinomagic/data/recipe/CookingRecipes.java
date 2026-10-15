@@ -1,6 +1,6 @@
 package com.mochaohorizon.sinomagic.data.recipe;
 
-import com.mochaohorizon.sinomagic.common.registry.ModItems;
+import com.mochaohorizon.sinomagic.registry.ModItems;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.world.item.Items;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
