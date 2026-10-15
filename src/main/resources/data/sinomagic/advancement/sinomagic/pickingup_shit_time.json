@@ -1,12 +1,14 @@
 {
-  "parent": "sinomagic:source_of_all_food",
+  "parent": "sinomagic:sinomagic/root",
   "criteria": {
     "pickingup_shit_time": {
-      "trigger": "inventory_changed",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": {
-          "items": "sinomagic:dried_shit"
-        }
+        "items": [
+          {
+            "items": "sinomagic:dried_shit"
+          }
+        ]
       }
     }
   },
@@ -16,7 +18,7 @@
       "translate": "advancement.description.sinomagic.pickingup_shit_time"
     },
     "frame": "task",
-    "hidden": false,
+    "hidden": true,
     "icon": {
       "count": 1,
       "id": "sinomagic:dried_shit"

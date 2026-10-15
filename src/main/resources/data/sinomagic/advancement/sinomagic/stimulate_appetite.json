@@ -1,12 +1,14 @@
 {
-  "parent": "sinomagic:soild_soyamilk",
+  "parent": "sinomagic:sinomagic/soild_soyamilk",
   "criteria": {
     "stimulate_appetite": {
-      "trigger": "inventory_changed",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": {
-          "items": "sinomagic:fermented_bean_curd"
-        }
+        "items": [
+          {
+            "items": "sinomagic:fermented_bean_curd"
+          }
+        ]
       }
     }
   },

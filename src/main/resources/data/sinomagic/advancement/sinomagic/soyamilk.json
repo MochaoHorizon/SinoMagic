@@ -1,12 +1,14 @@
 {
-  "parent": "sinomagic:golden_powder",
+  "parent": "sinomagic:sinomagic/golden_powder",
   "criteria": {
     "soyamilk": {
-      "trigger": "inventory_changed",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": {
-          "items": "sinomagic:soy_milk_bottle"
-        }
+        "items": [
+          {
+            "items": "sinomagic:soy_milk_bottle"
+          }
+        ]
       }
     }
   },

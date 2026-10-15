@@ -1,12 +1,14 @@
 {
-  "parent": "sinomagic:soybean",
+  "parent": "sinomagic:sinomagic/soybean",
   "criteria": {
     "golden_powder": {
-      "trigger": "inventory_changed",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": {
-          "items": "sinomagic:soybean_powder"
-        }
+        "items": [
+          {
+            "items": "sinomagic:soybean_powder"
+          }
+        ]
       }
     }
   },

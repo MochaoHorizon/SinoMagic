@@ -1,12 +1,14 @@
 {
-  "parent": "sinomagic:source_of_all_food",
+  "parent": "sinomagic:sinomagic/root",
   "criteria": {
     "soybean": {
-      "trigger": "inventory_changed",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": {
-          "items": "sinomagic:soybean_pod"
-        }
+        "items": [
+          {
+            "items": "sinomagic:soybean_pod"
+          }
+        ]
       }
     }
   },

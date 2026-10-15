@@ -1,12 +1,14 @@
 {
-  "parent": "sinomagic:soild_soyamilk",
+  "parent": "sinomagic:sinomagic/soild_soyamilk",
   "criteria": {
     "chinese_puff_pastry": {
-      "trigger": "inventory_changed",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": {
-          "items": "sinomagic:qianzhang_tofu"
-        }
+        "items": [
+          {
+            "items": "sinomagic:qianzhang_tofu"
+          }
+        ]
       }
     }
   },

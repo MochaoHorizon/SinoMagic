@@ -1,12 +1,17 @@
 {
-  "parent": "sinomagic:soyamilk",
+  "parent": "sinomagic:sinomagic/soyamilk",
   "criteria": {
     "salty_vs_sweet": {
-      "trigger": "inventory_changed",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": {
-          "items": ["sinomagic:salty_tofu_pudding", "sinomagic:sweet_tofu_pudding"]
-        }
+        "items": [
+          {
+            "items": [
+              "sinomagic:salty_tofu_pudding",
+              "sinomagic:sweet_tofu_pudding"
+            ]
+          }
+        ]
       }
     }
   },

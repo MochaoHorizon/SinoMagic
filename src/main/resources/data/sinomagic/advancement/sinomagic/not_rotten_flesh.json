@@ -1,12 +1,14 @@
 {
-  "parent": "sinomagic:soild_soyamilk",
+  "parent": "sinomagic:sinomagic/soild_soyamilk",
   "criteria": {
     "not_rotten_flesh": {
-      "trigger": "inventory_changed",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": {
-          "items": "sinomagic:stinky_tofu"
-        }
+        "items": [
+          {
+            "items": "sinomagic:stinky_tofu"
+          }
+        ]
       }
     }
   },

@@ -1,13 +1,15 @@
 {
-  "parent": "sinomagic:pickingup_shit_time",
+  "parent": "sinomagic:sinomagic/pickingup_shit_time",
   "criteria": {
     "shit_king": {
-      "trigger": "inventory_changed",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": {
-          "items": "sinomagic:dried_shit",
-          "count": 288
-        }
+        "items": [
+          {
+            "items": "sinomagic:dried_shit",
+            "count": 64
+          }
+        ]
       }
     }
   },
@@ -17,7 +19,7 @@
       "translate": "advancement.description.sinomagic.shit_king"
     },
     "frame": "challenge",
-    "hidden": false,
+    "hidden": true,
     "icon": {
       "count": 8,
       "id": "sinomagic:dried_shit"

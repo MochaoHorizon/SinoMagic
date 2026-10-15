@@ -1,12 +1,14 @@
 {
-  "parent": "sinomagic:soyamilk",
+  "parent": "sinomagic:sinomagic/soyamilk",
   "criteria": {
     "soild_soyamilk": {
-      "trigger": "inventory_changed",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": {
-          "items": "sinomagic:tofu"
-        }
+        "items": [
+          {
+            "items": "sinomagic:tofu"
+          }
+        ]
       }
     }
   },

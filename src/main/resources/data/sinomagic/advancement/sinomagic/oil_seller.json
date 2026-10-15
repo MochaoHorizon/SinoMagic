@@ -1,12 +1,14 @@
 {
-  "parent": "sinomagic:soybean",
+  "parent": "sinomagic:sinomagic/soybean",
   "criteria": {
     "oil_seller": {
-      "trigger": "inventory_changed",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": {
-          "items": "sinomagic:soybean_oil_bottle"
-        }
+        "items": [
+          {
+            "items": "sinomagic:soybean_oil_bottle"
+          }
+        ]
       }
     }
   },
@@ -19,7 +21,7 @@
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "sinomagic:soybean_oil"
+      "id": "sinomagic:soybean_oil_bottle"
     },
     "title": {
       "translate": "advancement.title.sinomagic.oil_seller"

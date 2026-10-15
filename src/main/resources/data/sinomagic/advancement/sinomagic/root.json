@@ -1,7 +1,7 @@
 {
   "criteria": {
     "source_of_all_food": {
-      "trigger": "placed_block",
+      "trigger": "minecraft:placed_block",
       "conditions": {
         "location": [
           {

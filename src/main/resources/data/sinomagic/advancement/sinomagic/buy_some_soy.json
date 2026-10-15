@@ -1,12 +1,14 @@
 {
-  "parent": "sinomagic:ferment_everything",
+  "parent": "sinomagic:sinomagic/ferment_everything",
   "criteria": {
     "buy_some_soy": {
-      "trigger": "inventory_changed",
+      "trigger": "minecraft:inventory_changed",
       "conditions": {
-        "items": {
-          "items": "sinomagic:soy_sauce_bottle"
-        }
+        "items": [
+          {
+            "items": "sinomagic:soy_sauce_bottle"
+          }
+        ]
       }
     }
   },

@@ -1,8 +1,8 @@
 {
-  "parent": "sinomagic:soybean",
+  "parent": "sinomagic:sinomagic/soybean",
   "criteria": {
     "ferment_everything": {
-      "trigger": "placed_block",
+      "trigger": "minecraft:placed_block",
       "conditions": {
         "location": [
           {
