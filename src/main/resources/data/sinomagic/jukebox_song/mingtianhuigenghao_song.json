@@ -1,7 +1,7 @@
 {
   "comparator_output": 15,
   "description": {
-    "translate": "jukebox_song.sinomagic.mingtianhuigenghao"
+    "translate": "jukebox_song.sinomagic.mingtianhuigenghao", "color": "gold"
   },
   "length_in_seconds": 282.0,
   "sound_event": "sinomagic:music.mingtianhuigenghao"

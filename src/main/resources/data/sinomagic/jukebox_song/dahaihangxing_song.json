@@ -1,7 +1,7 @@
 {
   "comparator_output": 15,
   "description": {
-    "translate": "jukebox_song.sinomagic.dahaihangxing"
+    "translate": "jukebox_song.sinomagic.dahaihangxing", "color": "gold"
   },
   "length_in_seconds": 136.0,
   "sound_event": "sinomagic:music.dahaihangxing"

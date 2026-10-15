@@ -54,8 +54,35 @@ public class ModCreativeTabs {
                         output.accept(ModItems.FIRE_CHILI.get());
                         output.accept(ModItems.CHILI_SEED.get());
 
+                        //Block items
+                        output.accept(ModItems.SALT_BLOCK.get());
+                        output.accept(ModItems.SALT_ORE.get());
+                        output.accept(ModItems.TOFU_BLOCK.get());
+                        output.accept(ModItems.MILLSTONE.get());
+                        output.accept(ModItems.VAT.get());
+                        output.accept(ModItems.SHIT_BLOCK.get());
 
-                        output.accept(ModBlocks.SALT_BLOCK.get());
+                        //Music discs
+                        output.accept(ModItems.MUSIC_DISC_BAINIAOCHAOFENG.get());
+                        output.accept(ModItems.MUSIC_DISC_BAOWEIHUANGHE.get());
+                        output.accept(ModItems.MUSIC_DISC_BEIJINGJINSHANSHANG.get());
+                        output.accept(ModItems.MUSIC_DISC_BUBUGAO.get());
+                        output.accept(ModItems.MUSIC_DISC_CHINFENGWUYI.get());
+                        output.accept(ModItems.MUSIC_DISC_DADAO.get());
+                        output.accept(ModItems.MUSIC_DISC_DADONGBEI.get());
+                        output.accept(ModItems.MUSIC_DISC_DAHAIHANGXING.get());
+                        output.accept(ModItems.MUSIC_DISC_HAOHANGE.get());
+                        output.accept(ModItems.MUSIC_DISC_HAOYUNLAI.get());
+                        output.accept(ModItems.MUSIC_DISC_JINSHEKUANGWU.get());
+                        output.accept(ModItems.MUSIC_DISC_LANLINGWANG.get());
+                        output.accept(ModItems.MUSIC_DISC_MINGTIANHUIGENGHAO.get());
+                        output.accept(ModItems.MUSIC_DISC_OURWORKERHAVEPOWER.get());
+                        output.accept(ModItems.MUSIC_DISC_SAIMA.get());
+                        output.accept(ModItems.MUSIC_DISC_SHEHUIZHUYIHAO.get());
+                        output.accept(ModItems.MUSIC_DISC_TONGTIANDADAO.get());
+                        output.accept(ModItems.MUSIC_DISC_YOUJIDUI.get());
+                        output.accept(ModItems.MUSIC_DISC_YUANFANGKEREN.get());
+                        output.accept(ModItems.MUSIC_DISC_ZIJINGHUA.get());
                     }).build());
 
     public static void register(IEventBus eventBus){

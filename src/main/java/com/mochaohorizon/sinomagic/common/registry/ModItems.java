@@ -217,122 +217,122 @@ public class ModItems {
     );
 
     //music discs add to v1.0.0-食五谷开发版
-    public static final DeferredItem<Item> BAINIAOCHAOFENG_DISC =
-            ITEMS.register("bainiaochaofeng_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_BAINIAOCHAOFENG =
+            ITEMS.register("music_disc_bainiaochaofeng", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.BAINIAOCHAOFENG_SONG)
             ));
-    public static final DeferredItem<Item> BAOWEIHUANGHE_DISC =
-            ITEMS.register("baoweihuanghe_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_BAOWEIHUANGHE =
+            ITEMS.register("music_disc_baoweihuanghe", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.BAOWEIHUANGHE_SONG)
             ));
-    public static final DeferredItem<Item> BEIJINGJINSHANSHANG_DISC =
-            ITEMS.register("beijingjinshanshang_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_BEIJINGJINSHANSHANG =
+            ITEMS.register("music_disc_beijingjinshanshang", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.BEIJINGJINSHANSHANG_SONG)
             ));
-    public static final DeferredItem<Item> BUBUGAO_DISC =
-            ITEMS.register("bubugao_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_BUBUGAO =
+            ITEMS.register("music_disc_bubugao", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.BUBUGAO_SONG)
             ));
-    public static final DeferredItem<Item> CHINFENGWUYI_DISC =
-            ITEMS.register("chinfengwuyi_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_CHINFENGWUYI =
+            ITEMS.register("music_disc_chinfengwuyi", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.CHINFENGWUYI_SONG)
             ));
-    public static final DeferredItem<Item> DADAO_DISC =
-            ITEMS.register("dadao_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_DADAO =
+            ITEMS.register("music_disc_dadao", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.DADAO_SONG)
             ));
-    public static final DeferredItem<Item> DADONGBEI_DISC =
-            ITEMS.register("dadongbei_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_DADONGBEI =
+            ITEMS.register("music_disc_dadongbei", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.DADONGBEI_SONG)
             ));
-    public static final DeferredItem<Item> DAHAIHANGXING_DISC =
-            ITEMS.register("dahaihangxing_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_DAHAIHANGXING =
+            ITEMS.register("music_disc_dahaihangxing", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.DAHAIHANGXING_SONG)
             ));
-    public static final DeferredItem<Item> HAOHANGE_DISC =
-            ITEMS.register("haohange_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_HAOHANGE =
+            ITEMS.register("music_disc_haohange", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.HAOHANGE_SONG)
             ));
-    public static final DeferredItem<Item> HAOYUNLAI_DISC =
-            ITEMS.register("haoyunlai_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_HAOYUNLAI =
+            ITEMS.register("music_disc_haoyunlai", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.HAOYUNLAI_SONG)
             ));
-    public static final DeferredItem<Item> JINSHEKUANGWU_DISC =
-            ITEMS.register("jinshekuangwu_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_JINSHEKUANGWU =
+            ITEMS.register("music_disc_jinshekuangwu", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.JINSHEKUANGWU_SONG)
             ));
-    public static final DeferredItem<Item> LANLINGWANG_DISC =
-            ITEMS.register("lanlingwang_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_LANLINGWANG =
+            ITEMS.register("music_disc_lanlingwang", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.LANLINGWANG_SONG)
             ));
-    public static final DeferredItem<Item> MINGTIANHUIGENGHAO_DISC =
-            ITEMS.register("mingtianhuigenghao_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_MINGTIANHUIGENGHAO =
+            ITEMS.register("music_disc_mingtianhuigenghao", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.MINGTIANHUIGENGHAO_SONG)
             ));
-    public static final DeferredItem<Item> OURWORKERHAVEPOWER_DISC =
-            ITEMS.register("ourworkerhavepower_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_OURWORKERHAVEPOWER =
+            ITEMS.register("music_disc_ourworkerhavepower", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.OURWORKERHAVEPOWER_SONG)
             ));
-    public static final DeferredItem<Item> SAIMA_DISC =
-            ITEMS.register("saima_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_SAIMA =
+            ITEMS.register("music_disc_saima", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.SAIMA_SONG)
             ));
-    public static final DeferredItem<Item> SHEHUIZHUYIHAO_DISC =
-            ITEMS.register("shehuizhuyihao_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_SHEHUIZHUYIHAO =
+            ITEMS.register("music_disc_shehuizhuyihao", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.SHEHUIZHUYIHAO_SONG)
             ));
-    public static final DeferredItem<Item> TONGTIANDADAO_DISC =
-            ITEMS.register("tongtiandadao_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_TONGTIANDADAO =
+            ITEMS.register("music_disc_tongtiandadao", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.TONGTIANDADAO_SONG)
             ));
-    public static final DeferredItem<Item> YOUJIDUI_DISC =
-            ITEMS.register("youjidui_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_YOUJIDUI =
+            ITEMS.register("music_disc_youjidui", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.YOUJIDUI_SONG)
             ));
-    public static final DeferredItem<Item> YUANFANGKEREN_DISC =
-            ITEMS.register("yuanfangkeren_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_YUANFANGKEREN =
+            ITEMS.register("music_disc_yuanfangkeren", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.YUANFANGKEREN_SONG)
             ));
-    public static final DeferredItem<Item> ZIJINGHUA_DISC =
-            ITEMS.register("zijinghua_disc", () -> new Item(new Item.Properties()
+    public static final DeferredItem<Item> MUSIC_DISC_ZIJINGHUA =
+            ITEMS.register("music_disc_zijinghua", () -> new Item(new Item.Properties()
                     .stacksTo(1)
                     .rarity(RARE)
                     .jukeboxPlayable(JukeboxSongs.ZIJINGHUA_SONG)

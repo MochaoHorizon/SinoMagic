@@ -1,7 +1,7 @@
 {
   "comparator_output": 15,
   "description": {
-    "translate": "jukebox_song.sinomagic.ourworkerhavepower"
+    "translate": "jukebox_song.sinomagic.ourworkerhavepower", "color": "gold"
   },
   "length_in_seconds": 111.0,
   "sound_event": "sinomagic:music.ourworkerhavepower"

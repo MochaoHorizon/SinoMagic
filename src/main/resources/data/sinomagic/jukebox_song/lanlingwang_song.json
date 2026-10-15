@@ -1,7 +1,7 @@
 {
   "comparator_output": 15,
   "description": {
-    "translate": "jukebox_song.sinomagic.lanlingwang"
+    "translate": "jukebox_song.sinomagic.lanlingwang", "color": "gold"
   },
   "length_in_seconds": 67.0,
   "sound_event": "sinomagic:music.lanlingwang"
