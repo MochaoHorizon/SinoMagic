@@ -82,7 +82,7 @@ public class Millstone extends Block implements EntityBlock {
                     return InteractionResult.SUCCESS;
                 }
             } else {
-                player.sendSystemMessage(Component.literal("这个物品磨不了"));
+                player.sendSystemMessage(Component.translatable("block.sinomagic.millstone.cannot_grind"));
                 return InteractionResult.FAIL;
             }
         }
