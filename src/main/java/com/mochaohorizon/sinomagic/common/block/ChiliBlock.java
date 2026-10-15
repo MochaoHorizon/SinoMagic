@@ -12,15 +12,16 @@ import net.minecraft.world.phys.shapes.CollisionContext;
 import net.minecraft.world.phys.shapes.VoxelShape;
 
 public class ChiliBlock extends CropBlock {
+    //形状高度与 blockstate 的 stage 映射一致：stage0=6px, stage1=8px, stage2=12px, stage3=14px
     private static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 4.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 5.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 10.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 11.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 12.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 13.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 13.0D, 16.0D),
-            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 14.0D, 16.0D)
+            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 6.0D, 16.0D),   //age 0 → stage0
+            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 6.0D, 16.0D),   //age 1 → stage0
+            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D),   //age 2 → stage1
+            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 8.0D, 16.0D),   //age 3 → stage1
+            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 12.0D, 16.0D),  //age 4 → stage2
+            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 12.0D, 16.0D),  //age 5 → stage2
+            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 12.0D, 16.0D),  //age 6 → stage2
+            Block.box(0.0D, 0.0D, 0.0D, 16.0D, 14.0D, 16.0D)   //age 7 → stage3 成熟
     };
 
     public ChiliBlock(BlockBehaviour.Properties properties) {

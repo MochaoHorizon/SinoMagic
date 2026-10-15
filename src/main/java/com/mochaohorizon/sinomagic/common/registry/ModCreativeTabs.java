@@ -61,6 +61,8 @@ public class ModCreativeTabs {
                         output.accept(ModItems.MILLSTONE.get());
                         output.accept(ModItems.VAT.get());
                         output.accept(ModItems.SHIT_BLOCK.get());
+                        output.accept(ModItems.WILD_SOYBEAN_PLANT.get());
+                        output.accept(ModItems.WILD_CHILI_PLANT.get());
 
                         //Music discs
                         output.accept(ModItems.MUSIC_DISC_BAINIAOCHAOFENG.get());

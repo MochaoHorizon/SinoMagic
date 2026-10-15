@@ -3,6 +3,7 @@ package com.mochaohorizon.sinomagic.common.registry;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Items;
 import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredItem;
@@ -31,9 +32,10 @@ public class ModItems {
     }
 
     //Simple items added to v1.0.0-人食五谷开发版
+    //大豆兼作食物与种子，用 ItemNameBlockItem 才能种下
     public static final Supplier<Item> SOYBEAN = ITEMS.registerItem(
             "soybean",
-            props -> new Item(props.food(FoodValues.SOYBEAN)),
+            props -> new ItemNameBlockItem(ModBlocks.SOYBEAN_PLANT.get(), props.food(FoodValues.SOYBEAN)),
             new Item.Properties()
     );
     public static final Supplier<Item> EDAMAME = ITEMS.registerItem(
@@ -158,14 +160,15 @@ public class ModItems {
             props -> new Item(props.food(FoodValues.DRIED_TOFU)),
             new Item.Properties()
     );
+    //黑豆、赤豆、绿豆同上
     public static final Supplier<Item> BLACK_BEAN = ITEMS.registerItem(
             "black_bean",
-            props -> new Item(props.food(FoodValues.BLACK_BEAN)),
+            props -> new ItemNameBlockItem(ModBlocks.BLACK_BEAN_PLANT.get(), props.food(FoodValues.BLACK_BEAN)),
             new Item.Properties()
     );
     public static final Supplier<Item> RED_BEAN = ITEMS.registerItem(
             "red_bean",
-            props -> new Item(props.food(FoodValues.RED_BEAN)),
+            props -> new ItemNameBlockItem(ModBlocks.RED_BEAN_PLANT.get(), props.food(FoodValues.RED_BEAN)),
             new Item.Properties()
     );
     public static final Supplier<Item> RED_BEAN_PASTE = ITEMS.registerItem(
@@ -175,7 +178,7 @@ public class ModItems {
     );
     public static final Supplier<Item> MUNG_BEAN = ITEMS.registerItem(
             "mung_bean",
-            props -> new Item(props.food(FoodValues.MUNG_BEAN)),
+            props -> new ItemNameBlockItem(ModBlocks.MUNG_BEAN_PLANT.get(), props.food(FoodValues.MUNG_BEAN)),
             new Item.Properties()
     );
     public static final Supplier<Item> MUNG_BEAN_PASTE = ITEMS.registerItem(
@@ -210,9 +213,10 @@ public class ModItems {
             Item::new,
             new Item.Properties()
     );
+    //辣椒种子，可种下辣椒植株
     public static final Supplier<Item> CHILI_SEED = ITEMS.registerItem(
             "chili_seed",
-            Item::new,
+            props -> new ItemNameBlockItem(ModBlocks.CHILI_PLANT.get(), props),
             new Item.Properties()
     );
 
@@ -356,6 +360,12 @@ public class ModItems {
             ));
     public static final DeferredItem<Item> SHIT_BLOCK =
             ITEMS.register("shit_block", () -> new BlockItem(ModBlocks.SHIT_BLOCK.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> WILD_SOYBEAN_PLANT =
+            ITEMS.register("wild_soybean_plant", () -> new BlockItem(ModBlocks.WILD_SOYBEAN_PLANT.get(), new Item.Properties()
+            ));
+    public static final DeferredItem<Item> WILD_CHILI_PLANT =
+            ITEMS.register("wild_chili_plant", () -> new BlockItem(ModBlocks.WILD_CHILI_PLANT.get(), new Item.Properties()
             ));
 
     public static void register(IEventBus eventBus){

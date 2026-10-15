@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "sinomagic:block/wild_chili_plant"
+  }
+}

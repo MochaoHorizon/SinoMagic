@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "sinomagic:item/beijingjinshanshang_disc"
+    "layer0": "sinomagic:item/mantou_red_bean"
   }
 }
