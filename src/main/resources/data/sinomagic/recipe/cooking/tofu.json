@@ -3,10 +3,10 @@
   "experience": 0.35,
   "ingredients": [
     {
-      "item": "sinomagic:soyamilk_bottle"
+      "item": "sinomagic:soy_milk_bottle"
     },
     {
-      "item": "sinomagic:luzhi_bottle"
+      "item": "sinomagic:marinade_bottle"
     }
   ],
   "recipe_book_tab": "misc",

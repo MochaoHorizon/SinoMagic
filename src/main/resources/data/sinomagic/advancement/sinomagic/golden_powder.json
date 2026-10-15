@@ -1,11 +1,11 @@
 {
-  "parent": "chmagic:soybean",
+  "parent": "sinomagic:soybean",
   "criteria": {
     "golden_powder": {
       "trigger": "inventory_changed",
       "conditions": {
         "items": {
-          "items": "chmagic:dadou_powder"
+          "items": "sinomagic:soybean_powder"
         }
       }
     }
@@ -13,16 +13,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.description.chmagic.golden_powder"
+      "translate": "advancement.description.sinomagic.golden_powder"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "chmagic:dadou_powder"
+      "id": "sinomagic:soybean_powder"
     },
     "title": {
-      "translate": "advancement.title.chmagic.golden_powder"
+      "translate": "advancement.title.sinomagic.golden_powder"
     }
   },
   "requirements": [

@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "sinomagic:red_bean"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 4,
+        "id": "sinomagic:red_bean_paste"
+      }
+    }
+  ],
+  "tool": {
+    "type": "#pickaxe",
+    "action": "pickaxe_dig"
+  }
+}

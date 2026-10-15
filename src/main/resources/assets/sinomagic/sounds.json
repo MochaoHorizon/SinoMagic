@@ -1,0 +1,162 @@
+{
+  "music.bainiaochaofeng": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/bainiaochaofeng",
+        "stream": true
+      }
+    ]
+  },
+  "music.baoweihuanghe": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/baoweihuanghe",
+        "stream": true
+      }
+    ]
+  },
+  "music.beijingjinshanshang": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/beijingjinshanshang",
+        "stream": true
+      }
+    ]
+  },
+  "music.bubugao": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/bubugao",
+        "stream": true
+      }
+    ]
+  },
+  "music.chinfengwuyi": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/chinfengwuyi",
+        "stream": true
+      }
+    ]
+  },
+  "music.dadao": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/dadao",
+        "stream": true
+      }
+    ]
+  },
+  "music.dadongbei": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/dadongbei",
+        "stream": true
+      }
+    ]
+  },
+  "music.dahaihangxing": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/dahaihangxing",
+        "stream": true
+      }
+    ]
+  },
+  "music.haohange": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/haohange",
+        "stream": true
+      }
+    ]
+  },
+  "music.haoyunlai": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/haoyunlai",
+        "stream": true
+      }
+    ]
+  },
+  "music.jinshekuangwu": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/jinshekuangwu",
+        "stream": true
+      }
+    ]
+  },
+  "music.lanlingwang": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/lanlingwang",
+        "stream": true
+      }
+    ]
+  },
+  "music.mingtianhuigenghao": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/mingtianhuigenghao",
+        "stream": true
+      }
+    ]
+  },
+  "music.ourworkerhavepower": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/ourworkerhavepower",
+        "stream": true
+      }
+    ]
+  },
+  "music.saima": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/saima",
+        "stream": true
+      }
+    ]
+  },
+  "music.shehuizhuyihao": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/shehuizhuyihao",
+        "stream": true
+      }
+    ]
+  },
+  "music.tongtiandadao": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/tongtiandadao",
+        "stream": true
+      }
+    ]
+  },
+  "music.youjidui": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/youjidui",
+        "stream": true
+      }
+    ]
+  },
+  "music.yuanfangkeren": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/yuanfangkeren",
+        "stream": true
+      }
+    ]
+  },
+  "music.zijinghua": {
+    "sounds": [
+      {
+        "name": "sinomagic:record/zijinghua",
+        "stream": true
+      }
+    ]
+  }
+}

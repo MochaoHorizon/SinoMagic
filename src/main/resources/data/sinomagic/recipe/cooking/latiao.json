@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 2.0,
+  "ingredients": [
+    {
+      "item": "sinomagic:tofu_skin"
+    },
+    {
+      "item": "sinomagic:chili"
+    },
+    {
+      "item": "sinomagic:soybean_oil_bottle"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 2,
+    "id": "sinomagic:latiao"
+  }
+}

@@ -1,11 +1,11 @@
 {
-  "parent": "chmagic:soild_soyamilk",
+  "parent": "sinomagic:soild_soyamilk",
   "criteria": {
     "stimulate_appetite": {
       "trigger": "inventory_changed",
       "conditions": {
         "items": {
-          "items": "chmagic:furu"
+          "items": "sinomagic:fermented_bean_curd"
         }
       }
     }
@@ -13,16 +13,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.description.chmagic.stimulate_appetite"
+      "translate": "advancement.description.sinomagic.stimulate_appetite"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "chmagic:furu"
+      "id": "sinomagic:fermented_bean_curd"
     },
     "title": {
-      "translate": "advancement.title.chmagic.stimulate_appetite"
+      "translate": "advancement.title.sinomagic.stimulate_appetite"
     }
   },
   "requirements": [

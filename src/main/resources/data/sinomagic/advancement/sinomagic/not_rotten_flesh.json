@@ -1,11 +1,11 @@
 {
-  "parent": "chmagic:soild_soyamilk",
+  "parent": "sinomagic:soild_soyamilk",
   "criteria": {
     "not_rotten_flesh": {
       "trigger": "inventory_changed",
       "conditions": {
         "items": {
-          "items": "chmagic:stinky_tofu"
+          "items": "sinomagic:stinky_tofu"
         }
       }
     }
@@ -13,16 +13,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.description.chmagic.not_rotten_flesh"
+      "translate": "advancement.description.sinomagic.not_rotten_flesh"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "chmagic:stinky_tofu"
+      "id": "sinomagic:stinky_tofu"
     },
     "title": {
-      "translate": "advancement.title.chmagic.not_rotten_flesh"
+      "translate": "advancement.title.sinomagic.not_rotten_flesh"
     }
   },
   "requirements": [

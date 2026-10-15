@@ -1,11 +1,11 @@
 {
-  "parent": "chmagic:ferment_everything",
+  "parent": "sinomagic:ferment_everything",
   "criteria": {
     "buy_some_soy": {
       "trigger": "inventory_changed",
       "conditions": {
         "items": {
-          "items": "chmagic:soy_bottle"
+          "items": "sinomagic:soy_sauce_bottle"
         }
       }
     }
@@ -13,16 +13,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.description.chmagic.buy_some_soy"
+      "translate": "advancement.description.sinomagic.buy_some_soy"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "chmagic:soy_bottle"
+      "id": "sinomagic:soy_sauce_bottle"
     },
     "title": {
-      "translate": "advancement.title.chmagic.buy_some_soy"
+      "translate": "advancement.title.sinomagic.buy_some_soy"
     }
   },
   "requirements": [

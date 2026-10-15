@@ -1,11 +1,11 @@
 {
-  "parent": "chmagic:source_of_all_food",
+  "parent": "sinomagic:source_of_all_food",
   "criteria": {
     "soybean": {
       "trigger": "inventory_changed",
       "conditions": {
         "items": {
-          "items": "chmagic:doujia"
+          "items": "sinomagic:soybean_pod"
         }
       }
     }
@@ -13,16 +13,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.description.chmagic.soybean"
+      "translate": "advancement.description.sinomagic.soybean"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "chmagic:dadou"
+      "id": "sinomagic:soybean"
     },
     "title": {
-      "translate": "advancement.title.chmagic.soybean"
+      "translate": "advancement.title.sinomagic.soybean"
     }
   },
   "requirements": [

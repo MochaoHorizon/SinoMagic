@@ -1,0 +1,14 @@
+{
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "sinomagic:red_bean"
+    }
+  ],
+  "processing_time": 150,
+  "results": [
+    {
+      "id": "sinomagic:red_bean_paste"
+    }
+  ]
+}

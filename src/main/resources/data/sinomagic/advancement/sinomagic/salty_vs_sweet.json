@@ -1,11 +1,11 @@
 {
-  "parent": "chmagic:soyamilk",
+  "parent": "sinomagic:soyamilk",
   "criteria": {
     "salty_vs_sweet": {
       "trigger": "inventory_changed",
       "conditions": {
         "items": {
-          "items": ["chmagic:salty_tofu_curd", "chmagic:sweet_tofu_curd"]
+          "items": ["sinomagic:salty_tofu_pudding", "sinomagic:sweet_tofu_pudding"]
         }
       }
     }
@@ -13,16 +13,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.description.chmagic.salty_vs_sweet"
+      "translate": "advancement.description.sinomagic.salty_vs_sweet"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "chmagic:salty_tofu_curd"
+      "id": "sinomagic:salty_tofu_pudding"
     },
     "title": {
-      "translate": "advancement.title.chmagic.salty_vs_sweet"
+      "translate": "advancement.title.sinomagic.salty_vs_sweet"
     }
   },
   "requirements": [

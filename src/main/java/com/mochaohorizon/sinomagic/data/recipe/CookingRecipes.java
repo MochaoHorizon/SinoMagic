@@ -1,6 +1,6 @@
 package com.mochaohorizon.sinomagic.data.recipe;
 
-import com.mochaohorizon.sinomagic.common.registry.SinoMagicItems;
+import com.mochaohorizon.sinomagic.common.registry.ModItems;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.world.item.Items;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
@@ -23,53 +23,53 @@ public class CookingRecipes
 	}
 
 	private static void cookMiscellaneous(RecipeOutput output) {
-	    CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.SOYAMILK_BOTTLE.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.GLASS_BOTTLE)
-				.addIngredient(SinoMagicItems.DADOU_POWDER.get())
+	    CookingPotRecipeBuilder.cookingPotRecipe(ModItems.SOY_MILK_BOTTLE.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.GLASS_BOTTLE)
+				.addIngredient(ModItems.SOYBEAN_POWDER.get())
 				.addIngredient(Items.WATER_BUCKET)
-				.unlockedByAnyIngredient(SinoMagicItems.DADOU_POWDER.get())
+				.unlockedByAnyIngredient(ModItems.SOYBEAN_POWDER.get())
 				.setRecipeBookTab(CookingPotRecipeBookTab.DRINKS)
-				.build(output);
-		CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.TOFU.get(), 2, NORMAL_COOKING, SMALL_EXP)
-				.addIngredient(SinoMagicItems.SOYAMILK_BOTTLE.get())
-				.addIngredient(SinoMagicItems.LUZHI_BOTTLE.get())
-				.unlockedByAnyIngredient(SinoMagicItems.SOYAMILK_BOTTLE.get(), SinoMagicItems.LUZHI_BOTTLE.get())
+				.save(output);
+		CookingPotRecipeBuilder.cookingPotRecipe(ModItems.TOFU.get(), 2, NORMAL_COOKING, SMALL_EXP)
+				.addIngredient(ModItems.SOY_MILK_BOTTLE.get())
+				.addIngredient(ModItems.MARINADE_BOTTLE.get())
+				.unlockedByAnyIngredient(ModItems.SOY_MILK_BOTTLE.get(), ModItems.MARINADE_BOTTLE.get())
 				.setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-				.build(output);
-		CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.LUZHI_BOTTLE.get(), 1, FAST_COOKING, MEDIUM_EXP, Items.GLASS_BOTTLE)
+				.save(output);
+		CookingPotRecipeBuilder.cookingPotRecipe(ModItems.MARINADE_BOTTLE.get(), 1, FAST_COOKING, MEDIUM_EXP, Items.GLASS_BOTTLE)
 				.addIngredient(Items.WATER_BUCKET)
 				.unlockedByAnyIngredient(Items.WATER_BUCKET)
 				.setRecipeBookTab(CookingPotRecipeBookTab.MISC)
-				.build(output);
-		CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.MOULD_TOFU.get(), 1, NORMAL_COOKING, SMALL_EXP)
-				.addIngredient(SinoMagicItems.YEAST.get())
-				.addIngredient(SinoMagicItems.TOFU.get())
-				.unlockedByAnyIngredient(SinoMagicItems.TOFU.get(), SinoMagicItems.YEAST.get())
+				.save(output);
+		CookingPotRecipeBuilder.cookingPotRecipe(ModItems.HAIRY_TOFU.get(), 1, NORMAL_COOKING, SMALL_EXP)
+				.addIngredient(ModItems.YEAST.get())
+				.addIngredient(ModItems.TOFU.get())
+				.unlockedByAnyIngredient(ModItems.TOFU.get(), ModItems.YEAST.get())
 				.setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
-				.build(output);
-	    CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.FURU.get(), 2, NORMAL_COOKING, MEDIUM_EXP)
-				.addIngredient(SinoMagicItems.MOULD_TOFU.get())
-				.addIngredient(SinoMagicItems.SALT.get())
-				.unlockedByAnyIngredient(SinoMagicItems.MOULD_TOFU.get())
+				.save(output);
+	    CookingPotRecipeBuilder.cookingPotRecipe(ModItems.FERMENTED_BEAN_CURD.get(), 2, NORMAL_COOKING, MEDIUM_EXP)
+				.addIngredient(ModItems.HAIRY_TOFU.get())
+				.addIngredient(ModItems.SALT.get())
+				.unlockedByAnyIngredient(ModItems.HAIRY_TOFU.get())
 				.setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
-				.build(output);
-	    CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.DOUPI.get(), 2, NORMAL_COOKING, MEDIUM_EXP)
-				.addIngredient(SinoMagicItems.SOYAMILK_BOTTLE.get())
-				.unlockedByAnyIngredient(SinoMagicItems.SOYAMILK_BOTTLE.get(), SinoMagicItems.TOFU.get())
+				.save(output);
+	    CookingPotRecipeBuilder.cookingPotRecipe(ModItems.TOFU_SKIN.get(), 2, NORMAL_COOKING, MEDIUM_EXP)
+				.addIngredient(ModItems.SOY_MILK_BOTTLE.get())
+				.unlockedByAnyIngredient(ModItems.SOY_MILK_BOTTLE.get(), ModItems.TOFU.get())
 				.setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
-				.build(output);
-	    CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.SPICY_GLUTEN.get(), 2, SLOW_COOKING, LARGE_EXP)
-				.addIngredient(SinoMagicItems.DOUPI.get())
-				.addIngredient(SinoMagicItems.CHILI.get())
-				.addIngredient(SinoMagicItems.DADOU_OIL_BOTTLE.get())
-				.unlockedByAnyIngredient(SinoMagicItems.DOUPI.get())
+				.save(output);
+	    CookingPotRecipeBuilder.cookingPotRecipe(ModItems.LATIAO.get(), 2, SLOW_COOKING, LARGE_EXP)
+				.addIngredient(ModItems.TOFU_SKIN.get())
+				.addIngredient(ModItems.CHILI.get())
+				.addIngredient(ModItems.SOYBEAN_OIL_BOTTLE.get())
+				.unlockedByAnyIngredient(ModItems.TOFU_SKIN.get())
 				.setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
-				.build(output);
-	    CookingPotRecipeBuilder.cookingPotRecipe(SinoMagicItems.DRIED_TOFU.get(), 2, SLOW_COOKING, LARGE_EXP)
-				.addIngredient(SinoMagicItems.SOYAMILK_BOTTLE.get())
-				.addIngredient(SinoMagicItems.DADOU_OIL_BOTTLE.get())
-				.addIngredient(SinoMagicItems.LUZHI_BOTTLE.get())
-				.unlockedByAnyIngredient(SinoMagicItems.SOYAMILK_BOTTLE.get(), SinoMagicItems.SPICY_GLUTEN.get())
+				.save(output);
+	    CookingPotRecipeBuilder.cookingPotRecipe(ModItems.DRIED_TOFU.get(), 2, SLOW_COOKING, LARGE_EXP)
+				.addIngredient(ModItems.SOY_MILK_BOTTLE.get())
+				.addIngredient(ModItems.SOYBEAN_OIL_BOTTLE.get())
+				.addIngredient(ModItems.MARINADE_BOTTLE.get())
+				.unlockedByAnyIngredient(ModItems.SOY_MILK_BOTTLE.get(), ModItems.LATIAO.get())
 				.setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
-				.build(output);
+				.save(output);
    }
 }

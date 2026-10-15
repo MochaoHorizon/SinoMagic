@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "minecraft:item/huajuan"
+    "layer0": "sinomagic:item/huajuan"
   }
 }

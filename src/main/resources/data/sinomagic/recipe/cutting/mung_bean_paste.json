@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "sinomagic:mung_bean"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 4,
+        "id": "sinomagic:mung_bean_paste"
+      }
+    }
+  ],
+  "tool": {
+    "type": "#pickaxe",
+    "action": "pickaxe_dig"
+  }
+}

@@ -1,6 +1,6 @@
 package com.mochaohorizon.sinomagic.common.block;
 
-import com.mochaohorizon.sinomagic.common.registry.SinoMagicItems;
+import com.mochaohorizon.sinomagic.common.registry.ModItems;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.ItemLike;
@@ -30,7 +30,7 @@ public class ChiliBlock extends CropBlock {
     //种植用辣椒种子，掉落辣椒由战利品表管理
     @Override
     protected ItemLike getBaseSeedId() {
-        return SinoMagicItems.CHILI_SEED.get();
+        return ModItems.CHILI_SEED.get();
     }
 
     @Override

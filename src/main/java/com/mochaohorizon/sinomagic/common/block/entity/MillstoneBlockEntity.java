@@ -1,7 +1,7 @@
 package com.mochaohorizon.sinomagic.common.block.entity;
 
 import com.mochaohorizon.sinomagic.common.crafting.MillstoneRecipe;
-import com.mochaohorizon.sinomagic.common.registry.SinoMagicRecipeTypes;
+import com.mochaohorizon.sinomagic.common.registry.ModRecipeTypes;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.nbt.CompoundTag;
@@ -27,7 +27,7 @@ import software.bernie.geckolib.util.GeckoLibUtil;
 
 import java.util.Optional;
 
-import static com.mochaohorizon.sinomagic.common.registry.SinoMagicBlockEntity.Millstone_BlockEntity;
+import static com.mochaohorizon.sinomagic.common.registry.ModBlockEntities.Millstone_BlockEntity;
 
 public class MillstoneBlockEntity extends BlockEntity implements GeoBlockEntity {
 
@@ -72,7 +72,7 @@ public class MillstoneBlockEntity extends BlockEntity implements GeoBlockEntity 
 
         RecipeManager manager = level.getRecipeManager();
         SingleRecipeInput input = new SingleRecipeInput(stack);
-        Optional<RecipeHolder<MillstoneRecipe>> optional = manager.getRecipeFor(SinoMagicRecipeTypes.MILLSTONERECIPE.get(), input, level);
+        Optional<RecipeHolder<MillstoneRecipe>> optional = manager.getRecipeFor(ModRecipeTypes.MILLSTONERECIPE.get(), input, level);
         if (optional.isPresent()) {
             this.nowRecipe = optional.get().value();
             this.nowRecipeId = this.nowRecipe.getId();

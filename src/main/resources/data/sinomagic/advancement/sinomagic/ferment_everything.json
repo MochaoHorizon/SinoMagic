@@ -1,28 +1,31 @@
 {
-  "parent": "chmagic:soybean",
+  "parent": "sinomagic:soybean",
   "criteria": {
     "ferment_everything": {
       "trigger": "placed_block",
       "conditions": {
-        "location": {
-          "tool": "chmagic:dagang"
-        }
+        "location": [
+          {
+            "block": "sinomagic:vat",
+            "condition": "minecraft:block_state_property"
+          }
+        ]
       }
     }
   },
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.description.chmagic.ferment_everything"
+      "translate": "advancement.description.sinomagic.ferment_everything"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "chmagic:dagang"
+      "id": "sinomagic:vat"
     },
     "title": {
-      "translate": "advancement.title.chmagic.ferment_everything"
+      "translate": "advancement.title.sinomagic.ferment_everything"
     }
   },
   "requirements": [

@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "sinomagic:dried_soybean_pod"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 8,
+        "id": "sinomagic:soybean"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

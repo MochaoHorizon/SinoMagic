@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "jukebox_song.sinomagic.dadao"
+  },
+  "length_in_seconds": 84.0,
+  "sound_event": "sinomagic:music.dadao"
+}

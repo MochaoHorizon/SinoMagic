@@ -1,12 +1,12 @@
 package com.mochaohorizon.sinomagic.data.recipe;
 
+import com.mochaohorizon.sinomagic.common.registry.ModItems;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.neoforged.neoforge.common.ItemAbilities;
 import vectorwing.farmersdelight.common.crafting.ingredient.ItemAbilityIngredient;
 import vectorwing.farmersdelight.common.tag.CommonTags;
 import vectorwing.farmersdelight.data.builder.CuttingBoardRecipeBuilder;
-import com.mochaohorizon.sinomagic.common.registry.SinoMagicItems;
 
 public class CuttingRecipes
 {
@@ -32,25 +32,25 @@ public class CuttingRecipes
 	}
 
 	private static void salvagingMinerals(RecipeOutput output) {
-		CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(SinoMagicItems.DADOU.get()),
-				new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG).toVanilla(), SinoMagicItems.DADOU_POWDER.get(), 4)
-				.build(output);
-		CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(SinoMagicItems.REDBEANSHRUB.get()),
-				new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG).toVanilla(), SinoMagicItems.REDBEANSHRUB_POWDER.get(), 2)
-				.build(output);
-		CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(SinoMagicItems.GREENBEAN.get()),
-				new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG).toVanilla(), SinoMagicItems.GREENBEAN_POWDER.get(), 2)
-				.build(output);
+		CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.SOYBEAN.get()),
+				new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG).toVanilla(), ModItems.SOYBEAN_POWDER.get(), 4)
+				.save(output);
+		CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.RED_BEAN.get()),
+				new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG).toVanilla(), ModItems.RED_BEAN_PASTE.get(), 2)
+				.save(output);
+		CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.MUNG_BEAN.get()),
+				new ItemAbilityIngredient(ItemAbilities.PICKAXE_DIG).toVanilla(), ModItems.MUNG_BEAN_PASTE.get(), 2)
+				.save(output);
 	}
 
 	private static void cuttingVegetables(RecipeOutput output) {
-		CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(SinoMagicItems.DRIED_DOUJIA.get()),
-		    Ingredient.of(CommonTags.TOOLS_KNIFE),
-	    	SinoMagicItems.DADOU.get(), 8)
-	        .build(output);
-	    CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(SinoMagicItems.DOUJIA.get()),
-		    Ingredient.of(CommonTags.TOOLS_KNIFE),
-	    	SinoMagicItems.MAODOU.get(), 8)
-	        .build(output);
+		CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.DRIED_SOYBEAN_POD.get()),
+		    Ingredient.of(CommonTags.Items.TOOLS_KNIFE),
+	    	ModItems.SOYBEAN.get(), 8)
+	        .save(output);
+	    CuttingBoardRecipeBuilder.cuttingRecipe(Ingredient.of(ModItems.SOYBEAN_POD.get()),
+		    Ingredient.of(CommonTags.Items.TOOLS_KNIFE),
+	    	ModItems.EDAMAME.get(), 8)
+	        .save(output);
 	}
 }

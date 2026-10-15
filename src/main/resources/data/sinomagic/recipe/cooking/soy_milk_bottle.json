@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "sinomagic:soybean_powder"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "recipe_book_tab": "drink",
+  "result": {
+    "id": "sinomagic:soy_milk_bottle"
+  }
+}

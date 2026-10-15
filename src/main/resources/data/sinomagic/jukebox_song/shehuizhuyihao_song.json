@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "jukebox_song.sinomagic.shehuizhuyihao"
+  },
+  "length_in_seconds": 80.0,
+  "sound_event": "sinomagic:music.shehuizhuyihao"
+}

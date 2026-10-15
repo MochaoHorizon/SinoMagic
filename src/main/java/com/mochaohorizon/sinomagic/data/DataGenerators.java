@@ -7,7 +7,6 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
 import net.neoforged.bus.api.SubscribeEvent;
 import net.neoforged.fml.common.EventBusSubscriber;
-import net.neoforged.neoforge.common.data.ExistingFileHelper;
 import net.neoforged.neoforge.data.event.GatherDataEvent;
 
 import java.util.concurrent.CompletableFuture;
@@ -18,15 +17,10 @@ public class DataGenerators {
     @SubscribeEvent
     public static void gatherData(GatherDataEvent event){
         DataGenerator generator = event.getGenerator();
-        PackOutput packOutput = generator.getPackOutput();
         PackOutput output = generator.getPackOutput();
-        ExistingFileHelper existingFileHelper = event.getExistingFileHelper();
         CompletableFuture<HolderLookup.Provider> lookupProvider = event.getLookupProvider();
 
-        generator.addProvider(
-                event.includeClient(),
-                new ItemModels(packOutput, existingFileHelper)
-        );
+        //物品模型已在 assets/sinomagic/models/item/ 手写维护，不再走 datagen
 
         //被com.~.data.recipe.MillstoneRecipes使用
         generator.addProvider(

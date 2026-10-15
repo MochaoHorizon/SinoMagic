@@ -1,16 +1,17 @@
 #Sorry, DMHR114514's English is very average, I learn mostly written English. :)
 #I should say thanks for simibubi, I learn much on mods.toml of create. qwq
 modLoader="javafml"
-loaderVersion="[0,)"
+loaderVersion="[1,)"
 license="MIT"
 
 [[mods]]
 modId="sinomagic"
-version="1.0.0"
+version="0.1.2"
 displayName="SinoMagic"
 displayURL="https://github.com/MochaoHorizon/SinoMagic"
+# TODO: no icon.png yet. Drop one into src/main/resources/ and uncomment.
+#logoFile="icon.png"
 authors="MochaoHorizon"
-logoflie="icon.png"
 credits="一只带明球(DMHR114514), 荧惑启明(ExTetRagon), 克劳德(Cloud1232534), 之一"
 description="七月流火，九月授衣，春日载阳，有鸣仓庚"
 
@@ -19,13 +20,14 @@ config="sinomagic.mixins.json"
 
 #These are things what sinomagic have to use.
 #Although Farmer's Delight is the dependencies of sinomagic, but sinomagic also have many content, at least on the plan. XD
+
 [[dependencies."sinomagic"]]
-modId="minecraft"
+    modId="minecraft"
     type="required"
     versionRange="[1.21.1]"
     ordering="NONE"
     side="BOTH"
-    
+
 [[dependencies."sinomagic"]]
     modId="neoforge"
     type="required"
@@ -36,7 +38,7 @@ modId="minecraft"
 [[dependencies."sinomagic"]]
     modId="farmersdelight"
     type="required"
-    versionRange="[1.2.4a,)"
+    versionRange="[1.3.2,)"
     ordering="NONE"
     side="BOTH"
 

@@ -1,0 +1,7 @@
+{
+  "parent": "sinomagic:block/crop",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "cross": "sinomagic:block/soybean_plant_stage1"
+  }
+}

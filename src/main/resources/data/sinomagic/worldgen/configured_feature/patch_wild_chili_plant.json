@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_patch",
+  "config": {
+    "tries": 50,
+    "xz_spread": 7,
+    "y_spread": 3,
+    "feature": {
+      "feature": "sinomagic:wild_chili_plant",
+      "placement": []
+    }
+  }
+}

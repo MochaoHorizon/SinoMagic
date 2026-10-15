@@ -1,11 +1,11 @@
 {
-  "parent": "chmagic:soyamilk",
+  "parent": "sinomagic:soyamilk",
   "criteria": {
     "soild_soyamilk": {
       "trigger": "inventory_changed",
       "conditions": {
         "items": {
-          "items": "chmagic:tofu"
+          "items": "sinomagic:tofu"
         }
       }
     }
@@ -13,16 +13,16 @@
   "display": {
     "announce_to_chat": true,
     "description": {
-      "translate": "advancement.description.chmagic.soild_soyamilk"
+      "translate": "advancement.description.sinomagic.soild_soyamilk"
     },
     "frame": "task",
     "hidden": false,
     "icon": {
       "count": 1,
-      "id": "chmagic:tofu"
+      "id": "sinomagic:tofu"
     },
     "title": {
-      "translate": "advancement.title.chmagic.soild_soyamilk"
+      "translate": "advancement.title.sinomagic.soild_soyamilk"
     }
   },
   "requirements": [

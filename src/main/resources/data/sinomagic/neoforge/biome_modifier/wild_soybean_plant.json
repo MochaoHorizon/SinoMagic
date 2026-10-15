@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#sinomagic:can_patch_wild_soybean_plant",
+  "features": "sinomagic:patch_wild_soybean_plant",
+  "step": "vegetal_decoration"
+}

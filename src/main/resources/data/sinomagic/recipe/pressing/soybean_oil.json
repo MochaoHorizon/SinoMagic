@@ -1,0 +1,17 @@
+{
+  "type": "create:pressing",
+  "ingredients": [
+    {
+      "item": "sinomagic:soybean"
+    }
+  ],
+  "results": [
+    {
+      "id": "sinomagic:soybean_oil",
+      "amount": 100
+    },
+    {
+      "id": "sinomagic:soybean_meal"
+    }
+  ]
+}

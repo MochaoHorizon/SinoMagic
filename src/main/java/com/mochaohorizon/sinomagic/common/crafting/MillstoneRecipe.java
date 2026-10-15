@@ -1,7 +1,7 @@
 package com.mochaohorizon.sinomagic.common.crafting;
 
-import com.mochaohorizon.sinomagic.common.registry.SinoMagicRecipeTypes;
-import com.mochaohorizon.sinomagic.common.registry.SinoMagicSerializer;
+import com.mochaohorizon.sinomagic.common.registry.ModRecipeTypes;
+import com.mochaohorizon.sinomagic.common.registry.ModSerializers;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
 import net.minecraft.resources.ResourceLocation;
@@ -57,12 +57,12 @@ public class MillstoneRecipe implements Recipe<SingleRecipeInput> {
     }
 
     public RecipeType<?> getType() {
-        return SinoMagicRecipeTypes.MILLSTONERECIPE.get();
+        return ModRecipeTypes.MILLSTONERECIPE.get();
     }
 
     @Override
     public RecipeSerializer<?> getSerializer() {
-        return SinoMagicSerializer.MILLSTONESERIALIZER.get();
+        return ModSerializers.MILLSTONESERIALIZER.get();
     }
 
     //自定义.get()

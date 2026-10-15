@@ -1,7 +1,0 @@
-{
-  "parent": "sinomagic:block/crop",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "cross": "sinomagic/block/planted_dadou_2"
-  }
-}

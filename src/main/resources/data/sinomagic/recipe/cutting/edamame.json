@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "sinomagic:soybean_pod"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 8,
+        "id": "sinomagic:edamame"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

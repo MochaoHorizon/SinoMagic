@@ -1,0 +1,8 @@
+{
+  "comparator_output": 15,
+  "description": {
+    "translate": "jukebox_song.sinomagic.bubugao"
+  },
+  "length_in_seconds": 170.0,
+  "sound_event": "sinomagic:music.bubugao"
+}
