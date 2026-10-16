@@ -2,10 +2,12 @@
   "type": "minecraft:smoking",
   "group": "",
   "category": "food",
-  "experience": 5,
-  "cookingtime": 160,
-  "ingredient": "tofu",
+  "experience": 0.35,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "sinomagic:tofu"
+  },
   "result": {
-    "id": "baked_tofu"
+    "id": "sinomagic:baked_tofu"
   }
 }

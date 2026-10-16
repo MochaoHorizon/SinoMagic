@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chili": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sinomagic:chili"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sinomagic:crafting/chili_seed"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chili"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sinomagic:crafting/chili_seed"
+    ]
+  }
+}

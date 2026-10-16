@@ -1,0 +1,14 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 4,
+    "id": "sinomagic:salt"
+  }
+}

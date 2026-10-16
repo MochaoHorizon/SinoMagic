@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_tofu": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sinomagic:tofu"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sinomagic:crafting/frozen_tofu"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_tofu"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sinomagic:crafting/frozen_tofu"
+    ]
+  }
+}

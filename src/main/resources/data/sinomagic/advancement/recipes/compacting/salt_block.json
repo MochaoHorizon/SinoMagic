@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_salt": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sinomagic:salt"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sinomagic:compacting/salt_block"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_salt"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sinomagic:compacting/salt_block"
+    ]
+  }
+}

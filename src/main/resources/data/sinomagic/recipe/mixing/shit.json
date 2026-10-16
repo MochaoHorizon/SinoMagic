@@ -1,19 +1,25 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
   "type": "create:mixing",
-  "heat_requirement": "heated",
   "ingredients": [
     {
-      "item": "dried_shit"
+      "item": "sinomagic:dried_shit"
     },
     {
-      "id": "minecraft:water",
-      "amount": 800
+      "type": "neoforge:single",
+      "fluid": "minecraft:water",
+      "amount": 250
     }
   ],
   "results": [
     {
       "id": "sinomagic:shit",
-      "amount": 1000
+      "amount": 250
     }
   ]
 }

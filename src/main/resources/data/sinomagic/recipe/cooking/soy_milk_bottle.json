@@ -9,7 +9,7 @@
       "item": "minecraft:water_bucket"
     }
   ],
-  "recipe_book_tab": "drink",
+  "recipe_book_tab": "drinks",
   "result": {
     "id": "sinomagic:soy_milk_bottle"
   }

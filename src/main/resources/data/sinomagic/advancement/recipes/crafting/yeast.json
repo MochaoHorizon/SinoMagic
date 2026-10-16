@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_yeast": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sinomagic:yeast"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sinomagic:crafting/yeast"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_yeast"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sinomagic:crafting/yeast"
+    ]
+  }
+}

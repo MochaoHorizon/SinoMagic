@@ -1,0 +1,6 @@
+{
+  "type": "neoforge:add_features",
+  "biomes": "#sinomagic:can_patch_salt_lake",
+  "features": "sinomagic:salt_lake",
+  "step": "underground_ores"
+}

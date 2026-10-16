@@ -14,7 +14,7 @@ public class ModSerializers {
             DeferredRegister.create(Registries.RECIPE_SERIALIZER, SinoMagic.MOD_ID);
 
     public static final Supplier<RecipeSerializer<?>> MILLSTONESERIALIZER =
-            RECIPE_SERIALIZERS.register("millstone_serializer", MillstoneSerializer::new);
+            RECIPE_SERIALIZERS.register("millstone", MillstoneSerializer::new);
 
     public static void register(IEventBus eventBus) {
         RECIPE_SERIALIZERS.register(eventBus);

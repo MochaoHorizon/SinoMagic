@@ -4,21 +4,18 @@ import com.mochaohorizon.sinomagic.registry.ModRecipeTypes;
 import com.mochaohorizon.sinomagic.registry.ModSerializers;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.NonNullList;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.Level;
 
 public class MillstoneRecipe implements Recipe<SingleRecipeInput> {
     //配方类
-    private final ResourceLocation id;
     private final Ingredient ingredient;
     private final int ingredientCount;
     private final int processTime;
     private final ItemStack result;
 
-    public MillstoneRecipe(ResourceLocation id, Ingredient ingredient, int ingredientCount, int processTime, ItemStack result) {
-        this.id = id;
+    public MillstoneRecipe(Ingredient ingredient, int ingredientCount, int processTime, ItemStack result) {
         this.ingredient = ingredient;
         this.ingredientCount =ingredientCount;
         this.processTime = processTime;
@@ -30,10 +27,6 @@ public class MillstoneRecipe implements Recipe<SingleRecipeInput> {
         NonNullList<Ingredient> list = NonNullList.create();
         list.add(this.ingredient);
         return list;
-    }
-
-    public ResourceLocation getId() {
-        return id;
     }
 
     @Override

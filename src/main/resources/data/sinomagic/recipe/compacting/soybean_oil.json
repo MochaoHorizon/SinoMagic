@@ -1,0 +1,24 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:compacting",
+  "heat_requirement": "heated",
+  "ingredients": [
+    {
+      "item": "sinomagic:soybean"
+    }
+  ],
+  "results": [
+    {
+      "id": "sinomagic:soybean_oil",
+      "amount": 100
+    },
+    {
+      "id": "sinomagic:soybean_meal"
+    }
+  ]
+}

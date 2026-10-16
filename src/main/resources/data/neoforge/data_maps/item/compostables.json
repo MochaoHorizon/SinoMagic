@@ -1,0 +1,98 @@
+{
+  "values": {
+    "sinomagic:soybean_pod": {
+      "chance": 0.3
+    },
+    "sinomagic:dried_soybean_pod": {
+      "chance": 0.3
+    },
+    "sinomagic:chili_seed": {
+      "chance": 0.3,
+      "can_villager_compost": true
+    },
+    "sinomagic:soybean_meal": {
+      "chance": 0.5
+    },
+    "sinomagic:soybean_powder": {
+      "chance": 0.5
+    },
+    "sinomagic:soybean": {
+      "chance": 0.65
+    },
+    "sinomagic:edamame": {
+      "chance": 0.65
+    },
+    "sinomagic:black_bean": {
+      "chance": 0.65
+    },
+    "sinomagic:red_bean": {
+      "chance": 0.65
+    },
+    "sinomagic:mung_bean": {
+      "chance": 0.65
+    },
+    "sinomagic:chili": {
+      "chance": 0.65
+    },
+    "sinomagic:fire_chili": {
+      "chance": 0.65
+    },
+    "sinomagic:wild_soybean_plant": {
+      "chance": 0.65
+    },
+    "sinomagic:wild_chili_plant": {
+      "chance": 0.65
+    },
+    "sinomagic:tofu": {
+      "chance": 0.85
+    },
+    "sinomagic:dried_tofu": {
+      "chance": 0.85
+    },
+    "sinomagic:frozen_tofu": {
+      "chance": 0.85
+    },
+    "sinomagic:hairy_tofu": {
+      "chance": 0.85
+    },
+    "sinomagic:stinky_tofu": {
+      "chance": 0.85
+    },
+    "sinomagic:baked_tofu": {
+      "chance": 0.85
+    },
+    "sinomagic:fermented_bean_curd": {
+      "chance": 0.85
+    },
+    "sinomagic:tofu_skin": {
+      "chance": 0.85
+    },
+    "sinomagic:qianzhang_tofu": {
+      "chance": 0.85
+    },
+    "sinomagic:salty_tofu_pudding": {
+      "chance": 0.85
+    },
+    "sinomagic:sweet_tofu_pudding": {
+      "chance": 0.85
+    },
+    "sinomagic:latiao": {
+      "chance": 0.85
+    },
+    "sinomagic:red_bean_paste": {
+      "chance": 0.85
+    },
+    "sinomagic:mung_bean_paste": {
+      "chance": 0.85
+    },
+    "sinomagic:tofu_block": {
+      "chance": 1.0
+    },
+    "sinomagic:dried_shit": {
+      "chance": 1.0
+    },
+    "sinomagic:shit_block": {
+      "chance": 1.0
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "dried_shit",
+  "ingredients": [
+    {
+      "item": "sinomagic:shit_block"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "id": "sinomagic:dried_shit"
+  }
+}

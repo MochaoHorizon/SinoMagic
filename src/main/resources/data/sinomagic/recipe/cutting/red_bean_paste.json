@@ -13,8 +13,10 @@
       }
     }
   ],
-  "tool": {
-    "type": "#pickaxe",
-    "action": "pickaxe_dig"
-  }
+  "tool": [
+    {
+      "type": "farmersdelight:item_ability",
+      "action": "pickaxe_dig"
+    }
+  ]
 }

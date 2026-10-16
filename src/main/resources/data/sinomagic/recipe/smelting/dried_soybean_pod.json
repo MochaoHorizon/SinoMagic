@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smelting",
+  "category": "food",
+  "cookingtime": 200,
+  "experience": 0.1,
+  "ingredient": {
+    "item": "sinomagic:soybean_pod"
+  },
+  "result": {
+    "id": "sinomagic:dried_soybean_pod"
+  }
+}

@@ -27,6 +27,17 @@ repositories {
             includeGroup 'maven.modrinth'
         }
     }
+    // Create 及其前置。只在带 Create 的 run 任务里用到，普通 runClient / runServer 不加载。
+    // maven.createmod.net 提供 Ponder 与 Flywheel，Registrate 在另一个仓库
+    // （与 Create 自己的 build.gradle 一致）。
+    maven {
+        name = 'CreateMod'
+        url = 'https://maven.createmod.net'
+    }
+    maven {
+        name = 'IThundxr'
+        url = 'https://maven.ithundxr.dev/snapshots'
+    }
 }
 
 base {
@@ -70,6 +81,23 @@ neoForge {
             programArguments.addAll '--mod', project.mod_id, '--all', '--output', file('src/generated/resources/').getAbsolutePath(), '--existing', file('src/main/resources/').getAbsolutePath()
         }
 
+        // 带可选前置（Create 等）的测试运行：工作目录独立为 run-with-create/，
+        // 把 jar 放进 run-with-create/mods/ 就只在启动这两个任务时生效，
+        // 普通的 runClient / runServer 不受影响。两者共用同一个工作目录，
+        // 因此 mods/ 只需准备一份。
+        clientWithCreate {
+            client()
+            gameDirectory = file('run-with-create')
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
+        serverWithCreate {
+            server()
+            programArgument '--nogui'
+            gameDirectory = file('run-with-create')
+            systemProperty 'neoforge.enabledGameTestNamespaces', project.mod_id
+        }
+
         configureEach {
             systemProperty 'forge.logging.markers', 'REGISTRIES'
             logLevel = org.slf4j.event.Level.DEBUG
@@ -88,11 +116,36 @@ sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 configurations {
     runtimeClasspath.extendsFrom localRuntime
+
+    // 可选前置模组的依赖集合：只解析、不打包。内容会被复制到 run-with-create/mods/。
+    optionalMods {
+        canBeConsumed = false
+        canBeResolved = true
+    }
+}
+
+// 把 optionalMods 里的 jar 投放到带 Create 的运行目录。只复制不改写，
+// 因此手动往那个目录放的东西不会被清掉（不要用 Sync）。
+tasks.register('syncOptionalMods', Copy) {
+    description = '把可选前置模组复制到 run-with-create/mods'
+    from configurations.optionalMods
+    into layout.projectDirectory.dir('run-with-create/mods')
+    include '*.jar'
+}
+
+// 只有这两个 run 任务需要投放
+tasks.matching { it.name in ['runClientWithCreate', 'runServerWithCreate'] }.configureEach {
+    dependsOn 'syncOptionalMods'
 }
 
 dependencies {
     implementation 'software.bernie.geckolib:geckolib-neoforge-1.21.1:4.8.3'
     implementation 'maven.modrinth:farmers-delight:GbNuOZ4S'
+
+    // 可选前置（Create 系）。只解析、不参与编译与打包，由 syncOptionalMods 任务
+    // 复制到 run-with-create/mods/，因此只对带 Create 的 run 任务生效。
+    // Create 的 POM 声明了 Registrate / Ponder / Flywheel，Gradle 会自动解析整套前置。
+    optionalMods "com.simibubi.create:create-1.21.1:6.0.11-319"
 }
 
 //遇到重复文件，保留最先读取到的，跳过后续重复的

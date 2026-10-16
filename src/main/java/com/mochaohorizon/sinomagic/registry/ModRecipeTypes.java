@@ -16,8 +16,8 @@ public class ModRecipeTypes {
 
     public static final Supplier<RecipeType<MillstoneRecipe>> MILLSTONERECIPE =
             RECIPE_TYPES.register(
-                    "millstonerecipe",
-                    () -> RecipeType.simple(ResourceLocation.fromNamespaceAndPath(SinoMagic.MOD_ID, "millstonerecipe"))
+                    "millstone",
+                    () -> RecipeType.simple(ResourceLocation.fromNamespaceAndPath(SinoMagic.MOD_ID, "millstone"))
             );
 
     public static void register(IEventBus eventBus) {

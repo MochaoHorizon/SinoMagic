@@ -1,12 +1,12 @@
 {
   "type": "minecraft:campfire_cooking",
   "category": "food",
-  "cookingtime": 100,
-  "experience": 0.0,
+  "cookingtime": 600,
+  "experience": 0.35,
   "ingredient": {
-    "item": "tofu"
+    "item": "sinomagic:tofu"
   },
   "result": {
-    "id": "baked_tofu"
+    "id": "sinomagic:baked_tofu"
   }
 }

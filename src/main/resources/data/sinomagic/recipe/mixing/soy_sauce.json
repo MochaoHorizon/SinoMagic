@@ -1,4 +1,10 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
   "type": "create:mixing",
   "heat_requirement": "heated",
   "ingredients": [
@@ -6,20 +12,21 @@
       "item": "sinomagic:soybean"
     },
     {
-      "item": "sinomagic:stain"
+      "item": "sinomagic:yeast"
     },
     {
       "item": "sinomagic:salt"
     },
     {
-      "id": "minecraft:water",
-      "amount": 450
+      "type": "neoforge:single",
+      "fluid": "minecraft:water",
+      "amount": 500
     }
   ],
   "results": [
     {
-      "amount": 500,
-      "id": "sinomagic:soy_sauce"
+      "id": "sinomagic:soy_sauce",
+      "amount": 250
     }
   ]
 }

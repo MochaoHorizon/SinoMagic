@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_red_bean": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sinomagic:red_bean"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sinomagic:cutting/red_bean_paste"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_red_bean"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sinomagic:cutting/red_bean_paste"
+    ]
+  }
+}

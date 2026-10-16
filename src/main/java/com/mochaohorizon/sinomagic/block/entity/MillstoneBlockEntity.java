@@ -75,7 +75,7 @@ public class MillstoneBlockEntity extends BlockEntity implements GeoBlockEntity 
         Optional<RecipeHolder<MillstoneRecipe>> optional = manager.getRecipeFor(ModRecipeTypes.MILLSTONERECIPE.get(), input, level);
         if (optional.isPresent()) {
             this.nowRecipe = optional.get().value();
-            this.nowRecipeId = this.nowRecipe.getId();
+            this.nowRecipeId = optional.get().id();
             this.processTime = 0;
             setChanged();
             level.sendBlockUpdated(worldPosition, getBlockState(), getBlockState(), 3);

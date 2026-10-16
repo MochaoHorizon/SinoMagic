@@ -2,10 +2,12 @@
   "type": "minecraft:smoking",
   "group": "",
   "category": "food",
-  "experience": 5,
-  "cookingtime": 80,
-  "ingredient": "soybean_pod",
+  "experience": 0.1,
+  "cookingtime": 100,
+  "ingredient": {
+    "item": "sinomagic:soybean_pod"
+  },
   "result": {
-    "id": "dried_soybean_pod"
+    "id": "sinomagic:dried_soybean_pod"
   }
 }

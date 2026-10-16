@@ -1,0 +1,43 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:compacting",
+  "ingredients": [
+    {
+      "item": "sinomagic:salt"
+    },
+    {
+      "item": "sinomagic:salt"
+    },
+    {
+      "item": "sinomagic:salt"
+    },
+    {
+      "item": "sinomagic:salt"
+    },
+    {
+      "item": "sinomagic:salt"
+    },
+    {
+      "item": "sinomagic:salt"
+    },
+    {
+      "item": "sinomagic:salt"
+    },
+    {
+      "item": "sinomagic:salt"
+    },
+    {
+      "item": "sinomagic:salt"
+    }
+  ],
+  "results": [
+    {
+      "id": "sinomagic:salt_block"
+    }
+  ]
+}

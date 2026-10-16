@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_hairy_tofu": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sinomagic:hairy_tofu"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sinomagic:cooking/fermented_bean_curd"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_hairy_tofu"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sinomagic:cooking/fermented_bean_curd"
+    ]
+  }
+}

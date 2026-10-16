@@ -1,19 +1,29 @@
 {
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
   "type": "create:mixing",
-  "heat_requirement": "superheated",
+  "heat_requirement": "heated",
   "ingredients": [
     {
-      "id": "minecraft:water",
-      "amount": 400
+      "type": "neoforge:single",
+      "fluid": "minecraft:water",
+      "amount": 500
+    },
+    {
+      "item": "sinomagic:salt"
+    },
+    {
+      "item": "minecraft:sugar"
     }
   ],
   "results": [
     {
-      "count": 150,
-      "id": "sinomagic:marinade"
-    },
-    {
-      "id": "sinomagic:salt"
+      "id": "sinomagic:marinade",
+      "amount": 250
     }
   ]
 }

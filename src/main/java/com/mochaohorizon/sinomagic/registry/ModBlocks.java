@@ -6,9 +6,11 @@ import com.mochaohorizon.sinomagic.block.ChiliBlock;
 import com.mochaohorizon.sinomagic.block.NetherWildCropBlock;
 import com.mochaohorizon.sinomagic.block.SoybeanBlock;
 import com.mochaohorizon.sinomagic.block.Millstone;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.LiquidBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
@@ -62,9 +64,10 @@ public class ModBlocks {
                     .explosionResistance(1.0f)
             ));
     public static final DeferredBlock<Block> SALT_ORE = registerBlocks(
-            "salt_ore", () -> new Block(BlockBehaviour.Properties.of()
-                    .destroyTime(1.5f)
-                    .explosionResistance(1.0f)
+            "salt_ore", () -> new DropExperienceBlock(UniformInt.of(0, 2),
+                    BlockBehaviour.Properties.of()
+                            .destroyTime(1.5f)
+                            .explosionResistance(1.0f)
             ));
     public static final DeferredBlock<Block> TOFU_BLOCK = registerBlocks(
             "tofu_block", () -> new Block(BlockBehaviour.Properties.of()

@@ -1,0 +1,38 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_soybean": {
+      "conditions": {
+        "items": [
+          {
+            "items": "sinomagic:soybean"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "sinomagic:compacting/soybean_oil"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_soybean"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "sinomagic:compacting/soybean_oil"
+    ]
+  }
+}
