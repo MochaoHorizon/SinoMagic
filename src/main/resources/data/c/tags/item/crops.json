@@ -1,6 +1,9 @@
 {
   "values": [
-    "sinomagic:soybean",
-    "sinomagic:chili"
+    "#c:crops/soybean",
+    "#c:crops/black_bean",
+    "#c:crops/red_bean",
+    "#c:crops/mung_bean",
+    "#c:crops/chili"
   ]
 }

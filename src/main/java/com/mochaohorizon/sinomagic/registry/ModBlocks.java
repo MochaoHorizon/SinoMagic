@@ -70,7 +70,7 @@ public class ModBlocks {
             "tofu_block", () -> new Block(BlockBehaviour.Properties.of()
                     .destroyTime(0.5f)
                     .explosionResistance(0.5f)
-                    .sound(SoundType.SLIME_BLOCK)
+                    .sound(SoundType.HONEY_BLOCK)
                     .friction(0.75f)
             ));
     public static final DeferredBlock<Block> SHIT_BLOCK = registerBlocks(
@@ -78,6 +78,7 @@ public class ModBlocks {
                     .destroyTime(1.0f)
                     .explosionResistance(4.0f)
                     .friction(0.75f)
+                    .sound(SoundType.GRAVEL)
             ));
 
     // ---------- 流体方块 ----------

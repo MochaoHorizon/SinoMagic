@@ -1,11 +1,8 @@
 {
   "values": [
-    "sinomagic:soybean",
-    "sinomagic:edamame",
-    "sinomagic:soy_milk_bottle",
-    "sinomagic:salty_tofu_pudding",
-    "sinomagic:sweet_tofu_pudding",
+    "#c:foods/bean",
     "sinomagic:tofu",
+    "sinomagic:dried_tofu",
     "sinomagic:frozen_tofu",
     "sinomagic:hairy_tofu",
     "sinomagic:stinky_tofu",
@@ -13,10 +10,7 @@
     "sinomagic:fermented_bean_curd",
     "sinomagic:tofu_skin",
     "sinomagic:qianzhang_tofu",
-    "sinomagic:latiao",
-    "sinomagic:dried_tofu",
-    "sinomagic:black_bean",
-    "sinomagic:red_bean",
-    "sinomagic:mung_bean"
+    "sinomagic:soy_milk_bottle",
+    "sinomagic:latiao"
   ]
 }
