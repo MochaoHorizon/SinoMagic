@@ -6,7 +6,7 @@ license="MIT"
 
 [[mods]]
 modId="sinomagic"
-version="0.1.2"
+version="0.1.99"
 displayName="SinoMagic"
 displayURL="https://github.com/MochaoHorizon/SinoMagic"
 # TODO: no icon.png yet. Drop one into src/main/resources/ and uncomment.
